@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lykke - anyone can trade</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68151354-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+<aside class="menu_overlay"></aside>
+
+<div class="header_container">
+  <header class="header">
+    <div class="container">
+      <div class="header__logo header_logo">
+        <a href="/">
+          <img class="header_logo__img" src="img/lykke_new.svg" height="36" alt="lykke_logo">
+        </a>
+      </div>
+      <div class="header__actions header_actions pull-right">
+        <div class="header_actions__services">
+          <button class="btn btn--icon _open_submenu" type="button">
+            <i class="icon icon--services"></i>
+            <span>Services</span>
+          </button>
+          <menu class="header_submenu submenu">
+            <div class="submenu_list">
+              <ul class="main_projects_list">
+                <li class="main_projects_list__item">
+                  <a href="https://www.lykke.com/" target="_blank" class="main_projects_list__link">
+                    <div class="main_projects_list__img">
+                      <img src="img/services/lykke_wallet_icon.svg" alt="lykke_wallet_logo" width="40">
+                    </div>
+                    <div class="main_projects_list__content">
+                      <div class="main_projects_list__title">Lykke Wallet</div>
+                      <div class="main_projects_list__text">
+                        Trade FX and Digital Assets
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="main_projects_list__item">
+                  <a href="https://streams.lykke.com/" target="_blank" class="main_projects_list__link">
+                    <div class="main_projects_list__img">
+                      <img src="img/services/streams_icon.svg" alt="streams_logo" width="40">
+                    </div>
+                    <div class="main_projects_list__content">
+                      <div class="main_projects_list__title">Lykke Streams</div>
+                      <div class="main_projects_list__text">
+                        Competition platform. Is helping the great ideas to meet the bright minds
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="main_projects_list__item">
+                  <a href="https://blockchainexplorer.lykke.com/" target="_blank" class="main_projects_list__link">
+                    <div class="main_projects_list__img">
+                      <img src="img/services/blockchain_explorer_icon.svg" alt="bl_explorer_logo" width="40">
+                    </div>
+                    <div class="main_projects_list__content">
+                      <div class="main_projects_list__title">Blockchain Explorer</div>
+                      <div class="main_projects_list__text">
+                        Explore the Blockchain. Search transaction, assets, addresses or blocks
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="social">
+                <li><a href="https://www.facebook.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--fb_simple"></i></a></li>
+                <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--tw"></i></a></li>
+                <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/c/LykkeX" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--linkedin-icn"></i></a></li>
+                <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--reddit"></i></a></li>
+                <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--telegram"></i></a></li>
+                <li><a href="https://t.me/LykkeDev" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--telegram_dev"></i></a></li>
+                <li><a href="http://lykkecommunity.herokuapp.com" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--slack"></i></a></li>
+              </ul>
+            </div>
+
+          </menu>
+        </div>
+        <div class="header_actions__login header_login">
+
+          <div class="header_user dropdown__control">
+            <a href="/Home/SignIn">
+              <!--<div class="header_login__title">Sign in</div>-->
+
+              <div class="header_user__img">
+                <img src="img/user_default.svg" width="40" alt="user_image">
+              </div>
+            </a>
+          </div>
+
+          <div class="dropdown__container">
+            <ul class="dropdown__nav">
+              <li><a href="/Home/LogOut">Sign Out</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="header_actions__logout visible-xs">
+          <a href="/Home/LogOut" class="btn btn--icon btn_logout">
+            <i class="icon icon--exit"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header_search">
+      <div class="container">
+        <div class="header_search__inner">
+          <div class="header_search__buttons">
+            <button type="button" class="btn btn-sm btn--flat hidden-xs btn_close_header">Cancel</button>
+            <button type="button" class="btn btn-sm btn--primary hidden-xs">Search</button>
+            <button type="button" class="btn btn--icon visible-xs btn_close_header">
+              <i class="icon icon--cancel_round"></i>
+            </button>
+          </div>
+          <div class="header_search__field">
+            <button class="header_search__btn btn btn--icon" type="button">
+              <i class="icon icon--search"></i>
+            </button>
+            <input type="text" class="form-control" placeholder="Search block, address, transaction…">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<article class="content">
+  <section class="section section--lead">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 automargin">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="section_header">
+                <h1 class="section__title">Invoicing system</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+              <form class="form form_register">
+                <h4>Sign in</h4>
+
+                <div class="form-group">
+                  <div class="input-group">
+                    <i class="icon icon--email input-group-addon"></i>
+                    <input type="email" placeholder="E-mail address" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group--error">
+                    <i class="icon icon--lock input-group-addon"></i>
+                    <input type="password" placeholder="Password" class="form-control">
+                    <!-- TODO toggle icon classes and input type, show icon if input has value-->
+                    <i class="icon icon--show_password input-group-addon"></i>
+                    <!--<i class="icon icon--hide_password input-group-addon"></i>-->
+                  </div>
+                  <div class="hint hint--error">The username or password you entered is incorrect</div>
+                </div>
+                <div class="submit-group">
+                  <button class="btn btn--primary btn-block" type="submit">Sign in</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <div class="features_list">
+                <div class="features_item">
+                  <div class="features_item__img">
+                    <img src="img/balance_icn.svg" alt="balance" width="82px">
+                  </div>
+                  <div class="features_item__content">
+                    <div class="features_item__title">Balance</div>
+                    <div class="features_item__text">
+                      See the account balance updated immediately
+                    </div>
+                  </div>
+                </div>
+                <div class="features_item">
+                  <div class="features_item__img">
+                    <img src="img/refund_icn.svg" alt="refund" width="82px">
+                  </div>
+                  <div class="features_item__content">
+                    <div class="features_item__title">Refund</div>
+                    <div class="features_item__text">
+                      No matter what digital wallet is used, If something goes wrong we will give a refund
+                    </div>
+                  </div>
+                </div>
+                <div class="features_item">
+                  <div class="features_item__img">
+                    <img src="img/multiple_icn.svg" alt="multiple" width="82px">
+                  </div>
+                  <div class="features_item__content">
+                    <div class="features_item__title">Multiple</div>
+                    <div class="features_item__text">
+                      Accept multiple crypto currencies that can be immediately exchanged to an asset of choice
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</article>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="separator"></div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="apps apps--left">
+
+            <div class="apps_apple">
+              <a
+                href="https://appsto.re/ru/Dwjvcb.i"
+                class="app_link app_link--appstore"
+                title="App Store"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img src="img/appstore-badge.svg" width="170" alt="apps_apple">
+              </a>
+
+            </div>
+            <div class="apps_google">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet"
+                class="app_link app_link--googleplay"
+                title="Google Play"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img src="img/google-play.svg" width="170" alt="apps_google">
+              </a>
+            </div>
+          </div>
+
+          <div class="block_subscribe">
+            <div class="h5 block_subscribe__title">Newsletter</div>
+            <p class="hint">Get our latest news right in your mailbox</p>
+
+            <form class="form" id="subscribe-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <i class="icon icon--email"></i>
+                  <input type="email" placeholder="E-mail address" id="subscribe-email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+                </div>
+                <div id="subscribe-message" class="hint" style="display:none"></div>
+                <button class="btn btn-sm btn--primary btn--circle" type="button" id="subscribe-button"><i class="icon icon--arrow-right-alt"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="footer_nav">
+            <div class="footer_nav__row">
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">Services</li>
+                  <li><a href="https://streams.lykke.com/" target="_blank">Lykke Streams</a></li>
+                  <li><a href="https://blockchainexplorer.lykke.com/" target="_blank">Blockchain Explorer</a></li>
+                </menu>
+              </div>
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">For clients</li>
+                  <li><a href="https://lykke.com/city/invest" target="_blank">Invest</a></li>
+                  <li><a href="https://lykke.com" target="_blank">Wallet</a></li>
+                  <li><a href="https://lykke.com/exchange" target="_blank">Exchange</a></li>
+                  <li><a href="https://lykke.com/b2b" target="_blank">Accelerator</a></li>
+                  <li><a href="https://lykke.com/city/faq" target="_blank">FAQ</a></li>
+                </menu>
+              </div>
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">About us</li>
+                  <li><a href="https://lykke.com/leadership" target="_blank">Core team</a></li>
+                  <li><a href="https://lykke.com/technology" target="_blank">Technology</a></li>
+                  <li><a href="https://lykke.com/company/news" target="_blank">News</a></li>
+                  <li><a href="https://lykke.com/city/blog" target="_blank">Blog</a></li>
+                  <li><a href="https://lykke.com/media/Whitepaper_LykkeExchange.pdf" target="_blank">White Paper</a></li>
+                </menu>
+              </div>
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">Get in touch</li>
+                  <li><a href="https://lykke.com/contacts" target="_blank">Contacts</a></li>
+                  <li><a href="mailto:support@lykke.com">Support</a></li>
+                  <li><a href="https://lykke.com/city/open_positions" target="_blank">Open positions</a></li>
+                  <li><a href="https://lykke.com/b2b-join" target="_blank">Join as Blockchain Accelerator</a></li>
+                </menu>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 pull-right">
+          <ul class="social social--footer_alt">
+            <li><a href="https://www.facebook.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--fb_simple"></i></a></li>
+            <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--tw"></i></a></li>
+            <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/c/LykkeX" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--linkedin-icn"></i></a></li>
+            <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--reddit"></i></a></li>
+            <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--telegram"></i></a></li>
+            <li><a href="https://t.me/LykkeDev" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--telegram_dev"></i></a></li>
+            <li><a href="http://lykkecommunity.herokuapp.com" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--slack"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <ul class="footer_links">
+            <li><span class="copy">© 2017 Lykke, Inc.</span></li>
+            <li class="middot">·</li>
+            <li><a href="https://lykke.com/privacy_policy" target="_blank">Privacy Policy</a></li>
+            <li class="middot">·</li>
+            <li><a href="https://lykke.com/terms_of_use" target="_blank">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/functions.js"></script>
+
+
+</body>
+</html>

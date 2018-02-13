@@ -1,0 +1,147 @@
+@import "../../node_modules/LykkeFramework/assets/scss/style-minimal.scss";
+@import "../../node_modules/LykkeFramework/assets/scss/style-necessaries.scss";
+
+// vendors
+@import "../../node_modules/LykkeFramework/assets/scss/vendor/bootstrap-datetimepicker";
+
+// elements
+@import '../../node_modules/LykkeFramework/assets/scss/partials/table';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/list';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/links';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/labels';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/user';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/modal';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/nav';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/footer';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/lists';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/markets';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/nav';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/subscribe';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/support';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/apps';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/assets';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/status_icon';
+
+// optional
+@import 'pages/pay';
+@import 'pages/invoice';
+@import 'lists';
+@import 'form';
+@import 'pie_loader';
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+tr.collapse.in {
+  display: table-row;
+}
+tbody.collapse.in {
+  display: table-row-group;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+@media (max-width: 991px) {
+  .collapse {
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.header {
+  border-bottom: 1px solid $border-alt;
+}
+
+.error_page {
+  font-weight: $fw-semi;
+  text-align: center;
+  color: #111;
+  font-family: $ff-alt;
+
+  @include rem(margin-bottom, 20px);
+  @include rem(font-size, 88px);
+
+  .status_icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-bottom: 0;
+
+    @include rem(margin, 0 10px);
+    @include rem(top, -10px);
+  }
+}
+
+
+.status_icon {
+  text-align: center;
+  line-height: 60px;
+
+  @include rem(line-height, 62px);
+  @include rem(margin-bottom, 40px);
+
+  &--error {
+    img {
+      @include rem(width, 72px)
+    }
+  }
+}
+
+.form_status {
+  padding:3vh 0;
+
+  h2 {
+    text-align: center;
+    color: #111;
+
+    @include rem(margin-bottom, 40px);
+  }
+
+  p {
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: center;
+
+    @include rem(font-size, 18px);
+
+    a {
+      color: #1694fb;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  &__button {
+    @include rem(margin-top, 36px);
+
+    .btn {
+      @include rem(min-width, 150px);
+    }
+  }
+}
