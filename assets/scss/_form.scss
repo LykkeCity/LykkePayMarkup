@@ -33,25 +33,6 @@
   }
 }
 
-.input-group-addon {
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  &.left {
-    right: auto;
-    left: 0;
-    color: #b2b8bf;
-    opacity: 1 !important;
-    cursor: default;
-
-    + .form-control {
-      @include rem(font-size, 16px);
-      @include rem(padding-left, 50px);
-    }
-  }
-}
-
 .form {
   position: relative;
 }
@@ -346,23 +327,32 @@
   }
 }
 
-.form_register {
-  @include rem(margin, 50px 0);
+.input-group-addon {
+  right: auto;
+  margin-right: 0;
+  cursor: default;
+  top: 50%;
 
-  .input-group-addon {
-    right: auto;
-    margin-right: 0;
-    cursor: default;
-    top: 50%;
+  @include rem(right, 5px);
+  @include transform(translate(0, -50%));
 
+  &.icon, .icon {
     @include rem(font-size, 24px);
+  }
+
+  &.left {
+    right: auto;
+
     @include rem(left, 5px);
-    @include transform(translate(0, -50%));
 
     + .form-control {
       @include rem(padding-left, 50px);
     }
   }
+}
+
+.form_register {
+  @include rem(margin, 50px 0);
 
   .form-group {
     @include rem(margin-bottom, 20px);
@@ -456,4 +446,30 @@
       width: 90%;
     }
   }
+}
+
+.invoice_form {
+  textarea.form-control {
+    @include rem(min-height, 85px);
+  }
+}
+
+.form_header {
+  border-bottom: 1px solid $border-alt;
+
+  @include clearfix;
+  @include rem(margin, 40px 0 20px);
+  @include rem(padding-bottom, 20px);
+
+  .btn {
+    @include rem(margin, -7px 0 0);
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.attachment_list {
+  @include rem(margin-bottom, 50px);
 }

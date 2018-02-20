@@ -286,6 +286,7 @@ ol.list_styled {
   .btn--icon {
     @include rem(padding, 13px 4px);
     @include rem(margin-right, 6px);
+    @include rem(margin-top, 3px);
   }
 }
 
@@ -330,7 +331,12 @@ ol.list_styled {
   letter-spacing: -0.9px;
   color: #111;
 
-  @include rem(margin-top, -9px)
+  @include rem(margin-top, -9px);
+
+  @media all and (max-width: $screen-mobile) {
+    font-size: 30px;
+    margin-top: 0;
+  }
 }
 
 .label--violet { background: #ab00ff; }
@@ -393,6 +399,133 @@ ol.list_styled {
     &[disabled] {
       background-color: transparent !important;
       color: rgba(#b2b8bf, .24) !important;
+    }
+  }
+}
+
+.sidebar_breadcrumbs {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #F5F6F7;
+  z-index: 10;
+
+  @include rem(padding, 18px 40px 20px);
+
+  .icon--chevron-thin-right {
+    display: inline-block;
+    vertical-align: middle;
+    color: #b2b8bf;
+    position: relative;
+
+    @include rem(font-size, 12px);
+    @include rem(margin, 0 4px);
+    @include rem(top, 1px);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .btn_close_menu {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -12px;
+
+    .icon {
+      @include rem(font-size, 24px);
+    }
+  }
+}
+
+.breadcrumbs_item {
+  color: $secondary;
+  display: inline-block;
+  vertical-align: middle;
+
+  @include rem(font-size, 16px);
+
+  &--current {
+    color: rgba($secondary, 0.6);
+  }
+}
+
+.sidebar_menu {
+  &--right {
+    left: auto;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    max-width: 100%;
+    display: none;
+
+    @include rem(width, 550px);
+    @include transform(translate(0,0));
+
+    h3 {
+      font-family: $ff;
+      font-weight: $fw-semi;
+
+      @include rem(font-size, 28px);
+      @include rem(margin-bottom, 15px);
+    }
+
+    &.sidebar_menu--open {
+      display: block;
+    }
+
+    .sidebar_menu__header {
+      padding: 0;
+      border-bottom: 0;
+      margin: 0;
+      position: static;
+
+      @include rem(margin-bottom, 30px);
+    }
+
+    .sidebar_menu__footer {
+      position: relative;
+      padding: 0;
+    }
+
+    .sidebar_menu__body {
+      @include rem(padding, 100px 40px 20px);
+    }
+
+    .control-label {
+      line-height: 1.5;
+      color: rgba($secondary, .8);
+      font-weight: normal;
+
+      @include rem(font-size, 16px);
+      @include rem(margin-bottom, 12px);
+    }
+
+    .form-group {
+      @include rem(margin-bottom, 22px);
+    }
+
+    @media all and (max-width: $screen-mobile) {
+      width: 100%;
+    }
+  }
+}
+
+.profile_header {
+  .btn {
+    @include rem(min-width, 220px);
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    .col-xs-7,
+    .col-xs-5 {
+      width: 100%;
+      float: none;
+    }
+
+    .btn {
+      width: auto;
     }
   }
 }

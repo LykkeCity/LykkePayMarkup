@@ -47,7 +47,7 @@
   }
 
   &__qr {
-    margin-bottom: 25px;
+    margin-bottom: 52px;
   }
 
   &__loader {
@@ -71,7 +71,7 @@
   }
 
   &__row {
-    @include rem(margin-bottom, 25px);
+    margin-bottom: 20px;
   }
 
   &__value {
@@ -79,7 +79,6 @@
     line-height: normal;
     color: #333333;
     font-size: 24px;
-    margin-bottom: 5px;
 
     &--thin {
       font-weight: $fw-light;
@@ -95,20 +94,31 @@
     font-size: 13px;
   }
 
+  &__hint {
+    line-height: 1.43;
+    color: rgba(#3f4d60, .6);
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
   hr {
     @include rem(margin, 25px 0);
   }
 
   .hint {
     line-height: 1.56;
-    color: rgba($secondary, .6);
+    color: #3f4d60;
 
     @include rem(font-size, 16px);
   }
   
   @media all and (max-width: $screen-landscape) {
     &__loader {
-      @include rem(margin-bottom, 12px);
+      margin-bottom: 12px;
+    }
+
+    &__qr {
+      margin-bottom: 25px;
     }
   }
 
@@ -124,6 +134,8 @@
 
     .hint {
       text-align: center;
+      padding: 0 10px;
+      color: rgba($secondary, .6);
     }
 
     &__qr {
@@ -142,67 +154,25 @@
   }
 }
 
-.asset_link {
-  position: relative;
-
-  &__icon {
-    margin-right: 20px;
-    width: 60px;
-  }
-
-  &__info {
-    padding-right: 60px;
-  }
-
+.invoice_form {
   &__title {
-    font-size: 18px;
-    line-height: 25px;
+    color: #111;
+    line-height: 1;
+    font-family: $ff-alt;
+    font-weight: $fw-semi;
+    letter-spacing: -0.9px;
+
+    @include rem(font-size, 60px);
+    @include rem(margin-bottom, 2px);
   }
 
-  &__desc {
-    font-size: 16px;
-    line-height: 1.5;
-    word-break: break-word;
-  }
+  &__status {
+    line-height: 1.33;
+    font-family: $ff-alt;
+    letter-spacing: -0.3px;
+    color: rgba($secondary, .6);
 
-  &__action {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    z-index:10;
+    @include rem(font-size, 30px);
 
-    @include transform(translate(0, -50%));
-
-    .btn {
-      @include rem(padding, 10px);
-
-      .icon {
-        @include rem(font-size, 24px);
-      }
-    }
-  }
-
-  &--alt {
-    .asset_icon {
-      width: 60px;
-      font-size: 16px;
-      line-height: 32px;
-      height: 31px;
-    }
-
-    .asset_link__title {
-      line-height: 30px;
-      margin-right: 5px;
-    }
-
-    .asset_link__desc {
-      margin-left: 0;
-    }
-  }
-
-  @media all and (max-width: $screen-mobile) {
-    &__action {
-      right: 0;
-    }
   }
 }
