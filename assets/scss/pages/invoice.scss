@@ -1,9 +1,9 @@
 .invoice_header {
-  text-align: center;
-
+  @include clearfix;
   @include rem(margin-bottom, 75px);
 
   .page__title {
+    text-align: inherit;
     color: #111;
   }
 
@@ -13,6 +13,58 @@
     color: #8c94a0;
 
     @include rem(font-size, 28px);
+  }
+
+  &__link {
+    font-weight: $fw-semi;
+
+    @include rem(font-size, 24px);
+
+    .btn {
+      position: relative;
+
+      @include rem(top, -2px);
+    }
+  }
+
+  &__desc {
+    border-bottom: 1px solid $border-alt;
+
+    @include rem(padding-bottom, 28px);
+
+    .btn--flat {
+      @include rem(margin, -8px -22px);
+    }
+  }
+
+  &__data {
+    line-height: 1.5;
+
+    color: rgba($secondary, .8);
+  }
+
+  .invoice_info__qr {
+    text-align: right;
+
+    @include rem(margin-bottom, 38px);
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    .invoice_info__qr {
+      text-align: left;
+      margin: 30px 0;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+
+    &__desc {
+      .btn--flat {
+        margin-top: 15px;
+        float: none !important;
+      }
+    }
   }
 
   @media all and (max-width: $screen-mobile) {
@@ -27,6 +79,14 @@
 
     &__subtitle {
       font-size: 16px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+
+    .invoice_info__qr {
+      margin: 15px 0;
     }
   }
 }
@@ -174,5 +234,34 @@
 
     @include rem(font-size, 30px);
 
+  }
+}
+
+.invoice_page {
+  .asset_link_list--thin {
+    .asset_link {
+      border-top: 0;
+      border-bottom: 1px solid $border-alt;
+
+      &:last-child {
+        border-bottom: 1px solid $border-alt;
+      }
+    }
+  }
+
+  .invoice_header {
+    @include rem(margin-bottom, 35px);
+  }
+
+  .form_header {
+    @include rem(margin-top, 60px);
+  }
+}
+
+.invoice_buttons {
+  @include rem(margin, 54px 0);
+
+  .btn:first-child {
+    min-width: 155px;
   }
 }
