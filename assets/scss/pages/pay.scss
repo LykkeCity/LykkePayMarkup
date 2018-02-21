@@ -540,3 +540,14 @@ ol.list_styled {
 .relative {
   position: relative;
 }
+
+.blockchain_settlement_btn {
+  .btn {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  img {
+    @include rem(margin-right, 15px);
+  }
+}
