@@ -3,6 +3,7 @@
 
 // vendors
 @import "../../node_modules/LykkeFramework/assets/scss/vendor/bootstrap-datetimepicker";
+@import "../../node_modules/LykkeFramework/assets/scss/vendor/bootstrap-select";
 
 // elements
 @import '../../node_modules/LykkeFramework/assets/scss/partials/table';
@@ -23,6 +24,7 @@
 @import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/apps';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/assets';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/status_icon';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/alert';
 
 // optional
 @import 'pages/pay';
@@ -30,6 +32,7 @@
 @import 'lists';
 @import 'form';
 @import 'pie_loader';
+@import 'select';
 
 .fade {
   opacity: 0;
@@ -160,4 +163,8 @@ tbody.collapse.in {
 
 .label--dark {
   color: $secondary !important;
+}
+
+.alert--violet {
+  background-color: $violet;
 }

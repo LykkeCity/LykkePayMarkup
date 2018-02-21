@@ -174,76 +174,76 @@
             <div class="invoice_header__subtitle">by Budweiser Stag Brewing Company</div>
           </div>
 
-          <div class="invoice_info">
-            <div class="invoice_info__left">
-              <div class="invoice_info__qr">
-                <img src="img/qr.png" alt="qr" width="220" height="220">
-              </div>
-              <div class="invoice_info__loader">
-                <div class="pie">
-                  <div class="pie_inner">
-                    <div class="pie_half">
-                      <div class="pie_circle-right">
-                        <div class="pie_blocker-1"></div>
-                      </div>
-                    </div>
-                    <div class="pie_half pie_half-left">
-                      <div class="pie_circle-left">
-                        <div class="pie_blocker-2"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <span>10 min remaining…</span>
-              </div>
-
-              <div class="hint visible-xs">The address will be invalid in 10 minutes due to inactivity</div>
-            </div>
-            <div class="invoice_info__right">
-              <div class="invoice_info__row">
-                <div class="invoice_info__value">0.18446902
-                  <div class="invoice_info__select custom_dropdown">
-                    <select class="selectpicker inline_select" data-size="10">
-                      <option value="BTC" selected>BTC</option>
-                      <option value="USD">USD</option>
-                      <option value="CHF">CHF</option>
-                      <option value="EUR">EUR</option>
-                      <option value="GBP">GBP</option>
-                      <option value="LKK">LKK</option>
-                      <option value="LKK1Y">LKK1Y</option>
-                      <option value="LKK2Y">LKK2Y</option>
-                      <option value="LTC">LTC</option>
-                      <option value="ETH">ETH</option>
-                      <option value="AE">AE</option>
-                    </select>
-                  </div>
-                </div>
-                <span class="invoice_info__title">FOR PAYMENT</span>
-              </div>
-              <div class="invoice_info__row">
-                <div class="invoice_info__value invoice_info__value--thin">1 BTC = 15 000 USD</div>
-                <span class="invoice_info__title">Exchange rate</span>
-                <div class="invoice_info__hint">Includes 1.4% uplift for covering the exchange risk and the 8.6% fee</div>
-              </div>
-              <div class="invoice_info__row">
-                <div class="invoice_info__value">1,500 USD</div>
-                <span class="invoice_info__title">Original</span>
-              </div>
-
-              <hr class="hidden-xs">
-
-              <div class="hint hidden-xs">The address will be invalid in 10 minutes due to inactivity</div>
-            </div>
+          <div class="alert alert--green" role="alert">
+            <table>
+              <tr>
+                <td>
+                  <span class="label label--text label--white">Paid</span>
+                </td>
+                <td class="text-right">
+                  <i class="icon icon--check_circle hidden-xs"></i>
+                  Invoice has been paid <span class="hidden-xs"> on 15.05.2016</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="alert alert--red" role="alert">
+            <table>
+              <tr>
+                <td>
+                  <span class="label label--text label--white">Error</span>
+                </td>
+                <td class="text-right">
+                  <i class="icon--warning_icn hidden-xs"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+                  0.18446902 BTC received <span class="hidden-xs"> on 15.05.2016</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="alert alert--violet" role="alert">
+            <table>
+              <tr>
+                <td>
+                  <span class="label label--text label--white">Underpaid</span>
+                </td>
+                <td class="text-right">
+                  <i class="icon--remove_circle hidden-xs"></i>
+                  0.18446902 BTC received <span class="hidden-xs"> on 15.05.2016</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="alert alert--violet" role="alert">
+            <table>
+              <tr>
+                <td>
+                  <span class="label label--text label--white">Overpaid</span>
+                </td>
+                <td class="text-right">
+                  <i class="icon--add_circle hidden-xs"></i>
+                  0.18446902 BTC received <span class="hidden-xs"> on 15.05.2016</span>
+                </td>
+              </tr>
+            </table>
           </div>
 
           <div class="asset_link_list">
             <div class="asset_link">
-              <div class="asset_link__action">
-                <button class="btn btn--icon _copy" type="button"><i class="icon icon--copy_thin"></i></button>
-              </div>
               <div class="asset_link__info">
-                <div class="asset_link__title">Payment address</div>
-                <div class="asset_link__desc">akDUVgJyC5stSXwUnhSVkmWGPQeL6hrmYWn</div>
+                <div class="asset_link__title">For payment</div>
+                <div class="asset_link__desc">0.18446902 BTC</div>
+              </div>
+            </div>
+            <div class="asset_link">
+              <div class="asset_link__info">
+                <div class="asset_link__title">Exchange rate</div>
+                <div class="asset_link__desc">1 BTC = 15 000 USD</div>
+              </div>
+            </div>
+            <div class="asset_link">
+              <div class="asset_link__info">
+                <div class="asset_link__title">Original</div>
+                <div class="asset_link__desc">1,500 USD</div>
               </div>
             </div>
             <div class="asset_link">
