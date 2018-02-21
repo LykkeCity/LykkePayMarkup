@@ -152,3 +152,12 @@ tbody.collapse.in {
   font-family: $ff;
   font-weight: $fw-semi;
 }
+
+.label--text {
+  padding: 0;
+  margin: 0;
+}
+
+.label--dark {
+  color: $secondary !important;
+}

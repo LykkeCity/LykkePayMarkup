@@ -222,11 +222,17 @@
 
   &__img {
     float: left;
+    cursor: default;
 
     @include rem(margin-right, 30px);
 
     .icon {
       margin-right: 0;
+    }
+
+    img {
+      border-radius: 100px;
+      width: 40px;
     }
 
     &--success {
@@ -264,8 +270,59 @@
     display: inline-block;
     vertical-align: middle;
     font-weight: normal;
+    position: relative;
+    top: -1px;
+    white-space: nowrap;
 
     @include rem(font-size, 16px);
+  }
+
+  &__message {
+    @include rem(margin-top, 28px);
+
+    .form {
+      @include rem(margin-bottom, 10px);
+    }
+
+    .message_card {
+
+      p {
+        color: rgba($secondary, .8);
+        line-height: 1.5;
+
+        @include rem(font-size, 16px);
+      }
+
+      &--send {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin: 0;
+      }
+    }
+
+    .card__actions {
+      border-bottom: 0;
+      padding: 0;
+      color: rgba($secondary, .6);
+
+      @include rem(margin-top, 25px);
+      @include rem(font-size, 16px);
+
+      a:hover {
+        color: $secondary;
+      }
+    }
+
+    .user_badge__img {
+      @include rem(margin-right, 20px);
+    }
+
+    .text--gray {
+      color: rgba($secondary, .6);
+
+      @include rem(padding, 15px 0);
+    }
   }
 
   .middot {
@@ -273,10 +330,12 @@
     color: rgba($secondary, .6);
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
     font-weight: normal;
+    position: relative;
+    top: -1px;
 
     @include rem(font-size, 16px);
+    @include rem(margin, 0 2px);
   }
 
   &__text {

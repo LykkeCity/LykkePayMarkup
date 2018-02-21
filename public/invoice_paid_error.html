@@ -248,16 +248,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12">
-                  <div class="asset_link">
-                    <div class="asset_link__info">
-                      <div class="asset_link__title">Note</div>
-                      <div class="asset_link__desc">
-                        <input type="text" class="form-control form-control--content" placeholder="Enter note here...">
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -318,18 +308,101 @@
                 </div>
               </div>
               <div class="history_item">
-                <div class="history_item__img history_item__img--success">
-                  <div class="_circle"><i class="icon icon--check_thin"></i></div>
+                <div class="history_item__img">
+                  <img src="http://lorempixel.com/40/40/" width="40" height="40" alt="pic">
                 </div>
                 <div class="history_item__content">
-                  <div class="pull-right label label--green">Paid</div>
+                  <div class="pull-right label label--blue">Settled</div>
                   <div class="history_item__title">
-                    Pay
+                    Christian Fuller
                     <span class="middot">&middot;</span>
                     <div class="history_item__date">23:21 AM January 12, 2018</div>
                   </div>
-                  <div class="history_item__text">
-                    Transfer Y BTC from APdn8oY6fLMjRptvJ1jhqCnoGFAFQmdX1R to 2NAmtRw32LvymjsCx1Wdo8i42v49U6tHDEw expected Y BTC at rate 1.42 BTC/CHF
+                  <div class="history_item__text">Settled N CHF to Lykke Wallet</div>
+                </div>
+              </div>
+              <div class="history_item">
+                <div class="history_item__img history_item__img--error">
+                  <div class="_circle">!</div>
+                </div>
+                <div class="history_item__content">
+                  <div class="pull-right label label--red">Paid error</div>
+                  <div class="history_item__title">
+                    Error
+                    <span class="middot">&middot;</span>
+                    <div class="history_item__date">23:21 AM January 12, 2018</div>
+                  </div>
+                  <div class="history_item__text">Transfer Y BTC from APdn8oY6fLMjRptvJ1jhqCnoGFAFQmdX1R to 2NAmtRw32LvymjsCx1Wdo8i42v49U6tHDEw expected 0 BTC</div>
+                  <div class="history_item__message">
+                    <form action="" class="form form--message">
+                      <div class="message_card message_card--form">
+                        <div class="user_badge user_badge--small">
+                          <div class="user_badge__img"><img src="http://lorempixel.com/40/40/" alt="user_image_alt"></div>
+                          <div class="user_badge__message">
+                            <div class="message_card__inner">
+                              <div class="user_badge__title">Kaylee Harper</div>
+                              <textarea id="msg" placeholder="Enter your comment here..." class="form-control form-control--textarea message_card__area"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message_actions">
+                        <div class="row">
+                          <div class="col-xs-8 text-right pull-right">
+                            <div class="text--gray">Please remember to be respectful and considerate. Thanks!</div>
+                          </div>
+                          <div class="col-xs-4">
+                            <button type="button" class="btn btn-block">Post comment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="history_item">
+                <div class="history_item__img history_item__img--error">
+                  <div class="_circle">!</div>
+                </div>
+                <div class="history_item__content">
+                  <div class="pull-right label label--red">Paid error</div>
+                  <div class="history_item__title">
+                    Error
+                    <span class="middot">&middot;</span>
+                    <div class="history_item__date">23:21 AM January 12, 2018</div>
+                  </div>
+                  <div class="history_item__text">Transfer Y BTC from APdn8oY6fLMjRptvJ1jhqCnoGFAFQmdX1R to 2NAmtRw32LvymjsCx1Wdo8i42v49U6tHDEw expected 0 BTC</div>
+                  <div class="history_item__message">
+                    <div class="message_card message_card--send">
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt="user_image_alt"></a></div>
+                        <div class="user_badge__message">
+                          <div class="message_card__inner">
+                            <div class="user_badge__title">
+                              <a href="">Kaylee Harper</a>
+                              <span class="middot">&middot;</span>
+                              <span class="message_card__date">9:46 PM April 9, 2016</span>
+                              <span class="middot">&middot;</span>
+                              <span class="label label--dark label--text">edited <i class="icon icon--edit_alt"></i></span>
+                            </div>
+                            <div class="message_card__message">
+                              <p>
+                                Transfer Y BTC from APdn8oY6fLMjRptvJ1jhqCnoGFAFQmdX1R to 2NAmtRw32LvymjsCx1Wdo8i42v49U6tHDEw expected 0 BTC
+                              </p>
+
+                              <!-- выводить для админа  -->
+                              <div class="card__actions">
+                                <a href="" class="action_link">Reply</a>
+                                <span class="middot">&middot;</span>
+                                <a href="" class="action_link">Delete</a>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -472,6 +545,23 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
+
+
+<script src="js/vendor/autosize.min.js"></script>
+<script>
+  if ($('#msg').length) {
+    $('#msg')
+      .bind('focus', function(){ $(this).parents('.form--message').addClass('focused'); })
+      .keyup(function(){
+        if ($(this).val()) { $(this).parents('.form--message').addClass('with_value'); }
+        else { $(this).parents('.form--message').removeClass('with_value'); }
+      })
+      .each(function(){ autosize(this); })
+      .on('autosize:resized', function(){
+        $('.message_card__inner').css({ height: 'auto' })
+      });
+  }
+</script>
 
 
 </body>
