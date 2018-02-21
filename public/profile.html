@@ -407,7 +407,7 @@
       <h3>Invoices</h3>
 
       <ul class="nav nav-tabs" role="tablist">
-        <li><button class="btn btn--icon"><i class="icon icon--search _open_search"></i></button></li>
+        <li><button class="btn btn--icon _show_search_block"><i class="icon icon--search"></i></button></li>
         <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All &middot; 32</a></li>
         <li role="presentation"><a href="#paid" aria-controls="paid" role="tab" data-toggle="tab">Paid &middot; 9</a></li>
         <li role="presentation"><a href="#unpaid" aria-controls="unpaid" role="tab" data-toggle="tab">Unpaid &middot; 21</a></li>
@@ -415,13 +415,25 @@
       </ul>
 
       <div class="search_filter">
-        <form action="">
+        <form>
           <div class="row">
-            <div class="col-md-2">
-
+            <div class="col-xs-6 col-sm-3">
+              <div class="form-group select">
+                <select class="form-control">
+                  <option value="In the past month">In the past month</option>
+                  <option value="In the past month">In the past month</option>
+                </select>
+              </div>
             </div>
-            <div class="col-md-10">
-
+            <div class="col-xs-9 col-sm-8">
+              <div class="input-search input-search--index">
+                <button class="btn btn--icon"><i class="icon icon--search"></i></button>
+                <input type="text" class="form-control form-control--search" placeholder="Asset or address...">
+                <button class="btn btn--icon"><i class="icon icon--cancel_round"></i></button>
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-1">
+              <button type="button" class="btn btn--link _hide_search_block">Cancel</button>
             </div>
           </div>
         </form>
@@ -731,6 +743,23 @@
       next: "icon--chevron-thin-right"
     }
   });
+
+  var searchBlock = $('.search_filter'),
+    searchActiveClass = 'search_filter--show';
+
+  function showSearch(e) {
+    e.preventDefault();
+    searchBlock.toggleClass(searchActiveClass);
+  }
+
+  function hideSearch(e) {
+    e.preventDefault();
+    searchBlock.removeClass(searchActiveClass);
+  }
+
+  $('._show_search_block').on('click', showSearch);
+  $('._hide_search_block').on('click', hideSearch);
+
 </script>
 
 </body>

@@ -551,3 +551,84 @@ ol.list_styled {
     @include rem(margin-right, 15px);
   }
 }
+
+
+.search_filter {
+  display: none;
+
+  @include rem(margin-bottom, 30px);
+
+  .btn--link {
+    @include rem(margin-top, 14px);
+  }
+
+  &--show {
+    display: block;
+  }
+
+  .input-search {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 370px;
+
+    .form-control {
+      border: 1px solid $gray-25;
+      border-radius: $border-radius;
+      color: rgba($secondary, .6);
+      width: 100%;
+      background: #fff;
+
+      @include rem(font-size, 16px);
+      @include rem(line-height, 20px);
+      @include rem(padding-left, 45px);
+      @include rem(padding-right, 45px);
+      @include rem(height, 50px);
+
+      + .btn {
+        left: auto;
+
+        @include rem(right, 14px);
+      }
+    }
+
+    .btn {
+      line-height: normal;
+      position: absolute;
+      color: rgba($secondary, .35);
+      top: 50%;
+
+      @include rem(left, 14px);
+      @include rem(margin-top, -13px);
+
+      &:hover {
+        color: rgba($secondary, .5);
+      }
+
+      .icon {
+        color: inherit;
+
+        @include rem(font-size, 20px);
+      }
+    }
+
+    .fixed & {
+      .form-control {
+        border-color: #fff;
+
+        @include rem(height, 35px);
+      }
+    }
+
+    &--index {
+      width: 100%;
+      margin: 0;
+      max-width: none;
+    }
+  }
+
+  .btn--link {
+    color: rgba($secondary, .6);
+
+    @include rem(font-size, 16px);
+  }
+}
