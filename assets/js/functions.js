@@ -314,6 +314,17 @@ function pie() {
 }
 
 
+function openCreateInvoice() {
+  $('._create_invoice_btn').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $('body').addClass('body--menu_opened');
+    $('._invoice_sidebar').addClass('sidebar_menu--open')
+  })
+}
+
+
 // Init
 
 $(document).ready(function() {
@@ -326,5 +337,6 @@ $(document).ready(function() {
     initSmoothScroll();
     initFileupload();
     pie();
+    openCreateInvoice();
 });
 
