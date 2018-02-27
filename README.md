@@ -23,4 +23,6 @@ https://lykkecity.github.io/LykkePayMarkup/invoice_unpaid.html
 
 https://lykkecity.github.io/LykkePayMarkup/profile.html
 
+https://lykkecity.github.io/LykkePayMarkup/profile_fill.html
+
 https://lykkecity.github.io/LykkePayMarkup/404.html
