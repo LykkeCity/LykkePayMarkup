@@ -388,7 +388,9 @@ ol.list_styled {
 
     .btn {
       .icon {
-        @include rem(font-size, 16px);
+        top: 1px;
+
+        @include rem(font-size, 24px);
       }
     }
   }
@@ -431,7 +433,8 @@ ol.list_styled {
     position: absolute;
     right: 10px;
     top: 50%;
-    margin-top: -12px;
+
+    @include transform(translate(0, -50%));
 
     .icon {
       @include rem(font-size, 24px);
@@ -631,4 +634,14 @@ ol.list_styled {
 
     @include rem(font-size, 16px);
   }
+}
+
+.header_user__img + .header_login__title {
+  overflow: hidden;
+
+  @include rem(margin-left, 55px);
+}
+
+.header_actions {
+  min-width: 0;
 }

@@ -124,6 +124,7 @@
               <div class="header_user__img">
                 <img src="img/user_default.svg" width="40" alt="user_image">
               </div>
+              <div class="header_login__title">Title</div>
             </a>
           </div>
 
@@ -167,7 +168,7 @@
 <div class="_invoice_sidebar sidebar_menu sidebar_menu--right">
   <form class="invoice_form sidebar_menu__inner">
     <div class="sidebar_breadcrumbs">
-      <button class="btn btn--icon btn_close_menu visible-xs" type="button"><i class="icon icon--close"></i></button>
+      <button class="btn btn--icon btn_close_menu" type="button"><i class="icon icon--close"></i></button>
       <div class="breadcrumbs_item">
         <a href="">Profile</a>
       </div>
@@ -268,7 +269,7 @@
   <!--
     <form class="invoice_form sidebar_menu__inner">
       <div class="sidebar_breadcrumbs">
-        <button class="btn btn--icon btn_close_menu visible-xs" type="button"><i class="icon icon--close"></i></button>
+        <button class="btn btn--icon btn_close_menu" type="button"><i class="icon icon--close"></i></button>
         <div class="breadcrumbs_item">
           <a href="">Profile</a>
         </div>
@@ -406,12 +407,12 @@
 
       <h3>Invoices</h3>
 
-      <ul class="nav nav-tabs" role="tablist">
+      <ul class="nav nav-tabs">
         <li><button class="btn btn--icon _show_search_block"><i class="icon icon--search"></i></button></li>
-        <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All &middot; 32</a></li>
-        <li role="presentation"><a href="#paid" aria-controls="paid" role="tab" data-toggle="tab">Paid &middot; 9</a></li>
-        <li role="presentation"><a href="#unpaid" aria-controls="unpaid" role="tab" data-toggle="tab">Unpaid &middot; 21</a></li>
-        <li role="presentation"><a href="#draft" aria-controls="draft" role="tab" data-toggle="tab">Draft &middot; 2</a></li>
+        <li role="presentation" class="active"><a href="#all" >All &middot; 32</a></li>
+        <li role="presentation"><a href="#paid" >Paid &middot; 9</a></li>
+        <li role="presentation"><a href="#unpaid" >Unpaid &middot; 21</a></li>
+        <li role="presentation"><a href="#draft">Draft &middot; 2</a></li>
       </ul>
 
       <div class="search_filter">
@@ -439,158 +440,151 @@
         </form>
       </div>
 
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="all">
-          <div class="table-responsive">
-            <table class="table table_invoices">
-              <tr>
-                <th class="_number">Invoice number, date</th>
-                <th class="_client">Client</th>
-                <th class="_amount">Amount</th>
-                <th class="_currency">Currency</th>
-                <th class="_status">Status</th>
-                <th class="_pay">Pay due date</th>
-                <th class="_action"></th>
-              </tr>
-              <tr>
-                <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
-                </td>
-                <td class="_client">
-                  <span class="_title">Verizon Communications</span>
-                  <span class="_hint">info@verizon.com</span>
-                </td>
-                <td class="_amount">1,324.92</td>
-                <td class="_currency">CHF</td>
-                <td class="_status">
-                  <span class="label label--green">Paid</span>
-                </td>
-                <td class="_pay">15 Nov 2017</td>
-                <td class="_action">
-                  <button class="btn btn--icon" type="button" disabled><i class="icon icon--delete"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
-                </td>
-                <td class="_client">
-                  <span class="_title">Verizon Communications</span>
-                  <span class="_hint">info@verizon.com</span>
-                </td>
-                <td class="_amount">1,324.92</td>
-                <td class="_currency">CHF</td>
-                <td class="_status">
-                  <span class="label label--blue">Settled</span>
-                </td>
-                <td class="_pay">15 Nov 2017</td>
-                <td class="_action">
-                  <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
-                </td>
-                <td class="_client">
-                  <span class="_title">Verizon Communications</span>
-                  <span class="_hint">info@verizon.com</span>
-                </td>
-                <td class="_amount">1,324.92</td>
-                <td class="_currency">CHF</td>
-                <td class="_status">
-                  <span class="label label--yellow">Unpaid</span>
-                </td>
-                <td class="_pay">15 Nov 2017</td>
-                <td class="_action">
-                  <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
-                </td>
-                <td class="_client">
-                  <span class="_title">Verizon Communications</span>
-                  <span class="_hint">info@verizon.com</span>
-                </td>
-                <td class="_amount">1,324.92</td>
-                <td class="_currency">CHF</td>
-                <td class="_status">
-                  <span class="label label--gray">Draft</span>
-                </td>
-                <td class="_pay">15 Nov 2017</td>
-                <td class="_action">
-                  <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
-                </td>
-                <td class="_client">
-                  <span class="_title">Verizon Communications</span>
-                  <span class="_hint">info@verizon.com</span>
-                </td>
-                <td class="_amount">1,324.92</td>
-                <td class="_currency">CHF</td>
-                <td class="_status">
-                  <span class="label label--red">Error</span>
-                </td>
-                <td class="_pay">15 Nov 2017</td>
-                <td class="_action">
-                  <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
-                </td>
-                <td class="_client">
-                  <span class="_title">Verizon Communications</span>
-                  <span class="_hint">info@verizon.com</span>
-                </td>
-                <td class="_amount">1,324.92</td>
-                <td class="_currency">CHF</td>
-                <td class="_status">
-                  <span class="label label--violet">Underpaid</span>
-                </td>
-                <td class="_pay">15 Nov 2017</td>
-                <td class="_action">
-                  <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
-                </td>
-                <td class="_client">
-                  <span class="_title">Verizon Communications</span>
-                  <span class="_hint">info@verizon.com</span>
-                </td>
-                <td class="_amount">1,324.92</td>
-                <td class="_currency">CHF</td>
-                <td class="_status">
-                  <span class="label label--violet">Overpaid</span>
-                </td>
-                <td class="_pay">15 Nov 2017</td>
-                <td class="_action">
-                  <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="paid">2</div>
-        <div role="tabpanel" class="tab-pane" id="unpaid">3</div>
-        <div role="tabpanel" class="tab-pane" id="draft">3</div>
+      <div class="table-responsive">
+        <table class="table table_invoices">
+          <tr>
+            <th class="_number">Invoice number, date</th>
+            <th class="_client">Client</th>
+            <th class="_amount">Amount</th>
+            <th class="_currency">Currency</th>
+            <th class="_status">Status</th>
+            <th class="_pay">Pay due date</th>
+            <th class="_action"></th>
+          </tr>
+          <tr>
+            <td class="_number">
+              <span class="_title">#4974732</span>
+              <span class="_hint">15 Nov 2017</span>
+            </td>
+            <td class="_client">
+              <span class="_title">Verizon Communications</span>
+              <span class="_hint">info@verizon.com</span>
+            </td>
+            <td class="_amount">1,324.92</td>
+            <td class="_currency">CHF</td>
+            <td class="_status">
+              <span class="label label--green">Paid</span>
+            </td>
+            <td class="_pay">15 Nov 2017</td>
+            <td class="_action">
+              <button class="btn btn--icon" type="button" disabled><i class="icon icon--delete"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="_number">
+              <span class="_title">#4974732</span>
+              <span class="_hint">15 Nov 2017</span>
+            </td>
+            <td class="_client">
+              <span class="_title">Verizon Communications</span>
+              <span class="_hint">info@verizon.com</span>
+            </td>
+            <td class="_amount">1,324.92</td>
+            <td class="_currency">CHF</td>
+            <td class="_status">
+              <span class="label label--blue">Settled</span>
+            </td>
+            <td class="_pay">15 Nov 2017</td>
+            <td class="_action">
+              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="_number">
+              <span class="_title">#4974732</span>
+              <span class="_hint">15 Nov 2017</span>
+            </td>
+            <td class="_client">
+              <span class="_title">Verizon Communications</span>
+              <span class="_hint">info@verizon.com</span>
+            </td>
+            <td class="_amount">1,324.92</td>
+            <td class="_currency">CHF</td>
+            <td class="_status">
+              <span class="label label--yellow">Unpaid</span>
+            </td>
+            <td class="_pay">15 Nov 2017</td>
+            <td class="_action">
+              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="_number">
+              <span class="_title">#4974732</span>
+              <span class="_hint">15 Nov 2017</span>
+            </td>
+            <td class="_client">
+              <span class="_title">Verizon Communications</span>
+              <span class="_hint">info@verizon.com</span>
+            </td>
+            <td class="_amount">1,324.92</td>
+            <td class="_currency">CHF</td>
+            <td class="_status">
+              <span class="label label--gray">Draft</span>
+            </td>
+            <td class="_pay">15 Nov 2017</td>
+            <td class="_action">
+              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="_number">
+              <span class="_title">#4974732</span>
+              <span class="_hint">15 Nov 2017</span>
+            </td>
+            <td class="_client">
+              <span class="_title">Verizon Communications</span>
+              <span class="_hint">info@verizon.com</span>
+            </td>
+            <td class="_amount">1,324.92</td>
+            <td class="_currency">CHF</td>
+            <td class="_status">
+              <span class="label label--red">Error</span>
+            </td>
+            <td class="_pay">15 Nov 2017</td>
+            <td class="_action">
+              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="_number">
+              <span class="_title">#4974732</span>
+              <span class="_hint">15 Nov 2017</span>
+            </td>
+            <td class="_client">
+              <span class="_title">Verizon Communications</span>
+              <span class="_hint">info@verizon.com</span>
+            </td>
+            <td class="_amount">1,324.92</td>
+            <td class="_currency">CHF</td>
+            <td class="_status">
+              <span class="label label--violet">Underpaid</span>
+            </td>
+            <td class="_pay">15 Nov 2017</td>
+            <td class="_action">
+              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="_number">
+              <span class="_title">#4974732</span>
+              <span class="_hint">15 Nov 2017</span>
+            </td>
+            <td class="_client">
+              <span class="_title">Verizon Communications</span>
+              <span class="_hint">info@verizon.com</span>
+            </td>
+            <td class="_amount">1,324.92</td>
+            <td class="_currency">CHF</td>
+            <td class="_status">
+              <span class="label label--violet">Overpaid</span>
+            </td>
+            <td class="_pay">15 Nov 2017</td>
+            <td class="_action">
+              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </section>
