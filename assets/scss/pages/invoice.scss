@@ -29,7 +29,9 @@
     .btn {
       position: relative;
 
-      @include rem(top, -2px);
+      .icon {
+        @include rem(top, -2px);
+      }
     }
   }
 
@@ -285,6 +287,10 @@
 
 .alert {
   font-weight: $fw-semi;
+
+  &--dark {
+    background-color: #333333;
+  }
 
   .label {
     line-height: 1.78;

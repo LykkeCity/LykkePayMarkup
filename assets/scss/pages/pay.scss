@@ -513,6 +513,15 @@ ol.list_styled {
       width: 100%;
     }
   }
+
+  @media all and (min-width: $screen-landscape + 1) {
+    .col-sm-4._amount {
+      width: 28.333%;
+    }
+    .col-sm-4._date {
+      width: 37.333%;
+    }
+  }
 }
 
 .profile_header {

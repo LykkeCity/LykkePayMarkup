@@ -25,6 +25,7 @@
 @import '../../node_modules/LykkeFramework/assets/scss/partials/assets';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/status_icon';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/alert';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/tooltip';
 
 // optional
 @import 'pages/pay';
@@ -167,4 +168,12 @@ tbody.collapse.in {
 
 .alert--violet {
   background-color: $violet;
+}
+
+.icon--rss_feed:before {
+  font-size: 90%;
+}
+
+.tooltip-inner {
+  min-width: 0;
 }

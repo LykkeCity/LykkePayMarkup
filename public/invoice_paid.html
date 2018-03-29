@@ -184,7 +184,7 @@
                   <h1 class="page__title">Invoice #4974732</h1>
                   <div class="invoice_header__link">
                     <a href="">https://www.lykke.com/invoices/#4974732</a>
-                    <button class="btn btn--icon _copy" type="button"><i class="icon icon--copy_thin"></i></button>
+                    <button class="btn btn--icon _copy" type="button" data-toggle="tooltip" data-placement="top" title="Copied!"><i class="icon icon--copy_thin"></i></button>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -480,6 +480,12 @@
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
 
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
 
 </body>
 </html>
