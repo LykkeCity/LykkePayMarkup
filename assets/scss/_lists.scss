@@ -246,6 +246,16 @@
         background-color: $red;
       }
     }
+
+    &--refund {
+      ._circle {
+        background-color: $secondary;
+      }
+
+      .icon {
+        @include rem(font-size, 18px);
+      }
+    }
   }
 
   &__content {

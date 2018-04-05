@@ -163,6 +163,11 @@ tbody.collapse.in {
 }
 
 .label--dark {
+  background-color: $secondary;
+}
+
+.label--dark.label--text {
+  background-color: transparent !important;
   color: $secondary !important;
 }
 
