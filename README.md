@@ -7,22 +7,39 @@
 `gulp dev`
 
 
-https://lykkecity.github.io/LykkePayMarkup/
+http://lykkepay.tw1.ru/
 
-https://lykkecity.github.io/LykkePayMarkup/invoice_statuses.html
+http://lykkepay.tw1.ru/invoice.html
 
-https://lykkecity.github.io/LykkePayMarkup/invoice.html
+http://lykkepay.tw1.ru/invoice_detecting.html
 
-https://lykkecity.github.io/LykkePayMarkup/invoice_draft.html
+http://lykkepay.tw1.ru/invoice_draft.html
 
-https://lykkecity.github.io/LykkePayMarkup/invoice_paid.html
+http://lykkepay.tw1.ru/invoice_paid.html
 
-https://lykkecity.github.io/LykkePayMarkup/invoice_paid_error.html
+http://lykkepay.tw1.ru/invoice_paid_error.html
 
-https://lykkecity.github.io/LykkePayMarkup/invoice_unpaid.html
+http://lykkepay.tw1.ru/invoice_statuses.html
 
-https://lykkecity.github.io/LykkePayMarkup/profile.html
+http://lykkepay.tw1.ru/invoice_unpaid.html
 
-https://lykkecity.github.io/LykkePayMarkup/profile_fill.html
+http://lykkepay.tw1.ru/modal.html
 
-https://lykkecity.github.io/LykkePayMarkup/404.html
+http://lykkepay.tw1.ru/profile.html
+
+http://lykkepay.tw1.ru/profile_fill.html
+
+http://lykkepay.tw1.ru/profile_no_invoices.html
+
+http://lykkepay.tw1.ru/profile_no_search_results.html
+
+
+
+
+
+
+
+
+
+
+

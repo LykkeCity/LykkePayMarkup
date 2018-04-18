@@ -174,10 +174,10 @@
             <div class="invoice_header__subtitle">by Budweiser Stag Brewing Company</div>
           </div>
 
-          <div class="invoice_info">
+          <div class="invoice_info clearfix">
             <div class="invoice_info__left">
               <div class="invoice_info__qr">
-                <img src="img/qr.png" alt="qr" width="220" height="220">
+                <img class="img-responsive" src="img/qr.png" alt="qr" width="220" height="220">
               </div>
               <div class="invoice_info__loader">
                 <div class="pie">
@@ -203,7 +203,7 @@
               <div class="invoice_info__row">
                 <div class="invoice_info__value">0.18446902
                   <div class="invoice_info__select custom_dropdown">
-                    <select class="selectpicker inline_select" data-size="10">
+                    <select class="selectpicker inline_select" data-size="10" data-live-search="true" data-live-search-placeholder="Asset name">
                       <option value="BTC" selected>BTC</option>
                       <option value="USD">USD</option>
                       <option value="CHF">CHF</option>
@@ -239,7 +239,9 @@
           <div class="asset_link_list">
             <div class="asset_link">
               <div class="asset_link__action">
-                <button class="btn btn--icon _copy" type="button"><i class="icon icon--copy_thin"></i></button>
+                <button class="btn btn--icon _copy" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--copy"></i>
+                </button>
               </div>
               <div class="asset_link__info">
                 <div class="asset_link__title">Payment address</div>
@@ -267,7 +269,9 @@
                 <div class="asset_icon asset_icon--red">PDF</div>
               </div>
               <div class="asset_link__action">
-                <button class="btn btn--icon _delete_asset"><i class="icon icon--download"></i></button>
+                <button class="btn btn--icon _delete_asset">
+                    <i class="btn__svg_icon svg_icon svg_icon--upload"></i>
+                </button>
               </div>
               <div class="asset_link__info">
                 <div class="asset_link__title">BAS Rechnung Sponsoring…- Sheet1.pdf</div>
@@ -412,14 +416,9 @@
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/bootstrap-select.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
-
-<script>
-  $('.selectpicker').selectpicker({
-    mobile: isMobile
-  })
-</script>
 
 </body>
 </html>
