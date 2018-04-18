@@ -3439,7 +3439,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .profile_info { margin-bottom: 59px; margin-bottom: 3.6875rem; }
 
-.profile_info__header { color: #111; font-weight: 600; font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif; font-size: 26px; font-size: 1.625rem; margin-bottom: 5px; margin-bottom: 0.3125rem; }
+.profile_info__header { color: #111; font-weight: 700; font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif; font-size: 26px; font-size: 1.625rem; margin-bottom: 5px; margin-bottom: 0.3125rem; }
 
 .profile_info__header_help { margin-left: 11px; margin-left: 0.6875rem; margin-bottom: -2px; margin-bottom: -0.125rem; cursor: pointer; }
 
@@ -3471,10 +3471,16 @@ tbody.collapse.in { display: table-row-group; }
 
 .invoice_nav { position: relative; padding-left: 35px; padding-left: 2.1875rem; border-bottom: 1px solid #EBEDEF; margin-top: 35px; margin-top: 2.1875rem; margin-bottom: 28px; margin-bottom: 1.75rem; }
 
-.invoice_nav__search { position: absolute; left: 0; left: 0; top: 8px; top: 0.5rem; }
+.invoice_nav__search { position: absolute; padding: 1px; left: 0; left: 0; top: 8px; top: 0.5rem; }
 
 .invoice_tabs { margin-bottom: -1px; }
 
 .invoice_tabs__tab { padding: 13px 12px 15px; padding: 0.8125rem 0.75rem 0.9375rem; font-size: 18px; font-size: 1.125rem; color: rgba(17, 17, 17, 0.6); font-weight: 600; display: inline-block; border-bottom: 2px solid transparent; }
 
 .invoice_tabs__tab--active { border-color: #0388ef; color: #111; }
+
+.content .btn .icon { font-size: 30px; font-size: 1.875rem; margin-right: 6px; margin-right: 0.375rem; }
+
+.content .btn--icon { color: #111111; font-size: 16px; font-size: 1rem; }
+
+.content .btn--icon .icon { color: #111111; }

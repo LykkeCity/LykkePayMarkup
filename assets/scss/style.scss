@@ -310,7 +310,7 @@ tbody.collapse.in {
 
   &__header {
     color: #111;
-    font-weight: 600;
+    font-weight: 700;
     font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
     @include rem(font-size, 26px);
     @include rem(margin-bottom, 5px);
@@ -417,6 +417,7 @@ tbody.collapse.in {
   
   &__search {
     position: absolute;
+    padding: 1px;
     @include rem(left, 0);
     @include rem(top, 8px);
   }
@@ -436,6 +437,25 @@ tbody.collapse.in {
     &--active {
       border-color: #0388ef;
       color: #111;
+    }
+  }
+}
+
+.content {
+  .btn {
+    .icon {
+      @include rem(font-size, 30px);
+      @include rem(margin-right, 6px);
+    }
+  }
+
+  .btn--icon {
+    color: #111111;
+
+    @include rem(font-size, 16px);
+
+    .icon {
+      color: #111111;
     }
   }
 }
