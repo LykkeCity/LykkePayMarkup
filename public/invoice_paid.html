@@ -37,7 +37,6 @@
 
 </head>
 <body>
-
 <aside class="menu_overlay"></aside>
 
 <div class="header_container">
@@ -184,7 +183,9 @@
                   <h1 class="page__title">Invoice #4974732</h1>
                   <div class="invoice_header__link">
                     <a href="">https://www.lykke.com/invoices/#4974732</a>
-                    <button class="btn btn--icon _copy" type="button" data-toggle="tooltip" data-placement="top" title="Copied!"><i class="icon icon--copy_thin"></i></button>
+                    <button class="btn btn--icon _copy" type="button" data-toggle="tooltip" data-placement="top" title="Copied!">
+                        <i class="btn__svg_icon svg_icon svg_icon--copy"></i>
+                    </button>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -200,7 +201,12 @@
                     <div class="invoice_header__data">Thursday, November 3, 2016 3:50:24 PM</div>
                   </div>
                   <div class="col-md-4">
-                    <button class="btn btn--flat btn--default btn-sm pull-right" type="button"><i class="icon icon--delete"></i> Delete invoice</button>
+                    <div class="invoice_controls">
+                      <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
+                        <i class="btn__svg_icon svg_icon svg_icon--delete svg_icon--margin"></i>
+                        Delete
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -224,7 +230,9 @@
                   <div class="asset_link">
                     <div class="asset_link__info">
                       <div class="asset_link__title">Status</div>
-                      <div class="asset_link__desc">Unpaid</div>
+                      <div class="asset_link__desc">
+                        <div class="pull-right label label--yellow">Unpaid</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -272,7 +280,9 @@
                     <div class="asset_icon asset_icon--red">PDF</div>
                   </div>
                   <div class="asset_link__action">
-                    <button class="btn btn--icon _delete_asset"><i class="icon icon--download"></i></button>
+                    <button class="btn btn--icon _delete_asset">
+                      <i class="btn__svg_icon svg_icon svg_icon--upload"></i>
+                    </button>
                   </div>
                   <div class="asset_link__info">
                     <div class="asset_link__title">BAS Rechnung Sponsoring…- Sheet1.pdf</div>
@@ -477,6 +487,8 @@
 
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/bootstrap-select.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
 

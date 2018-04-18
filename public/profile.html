@@ -18,6 +18,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!--[if lte IE 9]>
@@ -198,11 +199,19 @@
         <div class="col-sm-4 _currency">
           <div class="form-group">
             <label class="control-label" for="currency">Currency</label>
-            <div class="select">
-              <select class="form-control" id="currency">
-                <option value="">CHF</option>
-                <option value="">CHF</option>
-                <option value="">CHF</option>
+            <div class="form_selectpicker">
+              <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="Asset name">
+                <option value="BTC" selected>BTC</option>
+                <option value="USD">USD</option>
+                <option value="CHF">CHF</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="LKK">LKK</option>
+                <option value="LKK1Y">LKK1Y</option>
+                <option value="LKK2Y">LKK2Y</option>
+                <option value="LTC">LTC</option>
+                <option value="ETH">ETH</option>
+                <option value="AE">AE</option>
               </select>
             </div>
           </div>
@@ -242,7 +251,9 @@
               <div class="asset_icon asset_icon--red">PDF</div>
             </div>
             <div class="asset_link__action">
-              <button class="btn btn--icon _delete_asset"><i class="icon icon--download"></i></button>
+              <button class="btn btn--icon _delete_asset">
+                <i class="btn__svg_icon svg_icon svg_icon--upload"></i>
+              </button>
             </div>
             <div class="asset_link__info">
               <div class="asset_link__title">BAS Rechnung Sponsoring…- Sheet1.pdf</div>
@@ -366,225 +377,319 @@
 <article class="content">
   <section class="section section--lead">
     <div class="container">
-      <div class="page_header profile_header">
-        <div class="section_subtitle">Current balance</div>
-
+      <div class="profile_info">
         <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-xs-7">
-                <div class="h1 value_accent">10,000 CHF</div>
+          <div class="col-md-5 col-sm-5">
+            <div class="profile_balance">
+              <div class="profile_info__header">Current balance</div>
+              <div class="profile_balance__value">
+                <span class="profile_balance__number">10,635,843.09</span>
+                <span class="profile_balance__currency">CHF</span>
               </div>
-              <div class="col-xs-5">
-                <button class="btn btn--primary btn-block _create_invoice_btn" type="button">Create new invoice</button>
+              <div class="profile_controls">
+                <button class="btn _create_invoice_btn">
+                    <i class="btn__svg_icon svg_icon svg_icon--add svg_icon--margin"></i>
+                  New invoice
+                </button>
+                <button class="settlement_btn btn btn--flat">
+                  <i class="btn__svg_icon svg_icon svg_icon--settlement svg_icon--margin"></i>Settlement
+                </button>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="docs_list text-right">
-              <div class="docs_item">
-                <div class="docs_item__icon">
-                  <img src="img/terms_icn.svg" alt="terms" width="35">
+          <div class="col-md-7 col-sm-7">
+            <div class="profile_summary">
+              <div class="profile_info__header">Summary<i class="btn__svg_icon svg_icon svg_icon--help profile_info__header_help"></i></div>
+              <div class="profile_summary__list clearfix">
+                <div class="profile_summary__left">
+                  <div class="profile_summary__item clearfix">
+                    <div class="profile_summary__status_name">Paid</div>
+                    <div class="profile_summary__status_value">10,235,843.09 CHF</div>
+                  </div>
+                  <div class="profile_summary__item clearfix">
+                    <div class="profile_summary__status_name">Unpaid</div>
+                    <div class="profile_summary__status_value">2,35,843.09 CHF</div>
+                  </div>
+                  <div class="profile_summary__item clearfix">
+                    <div class="profile_summary__status_name">Overdue</div>
+                    <div class="profile_summary__status_value">0.00 CHF</div>
+                  </div>
                 </div>
-                <div class="docs_item__content">
-                  <div class="docs_item__title">Export DTA file</div>
-                  <div class="docs_item__action"><a href="">Download</a></div>
-                </div>
-              </div>
-              <div class="docs_item">
-                <div class="docs_item__icon">
-                  <img src="img/terms_icn.svg" alt="terms" width="35">
-                </div>
-                <div class="docs_item__content">
-                  <div class="docs_item__title">Export XLSX file</div>
-                  <div class="docs_item__action"><a href="">Download</a></div>
+                <div class="profile_summary__right">
+                  <div class="profile_summary__item clearfix">
+                    <div class="profile_summary__status_name">Underpaid</div>
+                    <div class="profile_summary__status_value">10,235,843.09 CHF</div>
+                  </div>
+                  <div class="profile_summary__item clearfix">
+                    <div class="profile_summary__status_name">Overpaid</div>
+                    <div class="profile_summary__status_value">10,235,843.09 CHF</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="invoices">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Invoices</h3>
+          </div>
+          <div class="col-sm-6">
+            <div class="invoice_controls">
+                <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--download svg_icon--margin"></i>
+                    DTA file
+                  </button>
+                  <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
+                    <i class="btn__svg_icon svg_icon svg_icon--download svg_icon--margin"></i>
+                    XLSX file
+                  </button>
+                </div>
+          </div>
+        </div>
 
-      <h3>Invoices</h3>
-
-      <ul class="nav nav-tabs">
-        <li><button class="btn btn--icon _show_search_block"><i class="icon icon--search"></i></button></li>
-        <li role="presentation" class="active"><a href="#all" >All &middot; 32</a></li>
-        <li role="presentation"><a href="#paid" >Paid &middot; 9</a></li>
-        <li role="presentation"><a href="#unpaid" >Unpaid &middot; 21</a></li>
-        <li role="presentation"><a href="#draft">Draft &middot; 2</a></li>
-      </ul>
-
-      <div class="search_filter">
-        <form>
-          <div class="row">
-            <div class="col-xs-6 col-sm-3">
-              <div class="form-group select">
-                <select class="form-control">
-                  <option value="In the past month">In the past month</option>
-                  <option value="In the past month">In the past month</option>
-                </select>
-              </div>
+        <div class="invoice_nav">
+          <button class="invoice_nav__search btn btn--icon _show_search_block"><i class="icon icon--search"></i></button>
+          <div class="invoice_tabs _invoice_tabs_carousel owl-carousel">
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab invoice_tabs__tab--active" href="#all">All &middot; 32</a>
             </div>
-            <div class="col-xs-9 col-sm-8">
-              <div class="input-search input-search--index">
-                <button class="btn btn--icon"><i class="icon icon--search"></i></button>
-                <input type="text" class="form-control form-control--search" placeholder="Asset or address...">
-                <button class="btn btn--icon"><i class="icon icon--cancel_round"></i></button>
-              </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
             </div>
-            <div class="col-xs-3 col-sm-1">
-              <button type="button" class="btn btn--link _hide_search_block">Cancel</button>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+            </div>
+            <div class="invoice_tabs__item">
+              <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
 
-      <div class="table-responsive">
-        <table class="table table_invoices">
-          <tr>
-            <th class="_number">Invoice number, date</th>
-            <th class="_client">Client</th>
-            <th class="_amount">Amount</th>
-            <th class="_currency">Currency</th>
-            <th class="_status">Status</th>
-            <th class="_pay">Pay due date</th>
-            <th class="_action"></th>
-          </tr>
-          <tr>
-            <td class="_number">
-              <span class="_title">#4974732</span>
-              <span class="_hint">15 Nov 2017</span>
-            </td>
-            <td class="_client">
-              <span class="_title">Verizon Communications</span>
-              <span class="_hint">info@verizon.com</span>
-            </td>
-            <td class="_amount">1,324.92</td>
-            <td class="_currency">CHF</td>
-            <td class="_status">
-              <span class="label label--green">Paid</span>
-            </td>
-            <td class="_pay">15 Nov 2017</td>
-            <td class="_action">
-              <button class="btn btn--icon" type="button" disabled><i class="icon icon--delete"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="_number">
-              <span class="_title">#4974732</span>
-              <span class="_hint">15 Nov 2017</span>
-            </td>
-            <td class="_client">
-              <span class="_title">Verizon Communications</span>
-              <span class="_hint">info@verizon.com</span>
-            </td>
-            <td class="_amount">1,324.92</td>
-            <td class="_currency">CHF</td>
-            <td class="_status">
-              <span class="label label--blue">Settled</span>
-            </td>
-            <td class="_pay">15 Nov 2017</td>
-            <td class="_action">
-              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="_number">
-              <span class="_title">#4974732</span>
-              <span class="_hint">15 Nov 2017</span>
-            </td>
-            <td class="_client">
-              <span class="_title">Verizon Communications</span>
-              <span class="_hint">info@verizon.com</span>
-            </td>
-            <td class="_amount">1,324.92</td>
-            <td class="_currency">CHF</td>
-            <td class="_status">
-              <span class="label label--yellow">Unpaid</span>
-            </td>
-            <td class="_pay">15 Nov 2017</td>
-            <td class="_action">
-              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="_number">
-              <span class="_title">#4974732</span>
-              <span class="_hint">15 Nov 2017</span>
-            </td>
-            <td class="_client">
-              <span class="_title">Verizon Communications</span>
-              <span class="_hint">info@verizon.com</span>
-            </td>
-            <td class="_amount">1,324.92</td>
-            <td class="_currency">CHF</td>
-            <td class="_status">
-              <span class="label label--gray">Draft</span>
-            </td>
-            <td class="_pay">15 Nov 2017</td>
-            <td class="_action">
-              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="_number">
-              <span class="_title">#4974732</span>
-              <span class="_hint">15 Nov 2017</span>
-            </td>
-            <td class="_client">
-              <span class="_title">Verizon Communications</span>
-              <span class="_hint">info@verizon.com</span>
-            </td>
-            <td class="_amount">1,324.92</td>
-            <td class="_currency">CHF</td>
-            <td class="_status">
-              <span class="label label--red">Error</span>
-            </td>
-            <td class="_pay">15 Nov 2017</td>
-            <td class="_action">
-              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="_number">
-              <span class="_title">#4974732</span>
-              <span class="_hint">15 Nov 2017</span>
-            </td>
-            <td class="_client">
-              <span class="_title">Verizon Communications</span>
-              <span class="_hint">info@verizon.com</span>
-            </td>
-            <td class="_amount">1,324.92</td>
-            <td class="_currency">CHF</td>
-            <td class="_status">
-              <span class="label label--violet">Underpaid</span>
-            </td>
-            <td class="_pay">15 Nov 2017</td>
-            <td class="_action">
-              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="_number">
-              <span class="_title">#4974732</span>
-              <span class="_hint">15 Nov 2017</span>
-            </td>
-            <td class="_client">
-              <span class="_title">Verizon Communications</span>
-              <span class="_hint">info@verizon.com</span>
-            </td>
-            <td class="_amount">1,324.92</td>
-            <td class="_currency">CHF</td>
-            <td class="_status">
-              <span class="label label--violet">Overpaid</span>
-            </td>
-            <td class="_pay">15 Nov 2017</td>
-            <td class="_action">
-              <button class="btn btn--icon" type="button"><i class="icon icon--delete"></i></button>
-            </td>
-          </tr>
-        </table>
+        <div class="search_filter">
+          <form>
+            <div class="row">
+              <div class="col-xs-6 col-sm-3">
+                <div class="form-group">
+                  <div class="form_selectpicker">
+                    <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="">
+                      <option value="BTC" selected>In the past month</option>
+                      <option value="USD">In the past month</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-9 col-sm-8">
+                <div class="input-search input-search--index">
+                  <button class="btn btn--icon"><i class="icon icon--search"></i></button>
+                  <input type="text" class="form-control form-control--search" placeholder="Asset or address...">
+                  <button class="btn btn--icon"><i class="icon icon--cancel_round"></i></button>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-1">
+                <button type="button" class="btn btn--link _hide_search_block">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table_invoices">
+            <tr>
+              <th class="_number">Invoice number, date</th>
+              <th class="_client">Client</th>
+              <th class="_amount">Amount</th>
+              <th class="_currency">Currency</th>
+              <th class="_status">Status</th>
+              <th class="_pay">Pay due date</th>
+              <th class="_action"></th>
+            </tr>
+            <tr>
+              <td class="_number">
+                <span class="_title">#4974732</span>
+                <span class="_hint">15 Nov 2017</span>
+              </td>
+              <td class="_client">
+                <span class="_title">Verizon Communications</span>
+                <span class="_hint">info@verizon.com</span>
+              </td>
+              <td class="_amount">1,324.92</td>
+              <td class="_currency">CHF</td>
+              <td class="_status">
+                <span class="label label--green">Paid</span>
+              </td>
+              <td class="_pay">15 Nov 2017</td>
+              <td class="_action">
+                <button class="btn btn--icon" type="button" disabled>
+                  <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="_number">
+                <span class="_title">#4974732</span>
+                <span class="_hint">15 Nov 2017</span>
+              </td>
+              <td class="_client">
+                <span class="_title">Verizon Communications</span>
+                <span class="_hint">info@verizon.com</span>
+              </td>
+              <td class="_amount">1,324.92</td>
+              <td class="_currency">CHF</td>
+              <td class="_status">
+                <span class="label label--blue">Settled</span>
+              </td>
+              <td class="_pay">15 Nov 2017</td>
+              <td class="_action">
+                <button class="btn btn--icon" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="_number">
+                <span class="_title">#4974732</span>
+                <span class="_hint">15 Nov 2017</span>
+              </td>
+              <td class="_client">
+                <span class="_title">Verizon Communications</span>
+                <span class="_hint">info@verizon.com</span>
+              </td>
+              <td class="_amount">1,324.92</td>
+              <td class="_currency">CHF</td>
+              <td class="_status">
+                <span class="label label--yellow">Unpaid</span>
+              </td>
+              <td class="_pay">15 Nov 2017</td>
+              <td class="_action">
+                <button class="btn btn--icon" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="_number">
+                <span class="_title">#4974732</span>
+                <span class="_hint">15 Nov 2017</span>
+              </td>
+              <td class="_client">
+                <span class="_title">Verizon Communications</span>
+                <span class="_hint">info@verizon.com</span>
+              </td>
+              <td class="_amount">1,324.92</td>
+              <td class="_currency">CHF</td>
+              <td class="_status">
+                <span class="label label--gray">Draft</span>
+              </td>
+              <td class="_pay">15 Nov 2017</td>
+              <td class="_action">
+                <button class="btn btn--icon" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="_number">
+                <span class="_title">#4974732</span>
+                <span class="_hint">15 Nov 2017</span>
+              </td>
+              <td class="_client">
+                <span class="_title">Verizon Communications</span>
+                <span class="_hint">info@verizon.com</span>
+              </td>
+              <td class="_amount">1,324.92</td>
+              <td class="_currency">CHF</td>
+              <td class="_status">
+                <span class="label label--red">Error</span>
+              </td>
+              <td class="_pay">15 Nov 2017</td>
+              <td class="_action">
+                <button class="btn btn--icon" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="_number">
+                <span class="_title">#4974732</span>
+                <span class="_hint">15 Nov 2017</span>
+              </td>
+              <td class="_client">
+                <span class="_title">Verizon Communications</span>
+                <span class="_hint">info@verizon.com</span>
+              </td>
+              <td class="_amount">1,324.92</td>
+              <td class="_currency">CHF</td>
+              <td class="_status">
+                <span class="label label--violet">Underpaid</span>
+              </td>
+              <td class="_pay">15 Nov 2017</td>
+              <td class="_action">
+                <button class="btn btn--icon" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="_number">
+                <span class="_title">#4974732</span>
+                <span class="_hint">15 Nov 2017</span>
+              </td>
+              <td class="_client">
+                <span class="_title">Verizon Communications</span>
+                <span class="_hint">info@verizon.com</span>
+              </td>
+              <td class="_amount">1,324.92</td>
+              <td class="_currency">CHF</td>
+              <td class="_status">
+                <span class="label label--violet">Overpaid</span>
+              </td>
+              <td class="_pay">15 Nov 2017</td>
+              <td class="_action">
+                <button class="btn btn--icon" type="button">
+                  <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -718,9 +823,10 @@
 
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/bootstrap-select.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
-
 <script src="js/vendor/moment.min.js"></script>
 <script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
 

@@ -1,0 +1,53 @@
+.modal_dialog {
+    visibility: hidden;
+    background: #fff;
+    position: fixed;
+    top: 7%;
+    width: 470px;
+    max-width: 100%;
+    @include rem(padding, 40px 40px 40px);
+    z-index: 114;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 8px 50px 0 rgba(63, 77, 96, 0.4), 0 5px 5px 0 rgba(63, 77, 96, 0.05);
+    border-radius: 8px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0;
+
+    @media all and (max-width: $screen-mobile) {
+        width: auto;
+        margin: 10px;        
+    }
+
+    &--open {
+        top: 10%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__title {
+        color: #111;
+        @include rem(font-size, 30px);
+        font-weight: 600; 
+        font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif; 
+        @include rem(margin-bottom, 30px);
+    }
+
+    &__text {
+        color: #333;
+        @include rem(font-size, 18px);
+        @include rem(margin-bottom, 47px);
+    }
+
+    &__cancel {
+        width: 160px;
+
+        @media all and (max-width: $screen-mobile) {
+            width: auto;
+        }
+    }
+}

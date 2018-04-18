@@ -9,6 +9,13 @@ $loading-duration: 600s;
   background-color: #f3f4f5;
 
   @include transform(translate3d(0,0,0));
+
+  &--orange {
+    .pie_circle-right,
+    .pie_circle-left {
+      background-color: #ffae2c;
+    }
+  }
 }
 
 .pie_inner {
@@ -35,7 +42,7 @@ $loading-duration: 600s;
   width: 200%;
   height: 100%;
   border-radius: 50%;
-  background-color: #f3f4f5;
+  background-color: #0388ef;
   overflow: hidden;
 }
 
