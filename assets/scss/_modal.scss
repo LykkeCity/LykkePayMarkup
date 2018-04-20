@@ -5,18 +5,16 @@
     top: 7%;
     width: 470px;
     max-width: 100%;
-    @include rem(padding, 40px 40px 40px);
     z-index: 114;
     left: 0;
     right: 0;
     margin: auto;
-    box-shadow: 0 8px 50px 0 rgba(63, 77, 96, 0.4), 0 5px 5px 0 rgba(63, 77, 96, 0.05);
+    box-shadow: $box-shadow-modal;
     border-radius: 8px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     opacity: 0;
+    
+    @include rem(padding, 40px 40px 40px);
+    @include css3-prefix('transition', $all);
 
     @media all and (max-width: $screen-mobile) {
         width: auto;
@@ -30,15 +28,17 @@
     }
 
     &__title {
-        color: #111;
+        color: $black;
+        font-weight: $fw-bold; 
+        font-family: $ff-alt; 
+
         @include rem(font-size, 30px);
-        font-weight: 600; 
-        font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif; 
         @include rem(margin-bottom, 30px);
     }
 
     &__text {
-        color: #333;
+        color: $text;
+        
         @include rem(font-size, 18px);
         @include rem(margin-bottom, 47px);
     }

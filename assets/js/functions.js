@@ -350,13 +350,47 @@ function openCreateInvoice() {
   })
 }
 
-
+// Tabs carousel
 function initTabsCarousel() {
-    $('._invoice_tabs_carousel').owlCarousel({
+    var carousel = $('._invoice_tabs_carousel');
+    var right = $('._invoice_tabs__arrow--right');
+    var left = $('._invoice_tabs__arrow--left');
+
+    carousel.owlCarousel({
+        nav: true,
         loop: false,
         autoWidth: true,
-        items: 999999
+        items: 999999,
+        onInitialized: function() {
+            if (carousel.find('.owl-stage').width()>carousel.find('.owl-stage-outer').width()) {
+                right.addClass('invoice_tabs__arrow--in');
+            }
+        },
+        onResized: function() {
+            carousel.trigger('to.owl.carousel', [0]);
+        },
+        onChanged: function(e) {
+            if (e.page.index>0) {
+                left.addClass('invoice_tabs__arrow--in');
+            } else {
+                left.removeClass('invoice_tabs__arrow--in');
+            }
+
+            if ((e.page.index+1) == e.page.count) {
+                right.removeClass('invoice_tabs__arrow--in');
+            } else {
+                right.addClass('invoice_tabs__arrow--in');
+            }
+        }
     });
+
+    right.click( function (e) {
+        carousel.trigger('next.owl.carousel');
+    })
+
+    left.click( function (e) {
+        carousel.trigger('prev.owl.carousel');
+    })
 }
 
 // Init

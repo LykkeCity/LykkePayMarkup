@@ -109,7 +109,8 @@
   &__left {
     float: left;
     width: 47.4%;
-    padding-right: 50px;
+
+    @include rem(padding-right, 50px);
   }
 
   &__right {
@@ -118,8 +119,9 @@
   }
 
   &__qr {
-    margin-bottom: 52px;
     position: relative;
+    
+    @include rem(margin-bottom, 52px);
 
     &--detecting:after {
       content: '';
@@ -167,19 +169,27 @@
     overflow: hidden;
     border: solid 1px #e6e8ea;
     border-radius: $border-radius;
-    padding: 8px 15px;
+    padding: 8px 15px 8px 66px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 54px;
 
     .pie {
-      float: left;
-      margin-right: 15px;
+      position: absolute;
+
+      @include rem(left, 15px);
+      @include rem(top, 8px);
     }
 
     span {
       font-weight: $fw-semi;
-      color: #333333;
-      display: inline-block;
-      font-size: 16px;
-      padding: 10px 0;
+      color: $text;
+      padding: 0;
+      line-height: 38px;
+      
+      @include rem(font-size, 16px);
     }
   }
 
@@ -194,7 +204,7 @@
   &__value {
     font-weight: $fw-semi;
     line-height: normal;
-    color: #333333;
+    color: $text;
     font-size: 24px;
 
     &--thin {
@@ -228,7 +238,29 @@
 
     @include rem(font-size, 16px);
   }
-  
+
+  &__hint {
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    &__hint {
+      &--mobile {
+        display: block;
+      }
+    }
+  }  
+
+  @media all and (max-width: $screen-mobile) {
+    &__hint {
+      &--mobile-old {
+        display: none;
+      }
+    }
+  }
+
   @media all and (max-width: $screen-landscape) {
     &__loader {
       margin-bottom: 12px;
@@ -279,7 +311,7 @@
     }
 
     &__right {
-      border-top: 1px solid #ebedef;
+      border-top: 1px solid $border-alt;
       padding-top: 30px;
     }
   }
@@ -341,7 +373,7 @@
   font-weight: $fw-semi;
 
   &--dark {
-    background-color: #333333;
+    background-color: $text;
   }
 
   .label {
@@ -375,15 +407,17 @@
 }
 
 .invoice_refresh {
+  border-bottom: 1px solid $border-alt;
+  
   @include rem(padding-bottom, 54px);
-  border-bottom: 1px solid #ebedef;
 
   &__btn {
     width: 100%;
-    @include rem(margin-bottom, 40px);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    
+    @include rem(margin-bottom, 40px);
   }
 
   &__text {

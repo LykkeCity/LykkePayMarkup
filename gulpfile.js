@@ -23,6 +23,7 @@ gulp.task('copy-js-vendors', function () {
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/clipboard/dist/clipboard.min.js',
     './node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
+    './node_modules/owl.carousel/dist/owl.carousel.min.js',
     './node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
     './node_modules/LykkeFramework/assets/js/vendor/fastclick.min.js',
     './node_modules/LykkeFramework/assets/js/vendor/html5shiv.js'
@@ -32,7 +33,8 @@ gulp.task('copy-js-vendors', function () {
 
 gulp.task('copy-css-vendors', function () {
   return gulp.src([
-    './node_modules/LykkeFramework/assets/vendor/bootstrap-custom.min.css'
+    './node_modules/LykkeFramework/assets/vendor/bootstrap-custom.min.css',
+    './node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
   ])
     .pipe(gulp.dest('./public/css/vendor'));
 });
