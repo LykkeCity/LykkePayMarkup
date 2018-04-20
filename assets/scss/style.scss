@@ -37,7 +37,7 @@
 @import 'modal';
 
 .svg_icon_fill {
-  fill: #111;
+  fill: $black;
 }
 .svg_icon {
   width: 30px;
@@ -46,10 +46,10 @@
   vertical-align: bottom;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: background-image 0.3s ease;
-  -moz-transition: background-image 0.3s ease;
-  -o-transition: background-image 0.3s ease;
-  transition: background-image 0.3s ease;
+  -webkit-transition: background-image $transition-default;
+  -moz-transition: background-image $transition-default;
+  -o-transition: background-image $transition-default;
+  transition: background-image $transition-default;
 
   &--download {
     background-image: url(../img/download.svg);
@@ -85,7 +85,7 @@
   }
 
   &--margin {
-    margin-right: 5px;
+    @include rem(margin-right, 5px);
   }
 }
 .btn {
@@ -117,18 +117,25 @@
   &__btn {
     &.btn--flat.btn--default {
       padding-left: 0;
-      padding-right: 5px;
-      margin-right: 25px;
       margin-left: 0;
 
+      @include rem(padding-right, 5px);
+      @include rem(margin-right, 25px);
+      @include rem(margin-bottom, -8px);
+
       &:last-child {
-        margin-right: -5px;
+        @include rem(margin-right, -5px);
       }
 
       &:hover .svg_icon_fill {
-        fill: #3F4D60;
+        fill: $secondary;
       }
     }
+  }
+}
+@media (max-width: $screen-landscape) {
+  .invoice_controls {
+    float: left;
   }
 }
 .fade {
@@ -167,7 +174,7 @@ tbody.collapse.in {
   transition-timing-function: ease;
 }
 
-@media (max-width: 991px) {
+@media (max-width: $screen-tablet) {
   .collapse {
     height: auto;
     overflow: hidden;
@@ -181,7 +188,7 @@ tbody.collapse.in {
 .error_page {
   font-weight: $fw-semi;
   text-align: center;
-  color: #111;
+  color: $black;
   font-family: $ff-alt;
 
   @include rem(margin-bottom, 20px);
@@ -201,8 +208,8 @@ tbody.collapse.in {
 
 .status_icon {
   text-align: center;
-  line-height: 60px;
 
+  @include rem(line-height, 60px);
   @include rem(line-height, 62px);
   @include rem(margin-bottom, 40px);
 
@@ -218,7 +225,7 @@ tbody.collapse.in {
 
   h2 {
     text-align: center;
-    color: #111;
+    color: $black;
 
     @include rem(margin-bottom, 40px);
   }
@@ -281,26 +288,29 @@ tbody.collapse.in {
 
 .empty_result {
   text-align: center;
-  @include rem(padding-top, 94px);
-  @include rem(padding-bottom, 77px);
   max-width: 590px;
   margin-left: auto;
   margin-right: auto;
+  
+  @include rem(padding-top, 94px);
+  @include rem(padding-bottom, 77px);
 
   &__img-container {
     @include rem(margin-bottom, 33px);
   }
 
   &__title {
-    color: #111;
-    font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 600;
+    color: $black;
+    font-family: $ff-alt;
+    font-weight: $fw-semi;
+
     @include rem(font-size, 30px); 
     @include rem(margin-bottom, 34px);
   }
 
   &__description {
-    color: #333;
+    color: $text;
+
     @include rem(font-size, 22px);
   }
 }
@@ -309,35 +319,39 @@ tbody.collapse.in {
   @include rem(margin-bottom, 59px);
 
   &__header {
-    color: #111;
-    font-weight: 700;
-    font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    color: $black;
+    font-weight: $fw-bold;
+    font-family: $ff-alt;
+
     @include rem(font-size, 26px);
     @include rem(margin-bottom, 5px);
   }
 
   &__header_help {
+    cursor: pointer;
+
     @include rem(margin-left, 11px);
     @include rem(margin-bottom, -2px);
-    cursor: pointer;
   }
 }
 
 .profile_balance {
   &__value {
     color: #000;
-    font-family: "Akrobat", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: $ff-alt;
+
     @include rem(margin-bottom, 35px);
   }
 
   &__number {
+    font-weight: $fw-light;
+    
     @include rem(font-size, 60px);
-    font-weight: 300;
   }
 
   &__currency {
     @include rem(font-size, 30px);
-    margin-left: 9px;
+    @include rem(margin-left, 9px);
   }
 }
 
@@ -356,7 +370,8 @@ tbody.collapse.in {
   &__right {
     width: 55%;
     float: left;
-    padding-left: 68px;
+
+    @include rem(padding-left, 68px);
   }
 
   &__list {
@@ -365,28 +380,30 @@ tbody.collapse.in {
   }
 
   &__item {
-    border-bottom: 1px solid #ebedef;
+    border-bottom: 1px solid $border-alt;
+
     @include rem(padding, 14px 0 13px);
 
     &:first-child {
-      border-top: 1px solid #ebedef;
+      border-top: 1px solid $border-alt;
     }
   }
 
   &__status_name {
-    padding-right: 30px;
     width: 40%;
     float: left;
     color: #a1a1a1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    
+    @include rem(padding-right, 30px);
   }
 
   &__status_value {
     width: 60%;
     float: left;
-    color: #333;
+    color: $text;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -410,33 +427,120 @@ tbody.collapse.in {
 
 .invoice_nav {
   position: relative;
-  @include rem(padding-left, 35px);
-  border-bottom: 1px solid #EBEDEF;
+  border-bottom: 1px solid $border-alt;
+
+  @include rem(padding-left, 45px);
   @include rem(margin-top, 35px);
   @include rem(margin-bottom, 28px);
   
   &__search {
     position: absolute;
-    padding: 1px;
+
     @include rem(left, 0);
     @include rem(top, 8px);
+
+    &.btn {
+      color: inherit;
+    }
   }
+}
+
+.content {
+  .invoice_nav {
+    &__search {
+      &.btn {
+        color: #8C94A0;
+
+        @include rem(font-size, 16px);
+        @include rem(left, 6px);
+
+        .icon {
+          color: inherit;
+          margin-right: 0;
+
+          @include rem(font-size, 20px);
+        }
+      }
+    }
+  }  
 }
 
 .invoice_tabs {
   margin-bottom: -1px;
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: $white;
+    z-index: 2;
+    border-bottom: 1px solid $border-alt;
+    padding: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    opacity: 0;
+
+    @include rem(background-position, center 11px);
+    @include rem(width, 52px);
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      background: $border-alt;
+      left: 0;
+
+      @include rem(top, 9px);
+      @include rem(height, 25px);
+    }
+
+    &--left {
+      background-image: url(../img/left-tab-arrow.svg);
+      left: 0;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $border-alt;
+        right: 0;        
+        
+        @include rem(top, 9px);
+        @include rem(height, 25px);
+        @include rem(width, 1px);
+      }
+    }
+
+    &--right {
+      background-image: url(../img/right-tab-arrow.svg);
+      right: 0;
+    }
+
+    &--in {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
   &__tab {
-    @include rem(padding, 13px 12px 15px);
-    @include rem(font-size, 18px);
     color: rgba(17, 17, 17, 0.6);
-    font-weight: 600;
+    font-weight: $fw-semi;
     display: inline-block;
     border-bottom: 2px solid transparent;
+    
+    @include rem(padding, 13px 12px 15px);
+    @include rem(font-size, 18px);
 
     &--active {
-      border-color: #0388ef;
-      color: #111;
+      border-color: $blue;
+      color: $black;
     }
   }
 }
@@ -450,12 +554,66 @@ tbody.collapse.in {
   }
 
   .btn--icon {
-    color: #111111;
+    color: $black;
 
     @include rem(font-size, 16px);
 
     .icon {
-      color: #111111;
+      color: $black;
+    }
+  }
+}
+
+.sidebar_summary {
+  @include rem(margin-top, 42px);
+
+  &__item {
+    @include rem(margin-bottom, 42px);
+  }
+
+  &__header {
+    font-family: $ff-alt;
+    font-weight: $fw-bold;
+
+    @include rem(font-size, 26px);
+    @include rem(margin-bottom, 21px);
+  }
+
+  &__row {
+    border-bottom: 1px solid $border-alt;
+    color: $text;
+
+    @include rem(font-size, 18px);
+    @include rem(padding-top, 14px);
+    @include rem(padding-bottom, 13px);
+
+    &--header {
+      font-weight: $fw-semi;
+      color: $black;
+    }
+  }
+
+  &__td {
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &--first {
+      width: 42.5%;
+      
+      @include rem(padding-right, 15px);
+    }
+
+    &--second {
+      width: 37%;
+
+      @include rem(padding-right, 15px);
+    }
+
+    &--third {
+      text-align: right;
+      width: 20.5%
     }
   }
 }
