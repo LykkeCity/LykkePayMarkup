@@ -33,6 +33,8 @@ http://lykkepay.tw1.ru/profile_no_invoices.html
 
 http://lykkepay.tw1.ru/profile_no_search_results.html
 
+http://lykkepay.tw1.ru/profile_summary.html
+
 
 
 
