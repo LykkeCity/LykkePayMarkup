@@ -350,6 +350,16 @@ function openCreateInvoice() {
   })
 }
 
+function openSummaryInvoice() {
+    $('._summary_invoice_btn').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+  
+      $('body').addClass('body--menu_opened');
+      $('._summary_invoice_sidebar').addClass('sidebar_menu--open')
+    })
+  }
+
 // Tabs carousel
 function initTabsCarousel() {
     var carousel = $('._invoice_tabs_carousel');
@@ -408,5 +418,6 @@ $(document).ready(function() {
     initFileupload();
     pie();
     openCreateInvoice();
+    openSummaryInvoice();
 });
 

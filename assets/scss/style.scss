@@ -329,9 +329,20 @@ tbody.collapse.in {
 
   &__header_help {
     cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
 
     @include rem(margin-left, 11px);
     @include rem(margin-bottom, -2px);
+
+    &:hover {
+      background: transparent;
+
+      i {
+        background-image: url(../img/help-active.svg);
+      }
+    }
   }
 }
 

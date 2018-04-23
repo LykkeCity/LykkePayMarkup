@@ -166,6 +166,104 @@
   </header>
 </div>
 
+<div class="_summary_invoice_sidebar sidebar_menu sidebar_menu--right">
+    <form class="invoice_form sidebar_menu__inner">
+      <div class="sidebar_breadcrumbs">
+        <button class="btn btn--icon btn_close_menu visible-xs" type="button"><i class="icon icon--close"></i></button>
+        <div class="breadcrumbs_item">
+          <a href="">Profile</a>
+        </div>
+        <i class="icon icon--chevron-thin-right"></i>
+        <div class="breadcrumbs_item breadcrumbs_item--current">Information</div>
+      </div>
+      <div class="sidebar_menu__body">
+        <div class="sidebar_menu__header">
+          <div class="invoice_form__title">Invoice</div>
+          <div class="invoice_form__status">Unpaid</div>
+        </div>
+
+        <div class="sidebar_summary">
+          <div class="sidebar_summary__item">
+            <div class="sidebar_summary__header">Paid</div>
+            <div class="sidebar_summary__list">
+              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
+              </div>
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
+              </div>
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">CHF</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">12</div>
+              </div>   
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">BTC</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">764,837.93</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">1</div>
+              </div>           
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">EUR</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">125,847,863.16</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">30</div>
+              </div>
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">JPY</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar_summary__item">
+            <div class="sidebar_summary__header">Unpaid</div>
+            <div class="sidebar_summary__list">
+              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
+              </div>
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
+              </div>
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">CHF</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">12</div>
+              </div>   
+            </div>
+          </div>
+          <div class="sidebar_summary__item">
+            <div class="sidebar_summary__header">Overdue</div>
+            <div class="sidebar_summary__list">
+              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
+              </div>
+              <div class="sidebar_summary__row clearfix">
+                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
+                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
+              </div>
+            </div>
+          </div>                    
+        </div>
+
+        <div class="sidebar_menu__footer">
+          <div class="form-group">
+            <button class="btn btn-block btn_close_menu" type="button">Close</button>
+          </div>
+        </div>
+      </div>
+    </form>
+</div>
+
 <div class="_invoice_sidebar sidebar_menu sidebar_menu--right">
   <form class="invoice_form sidebar_menu__inner">
     <div class="sidebar_breadcrumbs">
@@ -399,7 +497,11 @@
           </div>
           <div class="col-md-7 col-sm-7">
             <div class="profile_summary">
-              <div class="profile_info__header">Summary<i class="btn__svg_icon svg_icon svg_icon--help profile_info__header_help"></i></div>
+                <div class="profile_info__header">
+                    Summary<button class="profile_info__header_help _summary_invoice_btn">
+                      <i class="btn__svg_icon svg_icon svg_icon--help"></i>
+                    </button>
+                  </div>
               <div class="profile_summary__list clearfix">
                 <div class="profile_summary__left">
                   <div class="profile_summary__item clearfix">
