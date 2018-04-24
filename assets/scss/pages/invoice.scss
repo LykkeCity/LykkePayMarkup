@@ -103,19 +103,18 @@
 }
 
 .invoice_info {
+  min-height: 325px;
+  padding-left: 280px;
+  position: relative;
+
   @include rem(margin-bottom, 50px);
   @include clearfix;
   
   &__left {
-    float: left;
-    width: 47.4%;
-
-    @include rem(padding-right, 50px);
-  }
-
-  &__right {
-    width: 52.6%;
-    float: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
   }
 
   &__qr {
@@ -139,6 +138,10 @@
 
     .img-responsive {
       width: 100%;
+    }
+
+    &_img_152 {
+      display: none;
     }
   }
 
@@ -272,9 +275,11 @@
   }
 
   @media all and (max-width: $screen-mobile) {
-    margin-bottom: 10px;
+    padding-left: 0;
+    @include rem(margin-bottom, 10px);
 
     &__left {
+      position: relative;
       float: none;
       margin-left: auto;
       margin-right: auto;
@@ -304,9 +309,12 @@
       margin-left: auto;
       margin-right: auto;
 
-      img {
-        width: 152px;
-        height: 152px;
+      &_img_152 {
+        display: inline;
+      }
+
+      &_img_220 {
+        display: none;
       }
     }
 
