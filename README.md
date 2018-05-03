@@ -16,6 +16,7 @@ Invoices list with statistic <br>(with generated invoice sidebar) | https://lykk
 Summary | https://lykkecity.github.io/LykkePayMarkup/public/profile_summary.html
 No invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
 No search results| https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results.html
+404 | https://lykkecity.github.io/LykkePayMarkup/public/404.html
 
 ### Development guide
 

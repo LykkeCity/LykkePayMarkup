@@ -10,6 +10,14 @@ var connect = require('gulp-connect');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
+var pug = require('gulp-pug');
+
+// run this task by typing in gulp pug in CLI
+gulp.task('pug', function() {  
+  return gulp.src('./assets/templates/*.pug')
+      .pipe(pug()) // pipe to pug plugin
+      .pipe(gulp.dest('./public'));
+});
 
 gulp.task('sass', function () {
   gulp.src('./assets/scss/*.scss')
@@ -143,6 +151,7 @@ gulp.task('watch', ['dev-server'], function () {
   gulp.watch('assets/scss/**/*.scss', ['sass']);
   gulp.watch('public/css/*.css', ['watchcss']);
   gulp.watch('assets/js/**/*.js', ['copy-scripts']);
+  gulp.watch(['assets/templates/**/*.pug', 'assets/templates/**/*.html'] , ['pug']);
 });
 
 gulp.task('clean', function () {
@@ -163,6 +172,7 @@ gulp.task('dev', function () {
   gulp.start('copy-fonts');
   gulp.start('copy-dev-favicons');
   gulp.start('copy-images');
+  gulp.start('pug');
 });
 
 gulp.task('prod', ['dev'], function () {
