@@ -11,11 +11,13 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
 var pug = require('gulp-pug');
+var htmlbeautify = require('gulp-html-beautify');
 
 // run this task by typing in gulp pug in CLI
-gulp.task('pug', function() {  
+gulp.task('pug', function() {
   return gulp.src('./assets/templates/*.pug')
-      .pipe(pug()) // pipe to pug plugin
+      .pipe(pug())
+      .pipe(htmlbeautify())
       .pipe(gulp.dest('./public'));
 });
 
@@ -64,7 +66,6 @@ gulp.task('copy-fonts', function () {
 
 gulp.task('copy-images', function() {
   return gulp.src([
-      './assets/img/**/*',
       './node_modules/LykkeFramework/assets/img/**/*'
     ])
     .pipe(gulp.dest('./public/img'));

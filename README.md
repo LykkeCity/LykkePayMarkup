@@ -11,8 +11,9 @@ Details - Unpaid | https://lykkecity.github.io/LykkePayMarkup/public/invoice_unp
 Details - Paid | https://lykkecity.github.io/LykkePayMarkup/public/invoice_paid.html
 Details - Error | https://lykkecity.github.io/LykkePayMarkup/public/invoice_paid_error.html
 Modal example | https://lykkecity.github.io/LykkePayMarkup/public/modal.html
-Invoices list with statistic <br>(with new invoice sidebar) | https://lykkecity.github.io/LykkePayMarkup/public/profile.html
-Invoices list with statistic <br>(with generated invoice sidebar) | https://lykkecity.github.io/LykkePayMarkup/public/profile_fill.html
+Invoices list <br>with statistic | https://lykkecity.github.io/LykkePayMarkup/public/profile.html
+New invoice sidebar | https://lykkecity.github.io/LykkePayMarkup/public/profile_draft.html
+Generated invoice sidebar | https://lykkecity.github.io/LykkePayMarkup/public/profile_fill.html
 Summary | https://lykkecity.github.io/LykkePayMarkup/public/profile_summary.html
 No invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
 No search results| https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results.html

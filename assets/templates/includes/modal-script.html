@@ -1,0 +1,21 @@
+<script>
+  $(document).ready(function() {
+    $('.menu_overlay').on('click', function() {
+        $('.modal_dialog').removeClass('modal_dialog--open');
+    });
+
+    $('.modal_dialog__cancel').on('click', function() {
+        $('.menu_overlay').trigger('click');
+    });
+
+    $('._delete_draft_invoice').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('body').addClass('body--menu_opened');
+        $('.modal_dialog').addClass('modal_dialog--open');
+    });
+
+    $('._delete_draft_invoice').trigger('click');
+  });
+</script>

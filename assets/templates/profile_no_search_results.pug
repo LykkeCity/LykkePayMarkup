@@ -1,0 +1,10 @@
+extends includes/layout.pug
+include mixins/content
+
+block content
+  +content()
+    include includes/partials/content_profile_info.html
+    include includes/partials/content_no_search_results.html
+block page scripts
+  include includes/profile-script.html
+  include includes/profile_no_search_results-script.html

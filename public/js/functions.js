@@ -136,22 +136,6 @@ function initHeader() {
         hideSubMenu();
     });
 
-    $('.menu_overlay').on('click', function() {
-        $('.modal_dialog').removeClass('modal_dialog--open');
-    })
-
-    $('.modal_dialog__cancel').on('click', function() {
-        $('.menu_overlay').trigger('click');
-    })
-
-    $('._open_modal').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        $('body').addClass('body--menu_opened');
-        $('.modal_dialog').addClass('modal_dialog--open');
-    })
-
     $('.btn_open_search').on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();

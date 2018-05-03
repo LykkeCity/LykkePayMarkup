@@ -1,0 +1,23 @@
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.datetimepicker').datetimepicker({
+      //    debug: true,
+      format: 'DD.MM.YYYY',
+      icons: {
+        time: "icon--clock",
+        date: "icon--cal",
+        up: "icon--chevron-thin-up",
+        down: "icon--chevron-thin-down",
+        previous: "icon--chevron-thin-left",
+        next: "icon--chevron-thin-right"
+      }
+    });
+
+    // show draft sidebar
+    $('._create_invoice_btn').trigger('click');
+  });
+
+</script>

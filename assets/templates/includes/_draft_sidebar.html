@@ -1,0 +1,112 @@
+<div class="_invoice_sidebar sidebar_menu sidebar_menu--right">
+  <form class="invoice_form sidebar_menu__inner">
+    <div class="sidebar_breadcrumbs">
+      <button class="btn btn--icon btn_close_menu" type="button">
+        <i class="icon icon--close"></i>
+      </button>
+      <div class="breadcrumbs_item">
+        <a href="">Profile</a>
+      </div>
+      <i class="icon icon--chevron-thin-right"></i>
+      <div class="breadcrumbs_item breadcrumbs_item--current">Create new invoice</div>
+    </div>
+    <div class="sidebar_menu__body">
+      <div class="sidebar_menu__header">
+        <div class="invoice_form__title">Invoice</div>
+        <div class="invoice_form__status">Not created</div>
+      </div>
+
+      <h3>Details</h3>
+      <div class="form-group">
+        <label class="control-label" for="invoice_number">Invoice number</label>
+        <input type="text" class="form-control" id="invoice_number">
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="client">Client</label>
+        <input type="text" class="form-control" id="client">
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="email">Email</label>
+        <input type="text" class="form-control" id="email">
+      </div>
+      <div class="row">
+        <div class="col-sm-4 _currency">
+          <div class="form-group">
+            <label class="control-label" for="currency">Currency</label>
+            <div class="form_selectpicker">
+              <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="Asset name">
+                <option value="BTC" selected>BTC</option>
+                <option value="USD">USD</option>
+                <option value="CHF">CHF</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="LKK">LKK</option>
+                <option value="LKK1Y">LKK1Y</option>
+                <option value="LKK2Y">LKK2Y</option>
+                <option value="LTC">LTC</option>
+                <option value="ETH">ETH</option>
+                <option value="AE">AE</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 _amount">
+          <div class="form-group">
+            <label class="control-label" for="amount">Amount</label>
+            <input type="text" class="form-control" id="amount" value="0.00">
+          </div>
+        </div>
+        <div class="col-sm-4 _date">
+          <div class="form-group">
+            <label class="control-label" for="amount">Pay due date</label>
+            <div class="input-group date datetimepicker">
+              <input type="text" class="form-control datetimepicker" />
+              <span class="input-group-addon">
+                <span class="icon icon--cal"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="note">Note</label>
+        <textarea name="note" id="note" class="form-control"></textarea>
+      </div>
+
+      <div class="form_header">
+        <button type="button" class="btn btn-sm btn-primary pull-right">Add File</button>
+        <h3>Attachment</h3>
+      </div>
+      <div class="attachment_list">
+        <div class="asset_link_list">
+          <div class="asset_link asset_link--alt">
+            <div class="asset_link__icon">
+              <div class="asset_icon asset_icon--red">PDF</div>
+            </div>
+            <div class="asset_link__action">
+              <button class="btn btn--icon _delete_asset">
+                <i class="btn__svg_icon svg_icon svg_icon--upload"></i>
+              </button>
+            </div>
+            <div class="asset_link__info">
+              <div class="asset_link__title">BAS Rechnung Sponsoring…- Sheet1.pdf</div>
+              <div class="asset_link__desc">57KB</div>
+            </div>
+          </div>
+        </div>
+        <!--<div class="hint">No file selected</div>-->
+      </div>
+
+      <div class="sidebar_menu__footer">
+        <div class="form-group">
+          <button class="btn btn-block" type="button">Generate</button>
+        </div>
+
+        <button class="btn btn--flat btn-block" type="button">Safe draft</button>
+        <button class="btn btn--flat btn-block btn_close_menu" type="button">Cancel and close</button>
+
+      </div>
+    </div>
+  </form>
+</div>

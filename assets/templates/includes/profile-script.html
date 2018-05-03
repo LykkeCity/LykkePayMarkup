@@ -1,0 +1,20 @@
+<script>
+  $(document).ready(function () {
+    var searchBlock = $('.search_filter'),
+      searchActiveClass = 'search_filter--show';
+
+    function showSearch(e) {
+      e.preventDefault();
+      searchBlock.toggleClass(searchActiveClass);
+    }
+
+    function hideSearch(e) {
+      e.preventDefault();
+      searchBlock.removeClass(searchActiveClass);
+    }
+
+    $('._show_search_block').on('click', showSearch);
+    $('._hide_search_block').on('click', hideSearch);
+  });
+
+</script>

@@ -1,0 +1,85 @@
+<div class="invoices">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Invoices</h3>
+    </div>
+    <div class="col-sm-6 clearfix">
+      <div class="invoice_controls">
+        <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
+          <i class="btn__svg_icon svg_icon svg_icon--download svg_icon--margin"></i>
+          DTA file
+        </button>
+        <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
+          <i class="btn__svg_icon svg_icon svg_icon--download svg_icon--margin"></i>
+          XLSX file
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="invoice_nav">
+    <button class="invoice_nav__search btn btn--icon _show_search_block">
+      <i class="icon icon--search"></i>
+    </button>
+    <div class="invoice_tabs">
+      <button class="invoice_tabs__arrow invoice_tabs__arrow--left _invoice_tabs__arrow--left"></button>
+      <div class="invoice_tabs__carousel _invoice_tabs_carousel owl-carousel">
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab invoice_tabs__tab--active" href="#all">All &middot; 32</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
+        </div>
+      </div>
+      <button class="invoice_tabs__arrow invoice_tabs__arrow--right _invoice_tabs__arrow--right"></button>
+    </div>
+  </div>
+
+  <div class="search_filter">
+    <form>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">
+          <div class="form-group">
+            <div class="form_selectpicker">
+              <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="">
+                <option value="BTC" selected>In the past month</option>
+                <option value="USD">In the past month</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-8">
+          <div class="input-search input-search--index">
+            <button class="btn btn--icon">
+              <i class="icon icon--search"></i>
+            </button>
+            <input type="text" class="form-control form-control--search" placeholder="Asset or address...">
+            <button class="btn btn--icon">
+              <i class="icon icon--cancel_round"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-1">
+          <button type="button" class="btn btn--link _hide_search_block">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="invoices__empty_result empty_result">
+    <div class="empty_result__img-container">
+      <img src="img/invoices-no-results.svg" />
+    </div>
+    <div class="empty_result__title">No search results</div>
+    <div class="empty_result__description">Sorry, we couldn't find any matches “356738”. Try using another keyword.</div>
+  </div>
+</div>
