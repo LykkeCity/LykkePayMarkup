@@ -2840,7 +2840,7 @@ ol.list_styled li:before { content: counter(step-counter); background-color: #33
 
 .invoice_info__row { margin-bottom: 20px; }
 
-.invoice_info__row--detecting { opacity: 0.15; }
+.invoice_info__row--detecting { opacity: 0.15; pointer-events: none; }
 
 .invoice_info__value { font-weight: 600; line-height: normal; color: #333333; font-size: 24px; }
 
