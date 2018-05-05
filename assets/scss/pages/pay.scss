@@ -360,13 +360,19 @@ ol.list_styled {
     }
 
     td, th {
-      cursor: auto;
-
       @include rem(padding, 12px 20px 12px 0);
 
       a {
         color: inherit;
       }
+    }
+
+    td {
+      cursor: auto;
+    }
+
+    th {
+      cursor: pointer;
     }
   }
 

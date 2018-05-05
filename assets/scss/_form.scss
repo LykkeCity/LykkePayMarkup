@@ -300,9 +300,13 @@
     @include rem(margin-top, -4px);
   }
 
-
   .form-control {
+    cursor: pointer;
     margin-bottom: 0;
+  }
+
+  &::after {
+    pointer-events: none;
   }
 }
 
@@ -521,6 +525,14 @@
   }
 }
 
+input[type="number"] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+      cursor: pointer;
+      height: auto;
+  }
+}
+
 ::-webkit-scrollbar {
   height: 18px;
   width: 18px;
@@ -578,7 +590,7 @@
     @include rem(font-size, 16px);
     @include rem(height, 50px);
     @include rem(padding-right, 45px);
-  
+
     &:focus {
       border-color: #b2b8bf;
       outline: none !important;
@@ -590,7 +602,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      
+
       @include rem(width, 45px);
 
       &:before {
@@ -603,7 +615,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url(../img/big-caret.svg);
-        
+
         @include rem(right, 15px);
       }
     }
@@ -617,13 +629,13 @@
     }
   }
 
-  .btn-default:active:hover, 
-  .btn-default.active:hover, 
-  .open>.dropdown-toggle.btn-default:hover, 
-  .btn-default:active:focus, 
-  .btn-default.active:focus, 
-  .open>.dropdown-toggle.btn-default:focus, 
-  .btn-default:active.focus, 
+  .btn-default:active:hover,
+  .btn-default.active:hover,
+  .open>.dropdown-toggle.btn-default:hover,
+  .btn-default:active:focus,
+  .btn-default.active:focus,
+  .open>.dropdown-toggle.btn-default:focus,
+  .btn-default:active.focus,
   .btn-default.active.focus,
    .open>.dropdown-toggle.btn-default.focus {
     background: transparent;
@@ -634,7 +646,7 @@
     padding-top: 0;
     padding-bottom: 0;
     overflow: auto !important;
-    
+
     @include rem(margin-top, 10px);
 
     a {
