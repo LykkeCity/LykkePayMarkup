@@ -168,6 +168,12 @@
       </div>
     </header>
   </div>
+  <style>
+    ._demo_only--real_hint_message {
+      display: none;
+    }
+  </style>
+
   <article class="content">
     <section class="section section--padding">
       <div class="container">
@@ -241,8 +247,14 @@
 
                 <div class="invoice_info__hint--mobile-old">
                   <hr>
-                  <div class="hint">
+                  <div class="hint _demo_only--real_hint_message">
                     We are detecting your transfer, please do not do any transfers the following 5 minutes.
+                  </div>
+                  <div class="hint _demo_only--updating">
+                    <div class="spinner spinner--inline spinner--small">
+                      <div class="spinner__inside"></div>
+                    </div>
+                    <span>Updating...</span>
                   </div>
                 </div>
               </div>
@@ -423,9 +435,19 @@
   <script src="js/vendor/fastclick.min.js"></script>
   <script src="js/functions.js"></script>
   <script>
-    $('.selectpicker').selectpicker({
-      mobile: isMobile
-    })
+    $(document).ready(function() {
+      $('.selectpicker').selectpicker({
+        mobile: isMobile
+      });
+
+      $('._demo_only--real_hint_message').hide();
+
+      setTimeout(function() {
+        $('._demo_only--real_hint_message').show();
+        $('._demo_only--updating').hide();
+      }, 1000);
+
+    });
   </script>
 </body>
 

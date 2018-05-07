@@ -1,5 +1,15 @@
 <script>
-  $('.selectpicker').selectpicker({
-    mobile: isMobile
-  })
+  $(document).ready(function() {
+    $('.selectpicker').selectpicker({
+      mobile: isMobile
+    });
+
+    $('._demo_only--real_hint_message').hide();
+
+    setTimeout(function() {
+      $('._demo_only--real_hint_message').show();
+      $('._demo_only--updating').hide();
+    }, 1000);
+
+  });
 </script>
