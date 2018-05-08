@@ -359,4 +359,13 @@
       }
     }
   }
+
+  .bootstrap-select {
+    &.btn-group {
+      .no-results {
+        white-space: normal;
+        word-break: break-word;
+      }
+    }
+  }
 }
