@@ -18,6 +18,9 @@ Summary | https://lykkecity.github.io/LykkePayMarkup/public/profile_summary.html
 No invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
 No search results| https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results.html
 404 | https://lykkecity.github.io/LykkePayMarkup/public/404.html
+Inbox Invoices list | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox.html
+Inbox no search results | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results_inbox.html
+Inbox no invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices_inbox.html
 
 ### Development guide
 
