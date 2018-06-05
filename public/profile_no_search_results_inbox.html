@@ -168,164 +168,72 @@
       </div>
     </header>
   </div>
-  <div class="_summary_invoice_sidebar sidebar_menu sidebar_menu--right">
-    <form class="invoice_form sidebar_menu__inner">
-      <div class="sidebar_breadcrumbs">
-        <button class="btn btn--icon btn_close_menu visible-xs" type="button">
-        <i class="icon icon--close"></i>
-      </button>
-        <div class="breadcrumbs_item">
-          <a href="">Profile</a>
-        </div>
-        <i class="icon icon--chevron-thin-right"></i>
-        <div class="breadcrumbs_item breadcrumbs_item--current">Information</div>
-      </div>
-      <div class="sidebar_menu__body">
-        <div class="sidebar_menu__header">
-          <div class="invoice_form__title">Invoice</div>
-          <div class="invoice_form__status">Unpaid</div>
-        </div>
 
-        <div class="sidebar_summary">
-          <div class="sidebar_summary__item">
-            <div class="sidebar_summary__header">Paid</div>
-            <div class="sidebar_summary__list">
-              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">CHF</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">12</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">BTC</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">764,837.93</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">1</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">EUR</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">125,847,863.16</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">30</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">JPY</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar_summary__item">
-            <div class="sidebar_summary__header">Unpaid</div>
-            <div class="sidebar_summary__list">
-              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">CHF</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">12</div>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar_summary__item">
-            <div class="sidebar_summary__header">Overdue</div>
-            <div class="sidebar_summary__list">
-              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar_menu__footer">
-          <div class="form-group">
-            <button class="btn btn-block btn_close_menu" type="button">Close</button>
-          </div>
-        </div>
+  <div class="page_tab">
+    <div class="container">
+      <div class="page_tab__item">
+        <a href="#">My Invoices</a>
       </div>
-    </form>
+      <div class="page_tab__item page_tab__item--active">
+        <a href="#">Inbox Invoices</a>
+      </div>
+    </div>
   </div>
+
   <article class="content">
     <section class="section section--padding">
       <div class="container">
-        <div class="profile_info">
+        <div class="invoices">
           <div class="row">
-            <div class="col-md-5 col-sm-5">
-              <div class="profile_balance">
-                <div class="profile_info__header">Current balance</div>
-                <div class="profile_balance__value">
-                  <span class="profile_balance__number">10,635,843.09</span>
-                  <span class="profile_balance__currency">CHF</span>
-                </div>
-                <div class="profile_controls">
-                  <button class="btn _create_invoice_btn">
-            <i class="btn__svg_icon svg_icon svg_icon--add svg_icon--margin"></i>
-            New invoice
-          </button>
-                  <button class="settlement_btn btn btn--flat">
-            <i class="btn__svg_icon svg_icon svg_icon--settlement svg_icon--margin"></i>Settlement
-          </button>
-                </div>
-              </div>
+            <div class="col-sm-6">
+              <h3>Inbox Invoices</h3>
             </div>
-            <div class="col-md-7 col-sm-7">
-              <div class="profile_summary">
-                <div class="profile_info__header">
-                  Summary
-                  <button class="profile_info__header_help _summary_invoice_btn">
-            <i class="btn__svg_icon svg_icon svg_icon--help"></i>
-          </button>
-                </div>
-                <div class="profile_summary__list clearfix">
-                  <div class="profile_summary__left">
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Paid</div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Unpaid</div>
-                      <div class="profile_summary__status_value">2,35,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Overdue</div>
-                      <div class="profile_summary__status_value">0.00 CHF</div>
-                    </div>
+          </div>
+
+          <div class="invoice_filters">
+            <form>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form_selectpicker form_selectpicker--type form-group">
+                    <label for="select1" class="control-label">Type:</label>
+                    <select id="select1" class="selectpicker" data-size="10">
+                      <option>All</option>
+                      <option>All2</option>
+                    </select>
                   </div>
-                  <div class="profile_summary__right">
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Underpaid</div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Overpaid</div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form_selectpicker form_selectpicker--status form-group">
+                    <label for="select2" class="control-label">Status:</label>
+                    <select id="select2" class="selectpicker" data-size="10">
+                      <option>All</option>
+                      <option>All2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="search_filter">
+                    <div class="input-search input-search--index">
+                      <button class="btn btn--icon">
+                        <i class="icon icon--search"></i>
+                      </button>
+                      <input type="text" class="form-control form-control--search" placeholder="Search">
+                      <button class="btn btn--icon">
+                        <i class="icon icon--cancel_round"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </form>
+          </div>
+
+          <div class="invoices__empty_result empty_result">
+            <div class="empty_result__img-container">
+              <img src="img/invoices-no-results.svg" />
             </div>
+            <div class="empty_result__title">No search results</div>
+            <div class="empty_result__description">Sorry, we couldn't find any matches “356738”. Try using another keyword.</div>
           </div>
         </div>
       </div>
@@ -450,7 +358,27 @@
   <script src="js/functions.js"></script>
   <script>
     $(document).ready(function() {
-      $('._summary_invoice_btn').trigger('click');
+      var searchBlock = $('.search_filter'),
+        searchActiveClass = 'search_filter--show';
+
+      function showSearch(e) {
+        e.preventDefault();
+        searchBlock.toggleClass(searchActiveClass);
+      }
+
+      function hideSearch(e) {
+        e.preventDefault();
+        searchBlock.removeClass(searchActiveClass);
+      }
+
+      $('._show_search_block').on('click', showSearch);
+      $('._hide_search_block').on('click', hideSearch);
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('._show_search_block').trigger('click');
+      $('.form-control--search').val('356738');
     });
   </script>
 </body>

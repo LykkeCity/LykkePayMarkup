@@ -169,7 +169,7 @@
     </header>
   </div>
   <article class="content">
-    <section class="section section--lead">
+    <section class="section section--padding">
       <div class="container">
         <div class="profile_info">
           <div class="row">
@@ -248,92 +248,39 @@
             </div>
           </div>
 
-          <div class="invoice_nav">
-            <button class="invoice_nav__search btn btn--icon _show_search_block">
-      <i class="icon icon--search"></i>
-    </button>
-            <div class="invoice_tabs">
-              <button class="invoice_tabs__arrow invoice_tabs__arrow--left _invoice_tabs__arrow--left"></button>
-              <div class="invoice_tabs__carousel _invoice_tabs_carousel owl-carousel">
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab invoice_tabs__tab--active" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-              </div>
-              <button class="invoice_tabs__arrow invoice_tabs__arrow--right _invoice_tabs__arrow--right"></button>
-            </div>
-          </div>
-
-          <div class="search_filter">
+          <div class="invoice_filters">
             <form>
               <div class="row">
-                <div class="col-xs-6 col-sm-3">
-                  <div class="form-group">
-                    <div class="form_selectpicker">
-                      <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="">
-                <option value="BTC" selected>In the past month</option>
-                <option value="USD">In the past month</option>
-              </select>
+                <div class="col-md-4">
+                  <div class="form_selectpicker form_selectpicker--category form-group">
+                    <label for="select1" class="control-label">Category:</label>
+                    <select id="select1" class="selectpicker" data-size="10">
+                      <option>All</option>
+                      <option>All2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form_selectpicker form_selectpicker--status form-group">
+                    <label for="select2" class="control-label">Status:</label>
+                    <select id="select2" class="selectpicker" data-size="10">
+                      <option>All</option>
+                      <option>All2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="search_filter">
+                    <div class="input-search input-search--index">
+                      <button class="btn btn--icon">
+                        <i class="icon icon--search"></i>
+                      </button>
+                      <input type="text" class="form-control form-control--search" placeholder="Search">
+                      <button class="btn btn--icon">
+                        <i class="icon icon--cancel_round"></i>
+                      </button>
                     </div>
                   </div>
-                </div>
-                <div class="col-xs-9 col-sm-8">
-                  <div class="input-search input-search--index">
-                    <button class="btn btn--icon">
-              <i class="icon icon--search"></i>
-            </button>
-                    <input type="text" class="form-control form-control--search" placeholder="Asset or address...">
-                    <button class="btn btn--icon">
-              <i class="icon icon--cancel_round"></i>
-            </button>
-                  </div>
-                </div>
-                <div class="col-xs-3 col-sm-1">
-                  <button type="button" class="btn btn--link _hide_search_block">Cancel</button>
                 </div>
               </div>
             </form>
@@ -366,9 +313,9 @@
                 </td>
                 <td class="_pay">15 Nov 2017</td>
                 <td class="_action">
-                  <button class="btn btn--icon" type="button">
-            <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
-          </button>
+                  <button class="btn btn--icon" type="button" data-target="#msg" data-toggle="modal">
+                    <i class="btn__svg_icon svg_icon svg_icon--delete"></i>
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -635,6 +582,37 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="modal alert_modal fade" id="msg" tabindex="-1" role="dialog">
+    <div class="modal_valign">
+      <div class="modal_valign__row">
+        <div class="modal_valign__cell">
+
+          <div class="modal__dialog" role="document">
+            <div class="modal__content">
+              <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+              <div class="modal__body">
+                <h3>Are you sure?</h3>
+
+                <div class="text">
+                  <p>Do you really want to delete «LP_2018044.pdf»?</p>
+                </div>
+              </div>
+              <div class="modal__footer text-right">
+                <button class="btn btn--flat" data-dismiss="modal" type="button">Yes</button>
+                <button class="btn btn--primary" data-dismiss="modal" type="button">Cancel</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/vendor/bootstrap-select.min.js"></script>

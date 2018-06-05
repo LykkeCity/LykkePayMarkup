@@ -16,7 +16,7 @@
 .dropdown-toggle:focus {
   outline: 0;
 }
-.dropdown-menu {
+.dropdown-menu[role=combobox] {
   position: absolute;
   top: 100%;
   left: 0;
@@ -24,6 +24,7 @@
   display: none;
   float: left;
   min-width: 160px;
+  width: 100%;
   list-style: none;
   text-align: left;
   -webkit-background-clip: padding-box;
@@ -32,11 +33,16 @@
   background-color: #ffffff;
   box-shadow: 0 8px 50px 0 rgba(63, 77, 96, 0.4), 0 5px 5px 0 rgba(63, 77, 96, 0.05);
   border: 0;
-  overflow: visible !important;
+  outline: none!important;
 
-  @include rem(padding, 8px 0);
   @include rem(margin, 2px 0);
   @include rem(font-size, 14px);
+
+  .inner {
+    outline: none!important;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 .dropdown-menu.pull-right {
   right: 0;

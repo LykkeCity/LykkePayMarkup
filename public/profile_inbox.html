@@ -168,169 +168,307 @@
       </div>
     </header>
   </div>
-  <div class="_summary_invoice_sidebar sidebar_menu sidebar_menu--right">
-    <form class="invoice_form sidebar_menu__inner">
-      <div class="sidebar_breadcrumbs">
-        <button class="btn btn--icon btn_close_menu visible-xs" type="button">
-        <i class="icon icon--close"></i>
-      </button>
-        <div class="breadcrumbs_item">
-          <a href="">Profile</a>
-        </div>
-        <i class="icon icon--chevron-thin-right"></i>
-        <div class="breadcrumbs_item breadcrumbs_item--current">Information</div>
+  <div class="page_tab">
+    <div class="container">
+      <div class="page_tab__item">
+        <a href="#">My Invoices</a>
       </div>
-      <div class="sidebar_menu__body">
-        <div class="sidebar_menu__header">
-          <div class="invoice_form__title">Invoice</div>
-          <div class="invoice_form__status">Unpaid</div>
-        </div>
-
-        <div class="sidebar_summary">
-          <div class="sidebar_summary__item">
-            <div class="sidebar_summary__header">Paid</div>
-            <div class="sidebar_summary__list">
-              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">CHF</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">12</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">BTC</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">764,837.93</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">1</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">EUR</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">125,847,863.16</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">30</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">JPY</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar_summary__item">
-            <div class="sidebar_summary__header">Unpaid</div>
-            <div class="sidebar_summary__list">
-              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">CHF</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">74,839.01</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">12</div>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar_summary__item">
-            <div class="sidebar_summary__header">Overdue</div>
-            <div class="sidebar_summary__list">
-              <div class="sidebar_summary__row sidebar_summary__row--header clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">Currency</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">Total</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">Invoices</div>
-              </div>
-              <div class="sidebar_summary__row clearfix">
-                <div class="sidebar_summary__td sidebar_summary__td--first">USD</div>
-                <div class="sidebar_summary__td sidebar_summary__td--second">23,847.09</div>
-                <div class="sidebar_summary__td sidebar_summary__td--third">3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar_menu__footer">
-          <div class="form-group">
-            <button class="btn btn-block btn_close_menu" type="button">Close</button>
-          </div>
-        </div>
+      <div class="page_tab__item page_tab__item--active">
+        <a href="#">Inbox Invoices</a>
       </div>
-    </form>
+    </div>
   </div>
   <article class="content">
     <section class="section section--padding">
       <div class="container">
-        <div class="profile_info">
+        <div class="invoices">
           <div class="row">
-            <div class="col-md-5 col-sm-5">
-              <div class="profile_balance">
-                <div class="profile_info__header">Current balance</div>
-                <div class="profile_balance__value">
-                  <span class="profile_balance__number">10,635,843.09</span>
-                  <span class="profile_balance__currency">CHF</span>
-                </div>
-                <div class="profile_controls">
-                  <button class="btn _create_invoice_btn">
-            <i class="btn__svg_icon svg_icon svg_icon--add svg_icon--margin"></i>
-            New invoice
-          </button>
-                  <button class="settlement_btn btn btn--flat">
-            <i class="btn__svg_icon svg_icon svg_icon--settlement svg_icon--margin"></i>Settlement
-          </button>
-                </div>
-              </div>
+            <div class="col-sm-6">
+              <h3>Inbox Invoices</h3>
             </div>
-            <div class="col-md-7 col-sm-7">
-              <div class="profile_summary">
-                <div class="profile_info__header">
-                  Summary
-                  <button class="profile_info__header_help _summary_invoice_btn">
-            <i class="btn__svg_icon svg_icon svg_icon--help"></i>
-          </button>
-                </div>
-                <div class="profile_summary__list clearfix">
-                  <div class="profile_summary__left">
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Paid</div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Unpaid</div>
-                      <div class="profile_summary__status_value">2,35,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Overdue</div>
-                      <div class="profile_summary__status_value">0.00 CHF</div>
-                    </div>
+          </div>
+
+          <div class="invoice_filters">
+            <form>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form_selectpicker form_selectpicker--category form-group">
+                    <label for="select1" class="control-label">Category:</label>
+                    <select id="select1" class="selectpicker" data-size="10">
+                      <option>All</option>
+                      <option>All2</option>
+                    </select>
                   </div>
-                  <div class="profile_summary__right">
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Underpaid</div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Overpaid</div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form_selectpicker form_selectpicker--status form-group">
+                    <label for="select2" class="control-label">Status:</label>
+                    <select id="select2" class="selectpicker" data-size="10">
+                      <option>All</option>
+                      <option>All2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="search_filter">
+                    <div class="input-search input-search--index">
+                      <button class="btn btn--icon">
+                        <i class="icon icon--search"></i>
+                      </button>
+                      <input type="text" class="form-control form-control--search" placeholder="Search">
+                      <button class="btn btn--icon">
+                        <i class="icon icon--cancel_round"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table_invoices _table_checkbox">
+              <tr>
+                <th class="_number" colspan="2">Invoice number, date</th>
+                <th class="_client">Client</th>
+                <th class="_amount">Amount</th>
+                <th class="_currency">Currency</th>
+                <th class="_status">Status</th>
+                <th class="_pay">Pay due date</th>
+                <th class="_action"></th>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox12" class="checkbox__control" checked>
+                    <label for="checkbox12" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732</span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--gray">Draft</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action">
+                  <div class="_status_text text--red" data-target="#msg" data-toggle="modal">
+                    <i class="icon--warning_icn">
+                      <span class="path1"><span class="path2"><span class="path3"></span></span></span>
+                    </i>
+                    Disput
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox13" class="checkbox__control" checked>
+                    <label for="checkbox13" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732</span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--yellow">Unpaid</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action"></td>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox14" class="checkbox__control" disabled>
+                    <label for="checkbox14" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732</span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--blue">InProgress</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action"></td>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox15" class="checkbox__control">
+                    <label for="checkbox15" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732</span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--green">Paid</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action"></td>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox16" class="checkbox__control" checked>
+                    <label for="checkbox16" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732</span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--red">Error</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action"></td>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox17" class="checkbox__control">
+                    <label for="checkbox17" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732</span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--violet">Underpaid</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action"></td>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox18" class="checkbox__control" checked>
+                    <label for="checkbox18" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732 <span>API</span></span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--violet">Overpaid</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action"></td>
+              </tr>
+              <tr>
+                <td class="_checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox19" class="checkbox__control">
+                    <label for="checkbox19" class="control-label checkbox__label"></label>
+                  </div>
+                </td>
+                <td class="_number">
+                  <span class="_title">#4974732</span>
+                  <span class="_hint">15 Nov 2017</span>
+                </td>
+                <td class="_client">
+                  <span class="_title">Verizon Communications</span>
+                  <span class="_hint">info@verizon.com</span>
+                </td>
+                <td class="_amount">1,324.92</td>
+                <td class="_currency">CHF</td>
+                <td class="_status">
+                  <span class="label label--dark">Refunded</span>
+                </td>
+                <td class="_pay">15 Nov 2017</td>
+                <td class="_action"></td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </section>
   </article>
+
+  <div class="bar_selected">
+    <div class="row">
+      <div class="col-sm-3 col-md-4">
+        <h5>Select <span class="_invoices_count">0</span> invoices</h5>
+      </div>
+      <div class="col-xs-4 col-sm-5 col-md-4  text-right">
+        <label for="amount" class="control-label">Total amount</label>
+        <input type="text" id="amount" class="form-control" value="1,500">
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        <label class="control-label visible-xs">&nbsp;</label>
+        <div class="form_selectpicker">
+          <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="Asset name">
+            <option value="USD" selected>USD</option>
+            <option value="CHF">CHF</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="LKK">LKK</option>
+            <option value="LKK1Y">LKK1Y</option>
+            <option value="LKK2Y">LKK2Y</option>
+            <option value="BTC">BTC</option>
+            <option value="LTC">LTC</option>
+            <option value="ETH">ETH</option>
+            <option value="AE">AE</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-2">
+        <label class="control-label visible-xs">&nbsp;</label>
+        <button class="btn brn--primary btn-block" type="button" disabled>Pay</button>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="footer__top">
       <div class="container">
@@ -442,6 +580,37 @@
       </div>
     </div>
   </footer>
+
+
+
+
+  <div class="modal alert_modal fade" id="msg" tabindex="-1" role="dialog">
+    <div class="modal_valign">
+      <div class="modal_valign__row">
+        <div class="modal_valign__cell">
+
+          <div class="modal__dialog" role="document">
+            <div class="modal__content">
+              <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+              <div class="modal__body">
+                <h3>Please write your comment</h3>
+                <textarea class="form-control"></textarea>
+              </div>
+              <div class="modal__footer text-right">
+                  <button class="btn btn--flat" data-dismiss="modal" type="button">Cancel</button>
+                  <button class="btn btn--primary" data-dismiss="modal" type="button">Send</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/vendor/bootstrap-select.min.js"></script>
@@ -450,7 +619,37 @@
   <script src="js/functions.js"></script>
   <script>
     $(document).ready(function() {
-      $('._summary_invoice_btn').trigger('click');
+      var searchBlock = $('.search_filter'),
+        searchActiveClass = 'search_filter--show';
+
+      function showSearch(e) {
+        e.preventDefault();
+        searchBlock.toggleClass(searchActiveClass);
+      }
+
+      function hideSearch(e) {
+        e.preventDefault();
+        searchBlock.removeClass(searchActiveClass);
+      }
+
+      $('._show_search_block').on('click', showSearch);
+      $('._hide_search_block').on('click', hideSearch);
+
+      $('._table_checkbox td:not("._action")').on('click', function () {
+        var isChecked = $(this).parent().find('input:checkbox').prop("checked"),
+        isDisabled = $(this).parent().find('input:checkbox').attr('disabled')
+
+        if (!isDisabled) {
+          if (isChecked === false) {
+            isChecked = true;
+            $(this).parent().find('input:checkbox').prop('checked', isChecked);
+          }
+          else {
+            isChecked = false;
+            $(this).parent().find('input:checkbox').prop('checked', isChecked);
+          }
+        }
+      })
     });
   </script>
 </body>

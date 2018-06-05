@@ -30,6 +30,7 @@
 
 // optional
 @import 'partials/spinner';
+@import 'partials/page_tab';
 @import 'pages/pay';
 @import 'pages/invoice';
 @import 'lists';
@@ -186,6 +187,7 @@ tbody.collapse.in {
 
 .header {
   border-bottom: 1px solid $border-alt;
+  z-index: 1100;
 }
 
 .error_page {
@@ -305,7 +307,7 @@ tbody.collapse.in {
   &__title {
     color: $black;
     font-family: $ff-alt;
-    font-weight: $fw-semi;
+    font-weight: $fw-bold;
 
     @include rem(font-size, 30px);
     @include rem(margin-bottom, 34px);
@@ -630,4 +632,42 @@ tbody.collapse.in {
       width: 20.5%
     }
   }
+}
+
+.alert_modal {
+  h3 {
+    margin-bottom: 25px;
+  }
+
+  textarea.form-control {
+    height: 85px;
+  }
+
+  .modal__dialog {
+    width: 470px;
+    max-width: 100%;
+  }
+
+  .modal__footer {
+    .btn {
+      vertical-align: middle;
+      margin-bottom: 0;
+
+      &--primary {
+        min-width: 160px;
+      }
+    }
+  }
+}
+
+.form_selectpicker .btn.dropdown-toggle {
+  text-align: left;
+}
+
+.bootstrap-select {
+  text-align: left;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
 }

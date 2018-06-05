@@ -109,7 +109,7 @@
 
   @include rem(margin-bottom, 50px);
   @include clearfix;
-  
+
   &__left {
     position: absolute;
     top: 0;
@@ -119,7 +119,7 @@
 
   &__qr {
     position: relative;
-    
+
     @include rem(margin-bottom, 52px);
 
     &--detecting:after {
@@ -191,7 +191,7 @@
       color: $text;
       padding: 0;
       line-height: 38px;
-      
+
       @include rem(font-size, 16px);
     }
   }
@@ -255,7 +255,7 @@
         display: block;
       }
     }
-  }  
+  }
 
   @media all and (max-width: $screen-mobile) {
     &__hint {
@@ -417,7 +417,7 @@
 
 .invoice_refresh {
   border-bottom: 1px solid $border-alt;
-  
+
   @include rem(padding-bottom, 54px);
 
   &__btn {
@@ -425,7 +425,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
+
     @include rem(margin-bottom, 40px);
   }
 
@@ -435,5 +435,160 @@
 
   &__a {
     font-weight: 600;
+  }
+}
+
+.invoice_filters {
+  @include rem(padding, 20px 0);
+
+  .btn .icon {
+    margin-right: 0 !important;
+  }
+
+  .search_filter {
+    display: block;
+
+    @include rem(margin-bottom, 10px);
+  }
+
+  .control-label {
+    font-weight: normal;
+    line-height: 1.25;
+    color: rgba(#3f4d60, .6);
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    z-index: 1002;
+
+    @include rem(top, 15px);
+    @include rem(left, 18px);
+    @include rem(font-size, 16px);
+  }
+
+  .form_selectpicker {
+    .dropdown-menu {
+      margin-top: 5px;
+    }
+  }
+}
+
+.form_selectpicker {
+  .btn.dropdown-toggle {
+    color: $secondary !important;
+    background-color: $white !important;
+    position: relative;
+    z-index: 1001;
+
+    @include transform(none)
+  }
+
+  &--category {
+    .btn.dropdown-toggle {
+      @include rem(padding-left, 96px)
+    }
+  }
+
+  &--status {
+    .btn.dropdown-toggle {
+      @include rem(padding-left, 75px)
+    }
+  }
+
+  &--type {
+    .btn.dropdown-toggle {
+      @include rem(padding-left, 66px)
+    }
+  }
+}
+
+.bar_selected {
+  width: 945px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background-color: #ffffff;
+  box-shadow: 0 8px 50px 0 rgba(63, 77, 96, 0.4), 0 5px 5px 0 rgba(63, 77, 96, 0.05);
+
+  @include rem(padding, 30px);
+  @include rem(bottom, 30px);
+  @include rem(border-radius, 8px);
+
+  h5 {
+    margin-bottom: 0;
+
+    @include rem(padding, 9px 0);
+  }
+
+  .control-label {
+    line-height: 1.5;
+    color: rgba($secondary, .8);
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    margin-bottom: 0;
+
+    @include rem(font-size, 16px);
+    @include rem(padding, 4px 0);
+    @include rem(margin-right, 10px);
+  }
+
+  .form-control {
+    width: 145px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .btn-group {
+    margin-bottom: 0;
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    .form_selectpicker, .form-control, .control-label {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 15px 15px;
+    border-radius: 0;
+    bottom: 0;
+    width: 100%;
+
+    h5 {
+      padding-top: 0;
+    }
+
+    .row {
+      margin-left: -5px;
+      margin-right: -5px;
+
+      > div {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    .text-right {
+      text-align: left !important;
+    }
+
+    .control-label {
+      display: block;
+      margin-bottom: 0;
+    }
+
+    .form-control {
+      width: 100%;
+    }
+  }
+}
+
+.profile_controls {
+  .svg_icon {
+    @include rem(margin-top, -3px);
   }
 }

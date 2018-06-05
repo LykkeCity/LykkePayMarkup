@@ -360,6 +360,8 @@ ol.list_styled {
     }
 
     td, th {
+      color: $secondary;
+
       @include rem(padding, 12px 20px 12px 0);
 
       a {
@@ -376,10 +378,30 @@ ol.list_styled {
     }
   }
 
+  ._checkbox {
+    width: 10px;
+    min-width: 0;
+    vertical-align: top;
+
+    @include rem(padding-right, 16px);
+
+    .control-label {
+      @include rem(padding, 15px);
+    }
+  }
+
   ._title {
     display: block;
+    color: #333;
 
     @include rem(margin-bottom, 4px);
+
+    span {
+      font-weight: $fw-light;
+
+      @include rem(margin-left, 3px);
+      @include rem(font-size, 17px);
+    }
   }
 
   ._hint {
@@ -388,9 +410,26 @@ ol.list_styled {
     @include rem(font-size, 16px);
   }
 
+  ._status_text {
+    @include rem(font-size, 16px);
+  }
+
   ._action {
     padding-right: 0;
     text-align: right;
+
+    .icon--warning_icn {
+      @include rem(font-size, 28px);
+
+      .path1:before {
+        color: #ff3e2e;
+      }
+
+      .path2:before,
+      .path3:before {
+        color: #fff;
+      }
+    }
 
     .btn {
       .icon {
@@ -659,4 +698,10 @@ ol.list_styled {
 
 .header_actions {
   min-width: 0;
+}
+
+._table_checkbox {
+  td:hover {
+    cursor: pointer;
+  }
 }
