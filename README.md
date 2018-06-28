@@ -62,3 +62,5 @@ Inbox no invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no
 [//]: # (No search results http://localhost:9006/profile_no_search_results.html)
 
 [//]: # (404 http://localhost:9006/404.html)
+
+[//]: # (Inbox Invoices list http://localhost:9006/profile_inbox.html)

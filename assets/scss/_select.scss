@@ -90,6 +90,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed;
 }
+.open.dropdown-menu {
+  z-index: 1003;
+}
 .open > .dropdown-menu {
   display: block;
 }
