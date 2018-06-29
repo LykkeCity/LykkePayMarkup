@@ -32,12 +32,13 @@
 @import 'partials/spinner';
 @import 'partials/page_tab';
 @import 'pages/pay';
-@import 'pages/invoice';
 @import 'lists';
 @import 'form';
 @import 'pie_loader';
 @import 'select';
 @import 'modal';
+//specific styles should be after common
+@import 'pages/invoice';
 
 .svg_icon_fill {
   fill: $black;

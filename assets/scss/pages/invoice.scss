@@ -488,6 +488,12 @@
     }
   }
 
+  &--period {
+    .btn.dropdown-toggle {
+      @include rem(padding-left, 60px)
+    }
+  }
+
   &--status {
     .btn.dropdown-toggle {
       @include rem(padding-left, 75px)
