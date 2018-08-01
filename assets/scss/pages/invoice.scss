@@ -151,20 +151,23 @@
     vertical-align: middle;
     top: -1px;
 
-    .btn-group .btn {
-      padding-right: 20px;
-    }
+    .bootstrap-select {
+      .dropdown-toggle {
+        padding-right: 20px;
 
-    .bootstrap-select.btn-group .dropdown-toggle .caret {
-      border: none;
-      width: 20px;
-      height: 20px;
-      display: block;
-      position: absolute;
-      background-image: url(../img/select-cur.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      top: 3px;
+        .caret {
+          border: none;
+          width: 20px;
+          height: 100%;
+          display: block;
+          position: absolute;
+          background-image: url(../img/select-cur.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          top: -1px;
+          right: 0;
+      }
+      }
     }
   }
 
