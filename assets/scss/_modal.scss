@@ -5,20 +5,20 @@
     top: 7%;
     width: 470px;
     max-width: 100%;
-    z-index: 114;
+    z-index: 9999999;
     left: 0;
     right: 0;
     margin: auto;
     box-shadow: $box-shadow-modal;
     border-radius: 8px;
     opacity: 0;
-    
+
     @include rem(padding, 40px 40px 40px);
     @include css3-prefix('transition', $all);
 
     @media all and (max-width: $screen-mobile) {
         width: auto;
-        margin: 10px;        
+        margin: 10px;
     }
 
     &--open {
@@ -29,8 +29,8 @@
 
     &__title {
         color: $black;
-        font-weight: $fw-bold; 
-        font-family: $ff-alt; 
+        font-weight: $fw-bold;
+        font-family: $ff-alt;
 
         @include rem(font-size, 30px);
         @include rem(margin-bottom, 30px);
@@ -38,7 +38,7 @@
 
     &__text {
         color: $text;
-        
+
         @include rem(font-size, 18px);
         @include rem(margin-bottom, 47px);
     }
@@ -50,4 +50,12 @@
             width: auto;
         }
     }
+}
+
+.menu_overlay {
+  z-index: 99999;
+}
+
+.sidebar_menu {
+  z-index: 999999;
 }

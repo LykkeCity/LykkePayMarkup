@@ -660,6 +660,43 @@ tbody.collapse.in {
       width: 20.5%
     }
   }
+
+  &--two_cols {
+    .sidebar_summary__list {
+      display: table;
+      line-height: 1.67;
+      letter-spacing: normal;
+      color: #333333;
+
+      @include rem(font-size, 18px);
+    }
+
+    .sidebar_summary__row {
+      display: table-row;
+    }
+
+    .sidebar_summary__td {
+      float: none;
+      display: table-cell;
+      vertical-align: middle;
+      border-bottom: 1px solid #EBEDEF;
+
+      @include rem(padding, 9px 0);
+
+      &--first {
+        @include rem(padding-right, 10px);
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    &--two_cols {
+      .sidebar_summary__list {
+        table-layout: fixed;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .alert_modal {

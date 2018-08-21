@@ -1,6 +1,9 @@
 extends includes/layout.pug
 
 block content
+  include includes/_payments_sidebar.html
   include includes/profile-content.pug
+  include includes/_modal_info.html
 block page scripts
   include includes/profile-script.html
+  include includes/modal-script.html

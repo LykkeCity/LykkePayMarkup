@@ -338,9 +338,19 @@ function openSummaryInvoice() {
     $('._summary_invoice_btn').on('click', function (e) {
       e.preventDefault();
       e.stopPropagation();
-  
+
       $('body').addClass('body--menu_opened');
       $('._summary_invoice_sidebar').addClass('sidebar_menu--open')
+    })
+  }
+
+function openPaymentsInfo() {
+    $('._payments_summary_btn').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      $('body').addClass('body--menu_opened');
+      $('._payments_sidebar').addClass('sidebar_menu--open')
     })
   }
 
@@ -403,5 +413,6 @@ $(document).ready(function() {
     pie();
     openCreateInvoice();
     openSummaryInvoice();
+    openPaymentsInfo();
 });
 
