@@ -47,8 +47,9 @@
 
   &__data {
     line-height: 1.5;
+    color: #657180;
 
-    color: rgba($secondary, .8);
+    @include rem(font-size, 22px);
   }
 
   .invoice_info__qr {
@@ -442,8 +443,6 @@
 }
 
 .invoice_filters {
-  @include rem(padding, 20px 0);
-
   .btn .icon {
     margin-right: 0 !important;
   }
@@ -493,7 +492,7 @@
 
   &--period {
     .btn.dropdown-toggle {
-      @include rem(padding-left, 60px)
+      @include rem(padding-left, 78px)
     }
   }
 
@@ -599,5 +598,133 @@
 .profile_controls {
   .svg_icon {
     @include rem(margin-top, -3px);
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.invoice_actions {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  width: 140px;
+
+  &__qr {
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    border-radius: $border-radius;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px #e6e8ea;
+
+    @include rem(margin-bottom, 20px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px 0 rgba(101, 113, 128, 0.2), 0 2px 4px 0 rgba(140, 148, 160, 0.15);
+
+    .invoice_controls {
+      float: none;
+
+      &__btn {
+        float: none;
+        width: 100%;
+        display: block;
+        font-weight: $fw-semi;
+        letter-spacing: 1.5px;
+        text-align: center;
+        color: #111111;
+        text-transform: uppercase;
+
+        @include rem(font-size, 13px);
+        @include rem(padding, 20px !important);
+
+        .icon {
+          display: block;
+
+          @include rem(margin, 0 0 8px 0 !important);
+
+          &--pay {
+            @include rem(font-size, 22px !important);
+            @include rem(margin, 0 0 10px 0 !important);
+          }
+        }
+
+        &._delete_draft_invoice {
+          color: #ff3e2e !important;
+
+          .icon {
+            color: #ff3e2e;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    position: relative;
+    right: auto;
+    width: 100%;
+    overflow: hidden;
+
+    &__qr {
+      float: right;
+
+      @include rem (margin-left, 20px);
+    }
+
+    &__menu {
+      overflow: hidden;
+      box-shadow: none;
+
+      @include rem (margin-top, 20px);
+
+      .invoice_controls {
+        &__btn {
+          display: inline-block;
+          width: auto;
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &__menu {
+      margin-top: 0;
+
+      .invoice_controls {
+        &__btn {
+          padding: 10px !important;
+          text-align: left;
+
+          .icon {
+            display: inline-block;
+            margin-bottom: 0 !important;
+            margin-right: 5px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    margin-bottom: 20px;
+
+    &__menu {
+      .invoice_controls {
+        &__btn {
+          display: block;
+        }
+      }
+    }
   }
 }

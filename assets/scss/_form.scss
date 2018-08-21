@@ -10,7 +10,7 @@
   line-height: 1.56;
   letter-spacing: normal;
   text-align: left;
-  color: $black;
+  color: #333333;
 
   @include rem(font-size, 16px);
 }
@@ -30,6 +30,18 @@
 .input-group {
   .form-control {
     @include rem(padding-right, 50px);
+  }
+}
+
+.checkbox__label,
+.checkbox label {
+  color: #333333 !important;
+
+  @include rem(padding-top, 2px);
+  @include rem(padding-left, 35px);
+
+  .hint {
+    @include rem(margin-top, 2px);
   }
 }
 

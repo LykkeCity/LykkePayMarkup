@@ -3,12 +3,15 @@
     <div class="container">
       <div class="relative hidden-xs hidden-sm">
         <a href="#" onclick="history.back()" class="btn_back">
-          <img src="img/back_icn.svg" width="30" height="12" alt="back">
+          <i class="icon icon--back_arrow"></i>
+          Back
         </a>
       </div>
-      <div class="row">
-        <div class="col-md-8 automargin">
-          <div class="invoice_page">
+
+      <div class="invoice_page">
+
+        <div class="row">
+          <div class="col-md-8 automargin">
             <div class="invoice_header">
               <div class="row">
                 <div class="col-md-8">
@@ -20,30 +23,47 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="invoice_info__qr">
-                    <img src="img/qr.png" alt="qr" width="130" height="130">
-                  </div>
-                </div>
               </div>
 
               <div class="invoice_header__desc">
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="invoice_header__data">Thursday, November 3, 2016 3:50:24 PM</div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="invoice_controls">
-                      <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
-                        <i class="btn__svg_icon svg_icon svg_icon--delete svg_icon--margin"></i>
-                        Delete
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                <div class="invoice_header__data">Thursday, November 3, 2016 3:50:24 PM</div>
               </div>
             </div>
+          </div>
+        </div>
 
+        <div class="invoice_actions">
+          <div class="invoice_actions__qr">
+            <img src="img/qr.png" alt="qr" width="120">
+          </div>
+          <div class="invoice_actions__menu">
+            <div class="invoice_controls">
+              <button class="btn btn--flat btn--default invoice_controls__btn">
+                <i class="icon icon--pay"></i>
+                Settlement
+              </button>
+              <button class="btn btn--flat btn--default invoice_controls__btn" type="button">
+                <i class="icon icon--send"></i>
+                Refund
+              </button>
+              <button class="btn btn--flat btn--default invoice_controls__btn" type="button">
+                <i class="icon icon--exchange"></i>
+                Refresh
+              </button>
+              <button class="btn btn--flat btn--default invoice_controls__btn" type="button">
+                <i class="icon icon--share"></i>
+                Share
+              </button>
+              <button class="btn btn--flat btn--default invoice_controls__btn _delete_draft_invoice" type="button">
+                <i class="icon icon--delete"></i>
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8 automargin">
             <div class="asset_link_list asset_link_list--thin">
               <div class="row">
                 <div class="col-md-6">
@@ -321,9 +341,9 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
+
     </div>
   </section>
 </article>

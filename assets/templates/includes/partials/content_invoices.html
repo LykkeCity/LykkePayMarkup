@@ -1,7 +1,7 @@
 <div class="invoices">
   <div class="row">
     <div class="col-sm-6">
-      <h3>Invoices</h3>
+      <h3>Payments</h3>
     </div>
     <div class="col-sm-6 clearfix">
       <div class="invoice_controls">
@@ -11,13 +11,14 @@
         </button>
         <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
           <i class="btn__svg_icon svg_icon svg_icon--download svg_icon--margin"></i>
-          XLSX file
+          CSV file
         </button>
       </div>
     </div>
   </div>
 
   <div class="invoice_nav">
+    <!--
     <button class="invoice_nav__search btn btn--icon _show_search_block">
       <i class="icon icon--search"></i>
     </button>
@@ -75,8 +76,59 @@
       </div>
       <button class="invoice_tabs__arrow invoice_tabs__arrow--right _invoice_tabs__arrow--right"></button>
     </div>
+    -->
+
+    <!-- TODO -->
+    <div class="invoice_filters">
+      <form>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="form_selectpicker form_selectpicker--period form-group">
+              <label for="select1" class="control-label">Period:</label>
+              <select id="select1" class="selectpicker" data-size="10">
+                <option>This month</option>
+                <option>This year</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form_selectpicker form_selectpicker--type form-group">
+              <label for="select2" class="control-label">Type:</label>
+              <select id="select2" class="selectpicker" data-size="10">
+                <option>All</option>
+                <option>Draft</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form_selectpicker form_selectpicker--status form-group">
+              <label for="select3" class="control-label">Status:</label>
+              <select id="select3" class="selectpicker" data-size="10">
+                <option>All</option>
+                <option>Paid</option>
+                <option>Unpaid</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="search_filter">
+              <div class="input-search input-search--index">
+                <button class="btn btn--icon">
+                  <i class="icon icon--search"></i>
+                </button>
+                <input type="text" class="form-control form-control--search" placeholder="Search">
+                <button class="btn btn--icon">
+                  <i class="icon icon--cancel_round"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 
+  <!--
   <div class="search_filter">
     <form>
       <div class="row">
@@ -107,6 +159,7 @@
       </div>
     </form>
   </div>
+  -->
 
   <div class="table-responsive">
     <table class="table table_invoices">
@@ -142,8 +195,8 @@
       </tr>
       <tr>
         <td class="_number">
-          <span class="_title">#4974732</span>
-          <span class="_hint">15 Nov 2017</span>
+          <div class="_title">#4974732 <span class="label label--rounded label--gray">API</span></div>
+          <div class="_hint">15 Nov 2017</div>
         </td>
         <td class="_client">
           <span class="_title">Verizon Communications</span>

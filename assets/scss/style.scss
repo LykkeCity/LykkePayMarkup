@@ -1,32 +1,32 @@
-@import "../../node_modules/LykkeFramework/assets/scss/style-minimal.scss";
-@import "../../node_modules/LykkeFramework/assets/scss/style-necessaries.scss";
+@import "../../node_modules/lykkeframework/assets/scss/style-minimal.scss";
+@import "../../node_modules/lykkeframework/assets/scss/style-necessaries.scss";
 
 // vendors
-@import "../../node_modules/LykkeFramework/assets/scss/vendor/bootstrap-datetimepicker";
-@import "../../node_modules/LykkeFramework/assets/scss/vendor/bootstrap-select";
+@import "../../node_modules/lykkeframework/assets/scss/vendor/bootstrap-datetimepicker";
+@import "../../node_modules/lykkeframework/assets/scss/vendor/bootstrap-select";
 
 // elements
-@import '../../node_modules/LykkeFramework/assets/scss/partials/table';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/list';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/links';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/labels';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/user';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/modal';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/nav';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/calendar';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/message';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/footer';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/lists';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/markets';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/nav';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/subscribe';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/support';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/apps';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/assets';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/status_icon';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/alert';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/tooltip';
-@import '../../node_modules/LykkeFramework/assets/scss/partials/spinner';
+@import '../../node_modules/lykkeframework/assets/scss/partials/table';
+@import '../../node_modules/lykkeframework/assets/scss/partials/list';
+@import '../../node_modules/lykkeframework/assets/scss/partials/links';
+@import '../../node_modules/lykkeframework/assets/scss/partials/labels';
+@import '../../node_modules/lykkeframework/assets/scss/partials/user';
+@import '../../node_modules/lykkeframework/assets/scss/partials/modal';
+@import '../../node_modules/lykkeframework/assets/scss/partials/nav';
+@import '../../node_modules/lykkeframework/assets/scss/partials/calendar';
+@import '../../node_modules/lykkeframework/assets/scss/partials/message';
+@import '../../node_modules/lykkeframework/assets/scss/partials/blocks/footer';
+@import '../../node_modules/lykkeframework/assets/scss/partials/blocks/lists';
+@import '../../node_modules/lykkeframework/assets/scss/partials/blocks/markets';
+@import '../../node_modules/lykkeframework/assets/scss/partials/blocks/nav';
+@import '../../node_modules/lykkeframework/assets/scss/partials/blocks/subscribe';
+@import '../../node_modules/lykkeframework/assets/scss/partials/blocks/support';
+@import '../../node_modules/lykkeframework/assets/scss/partials/blocks/apps';
+@import '../../node_modules/lykkeframework/assets/scss/partials/assets';
+@import '../../node_modules/lykkeframework/assets/scss/partials/status_icon';
+@import '../../node_modules/lykkeframework/assets/scss/partials/alert';
+@import '../../node_modules/lykkeframework/assets/scss/partials/tooltip';
+@import '../../node_modules/lykkeframework/assets/scss/partials/spinner';
 
 // optional
 @import 'partials/spinner';
@@ -62,6 +62,10 @@
   }
 
   &--help {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -1px;
     background-image: url(../img/help.svg);
   }
 
@@ -302,7 +306,7 @@ tbody.collapse.in {
   @include rem(padding-bottom, 77px);
 
   &__img-container {
-    @include rem(margin-bottom, 33px);
+    @include rem(margin-bottom, 30px);
   }
 
   &__title {
@@ -311,7 +315,7 @@ tbody.collapse.in {
     font-weight: $fw-bold;
 
     @include rem(font-size, 30px);
-    @include rem(margin-bottom, 34px);
+    @include rem(margin-bottom, 28px);
   }
 
   &__description {
@@ -322,7 +326,7 @@ tbody.collapse.in {
 }
 
 .profile_info {
-  @include rem(margin-bottom, 59px);
+  @include rem(margin-bottom, 58px);
 
   &__header {
     color: $black;
@@ -331,6 +335,13 @@ tbody.collapse.in {
 
     @include rem(font-size, 26px);
     @include rem(margin-bottom, 5px);
+  }
+
+  &__link {
+    font-weight: $fw-semi;
+
+    @include rem(font-size, 18px);
+    @include rem(margin, 10px 0 25px);
   }
 
   &__header_help {
@@ -407,18 +418,29 @@ tbody.collapse.in {
   }
 
   &__status_name {
-    width: 40%;
+    width: 44%;
     float: left;
     color: #a1a1a1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 
-    @include rem(padding-right, 30px);
+    @include rem(padding-right, 8px);
+
+    .btn.btn--icon {
+      @include rem(margin, -5px);
+
+      .icon {
+        color: #b2b8bf;
+        margin: 0;
+
+        @include rem(font-size, 24px);
+      }
+    }
   }
 
   &__status_value {
-    width: 60%;
+    width: 56%;
     float: left;
     color: $text;
     white-space: nowrap;
@@ -442,13 +464,17 @@ tbody.collapse.in {
   }
 }
 
+.invoices h3 {
+  margin: 0;
+
+  @include rem(padding, 10px 0)
+}
+
 .invoice_nav {
   position: relative;
-  border-bottom: 1px solid $border-alt;
 
-  @include rem(padding-left, 45px);
-  @include rem(margin-top, 35px);
-  @include rem(margin-bottom, 28px);
+  @include rem(margin-top, 20px);
+  @include rem(margin-bottom, 12px);
 
   &__search {
     position: absolute;
@@ -671,4 +697,30 @@ tbody.collapse.in {
 
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
   width: 100%;
+}
+
+.label {
+  letter-spacing: 1px;
+  font-family: $ff;
+
+  .page__title & {
+    vertical-align: top;
+    position: relative;
+
+    @include rem(top, 18px !important);
+  }
+
+  &--rounded {
+    &.label--gray {
+      color: #8c94a0;
+      background-color: #ebedef;
+      font-weight: $fw-semi !important;
+      position: relative;
+      top: -1px;
+
+      @include rem(font-size, 13px !important);
+      @include rem(padding-left, 15px !important);
+      @include rem(padding-right, 15px !important);
+    }
+  }
 }

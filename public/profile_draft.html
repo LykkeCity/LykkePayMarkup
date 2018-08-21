@@ -268,6 +268,16 @@
           <!--<div class="hint">No file selected</div>-->
         </div>
 
+        <div class="form-group">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox13" id="checkbox13" class="checkbox__control">
+            <label for="checkbox13" class="control-label checkbox__label">
+            Shield from volatility
+            <span class="hint">Today's recommend volatility shield is N%</span>
+          </label>
+          </div>
+        </div>
+
         <div class="sidebar_menu__footer">
           <div class="form-group">
             <button class="btn btn-block" type="button">Generate</button>
@@ -294,45 +304,46 @@
                 </div>
                 <div class="profile_controls">
                   <button class="btn _create_invoice_btn">
-            <i class="btn__svg_icon svg_icon svg_icon--add svg_icon--margin"></i>
+            <i class="icon icon--add"></i>
             New invoice
           </button>
-                  <button class="settlement_btn btn btn--flat">
-            <i class="btn__svg_icon svg_icon svg_icon--settlement svg_icon--margin"></i>Settlement
-          </button>
+                  <!--
+            <button class="settlement_btn btn btn--flat">
+              <i class="btn__svg_icon svg_icon svg_icon--settlement svg_icon--margin"></i>Settlement
+            </button>
+          -->
                 </div>
               </div>
             </div>
             <div class="col-md-7 col-sm-7">
               <div class="profile_summary">
                 <div class="profile_info__header">
-                  Summary
+                  Received 23,500 CHF
                   <button class="profile_info__header_help _summary_invoice_btn">
             <i class="btn__svg_icon svg_icon svg_icon--help"></i>
           </button>
                 </div>
+                <div class="profile_info__link">
+                  <a href="">Volatility shield</a>
+                </div>
                 <div class="profile_summary__list clearfix">
                   <div class="profile_summary__left">
                     <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Paid</div>
+                      <div class="profile_summary__status_name">Settled <a href="#" class="btn btn--icon"><i class="icon icon--help_outline"></i></a></div>
                       <div class="profile_summary__status_value">10,235,843.09 CHF</div>
                     </div>
                     <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Unpaid</div>
+                      <div class="profile_summary__status_name">Commission</div>
                       <div class="profile_summary__status_value">2,35,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Overdue</div>
-                      <div class="profile_summary__status_value">0.00 CHF</div>
                     </div>
                   </div>
                   <div class="profile_summary__right">
                     <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Underpaid</div>
+                      <div class="profile_summary__status_name">Unresolved <a href="#" class="btn btn--icon"><i class="icon icon--help_outline"></i></a></div>
                       <div class="profile_summary__status_value">10,235,843.09 CHF</div>
                     </div>
                     <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Overpaid</div>
+                      <div class="profile_summary__status_name">Refunded <a href="#" class="btn btn--icon"><i class="icon icon--help_outline"></i></a></div>
                       <div class="profile_summary__status_value">10,235,843.09 CHF</div>
                     </div>
                   </div>
@@ -344,7 +355,7 @@
         <div class="invoices">
           <div class="row">
             <div class="col-sm-6">
-              <h3>Invoices</h3>
+              <h3>Payments</h3>
             </div>
             <div class="col-sm-6 clearfix">
               <div class="invoice_controls">
@@ -354,102 +365,155 @@
         </button>
                 <button class="invoice_controls__btn btn btn--flat btn--default btn-sm pull-left" type="button">
           <i class="btn__svg_icon svg_icon svg_icon--download svg_icon--margin"></i>
-          XLSX file
+          CSV file
         </button>
               </div>
             </div>
           </div>
 
           <div class="invoice_nav">
-            <button class="invoice_nav__search btn btn--icon _show_search_block">
+            <!--
+    <button class="invoice_nav__search btn btn--icon _show_search_block">
       <i class="icon icon--search"></i>
     </button>
-            <div class="invoice_tabs">
-              <button class="invoice_tabs__arrow invoice_tabs__arrow--left _invoice_tabs__arrow--left"></button>
-              <div class="invoice_tabs__carousel _invoice_tabs_carousel owl-carousel">
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab invoice_tabs__tab--active" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
-                </div>
-                <div class="invoice_tabs__item">
-                  <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
-                </div>
-              </div>
-              <button class="invoice_tabs__arrow invoice_tabs__arrow--right _invoice_tabs__arrow--right"></button>
-            </div>
-          </div>
+    <div class="invoice_tabs">
+      <button class="invoice_tabs__arrow invoice_tabs__arrow--left _invoice_tabs__arrow--left"></button>
+      <div class="invoice_tabs__carousel _invoice_tabs_carousel owl-carousel">
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab invoice_tabs__tab--active" href="#all">All &middot; 32</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#all">All &middot; 32</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#paid">Paid &middot; 9</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#unpaid">Unpaid &middot; 21</a>
+        </div>
+        <div class="invoice_tabs__item">
+          <a class="invoice_tabs__tab" href="#draft">Draft &middot; 2</a>
+        </div>
+      </div>
+      <button class="invoice_tabs__arrow invoice_tabs__arrow--right _invoice_tabs__arrow--right"></button>
+    </div>
+    -->
 
-          <div class="search_filter">
-            <form>
-              <div class="row">
-                <div class="col-xs-6 col-sm-3">
-                  <div class="form-group">
-                    <div class="form_selectpicker">
-                      <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="">
-                <option value="BTC" selected>In the past month</option>
-                <option value="USD">In the past month</option>
+            <!-- TODO -->
+            <div class="invoice_filters">
+              <form>
+                <div class="row">
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form_selectpicker form_selectpicker--period form-group">
+                      <label for="select1" class="control-label">Period:</label>
+                      <select id="select1" class="selectpicker" data-size="10">
+                <option>This month</option>
+                <option>This year</option>
               </select>
                     </div>
                   </div>
-                </div>
-                <div class="col-xs-9 col-sm-8">
-                  <div class="input-search input-search--index">
-                    <button class="btn btn--icon">
-              <i class="icon icon--search"></i>
-            </button>
-                    <input type="text" class="form-control form-control--search" placeholder="Asset or address...">
-                    <button class="btn btn--icon">
-              <i class="icon icon--cancel_round"></i>
-            </button>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form_selectpicker form_selectpicker--type form-group">
+                      <label for="select2" class="control-label">Type:</label>
+                      <select id="select2" class="selectpicker" data-size="10">
+                <option>All</option>
+                <option>Draft</option>
+              </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form_selectpicker form_selectpicker--status form-group">
+                      <label for="select3" class="control-label">Status:</label>
+                      <select id="select3" class="selectpicker" data-size="10">
+                <option>All</option>
+                <option>Paid</option>
+                <option>Unpaid</option>
+              </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="search_filter">
+                      <div class="input-search input-search--index">
+                        <button class="btn btn--icon">
+                  <i class="icon icon--search"></i>
+                </button>
+                        <input type="text" class="form-control form-control--search" placeholder="Search">
+                        <button class="btn btn--icon">
+                  <i class="icon icon--cancel_round"></i>
+                </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-xs-3 col-sm-1">
-                  <button type="button" class="btn btn--link _hide_search_block">Cancel</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
+
+          <!--
+  <div class="search_filter">
+    <form>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">
+          <div class="form-group">
+            <div class="form_selectpicker">
+              <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="">
+                <option value="BTC" selected>In the past month</option>
+                <option value="USD">In the past month</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-9 col-sm-8">
+          <div class="input-search input-search--index">
+            <button class="btn btn--icon">
+              <i class="icon icon--search"></i>
+            </button>
+            <input type="text" class="form-control form-control--search" placeholder="Asset or address...">
+            <button class="btn btn--icon">
+              <i class="icon icon--cancel_round"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-1">
+          <button type="button" class="btn btn--link _hide_search_block">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  -->
 
           <div class="table-responsive">
             <table class="table table_invoices">
@@ -485,8 +549,8 @@
               </tr>
               <tr>
                 <td class="_number">
-                  <span class="_title">#4974732</span>
-                  <span class="_hint">15 Nov 2017</span>
+                  <div class="_title">#4974732 <span class="label label--rounded label--gray">API</span></div>
+                  <div class="_hint">15 Nov 2017</div>
                 </td>
                 <td class="_client">
                   <span class="_title">Verizon Communications</span>
