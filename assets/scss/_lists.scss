@@ -191,6 +191,30 @@
     }
   }
 
+  &--simple {
+    .asset_link__icon {
+      width: auto;
+      color: #0388ef;
+
+      @include rem(margin-right, 5px);
+
+      .icon {
+        @include rem(font-size, 30px);
+      }
+    }
+
+    .asset_link__info {
+      @include rem(padding-top, 3px);
+    }
+
+    .asset_link__title {
+      margin-bottom: 0;
+      color: #0388ef;
+
+      @include rem(font-size, 18px);
+    }
+  }
+
   @media all and (max-width: $screen-mobile) {
     &__action {
       right: 0;

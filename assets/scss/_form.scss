@@ -373,6 +373,13 @@
   }
 }
 
+.submit-group {
+  .btn {
+    width: 165px;
+    max-width: 100%;
+  }
+}
+
 .form_register {
   @include rem(margin, 50px 0);
 

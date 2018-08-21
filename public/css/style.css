@@ -2916,6 +2916,14 @@ ol.list_styled li:before { content: counter(step-counter); background-color: #33
 
 .asset_link--alt .asset_link__desc { margin-left: 0; }
 
+.asset_link--simple .asset_link__icon { width: auto; color: #0388ef; margin-right: 5px; margin-right: 0.3125rem; }
+
+.asset_link--simple .asset_link__icon .icon { font-size: 30px; font-size: 1.875rem; }
+
+.asset_link--simple .asset_link__info { padding-top: 3px; padding-top: 0.1875rem; }
+
+.asset_link--simple .asset_link__title { margin-bottom: 0; color: #0388ef; font-size: 18px; font-size: 1.125rem; }
+
 @media all and (max-width: 543px) { .asset_link__action { right: 0; } }
 
 .asset_link_list--thin .asset_link { padding: 14px 0; padding: 0.875rem 0; }
@@ -3080,6 +3088,8 @@ ol.list_styled li:before { content: counter(step-counter); background-color: #33
 .input-group-addon.left { right: auto; left: 5px; left: 0.3125rem; }
 
 .input-group-addon.left + .form-control { padding-left: 50px; padding-left: 3.125rem; }
+
+.submit-group .btn { width: 165px; max-width: 100%; }
 
 .form_register { margin: 50px 0; margin: 3.125rem 0; }
 
