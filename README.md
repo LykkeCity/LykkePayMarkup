@@ -21,6 +21,7 @@ No search results| https://lykkecity.github.io/LykkePayMarkup/public/profile_no_
 Inbox Invoices list | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox.html
 Inbox no search results | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results_inbox.html
 Inbox no invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices_inbox.html
+Volatility | https://lykkecity.github.io/LykkePayMarkup/public/volatility.html
 
 ### Development guide
 
