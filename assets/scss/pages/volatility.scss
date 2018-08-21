@@ -1,0 +1,53 @@
+.volatility_page {
+  .page__title {
+    @include rem(margin-bottom, 60px);
+  }
+
+  .profile_info__header {
+    @include rem(margin-bottom, 24px);
+  }
+
+  .profile_summary {
+    &__list {
+      @include rem(margin-bottom, 60px);
+    }
+
+    &__item {
+      overflow: hidden;
+      line-height: 1.94;
+      color: #333333;
+
+      @include rem(font-size, 22px);
+    }
+
+    &__status_name {
+      color: #333333;
+    }
+
+    &__status_value {
+      width: 20%;
+      float: right;
+      text-align: right;
+    }
+  }
+
+  &__search {
+    @include rem(margin-bottom, 62px);
+
+    h2 {
+      font-weight: $fw-semi;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+      color: #111111;
+
+      @include rem(font-size, 40px);
+      @include rem(margin-bottom, 20px);
+
+      .btn {
+        .icon {
+          @include rem(font-size, 24px !important);
+        }
+      }
+    }
+  }
+}
