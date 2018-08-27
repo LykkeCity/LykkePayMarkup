@@ -506,10 +506,9 @@ ol.list_styled {
     background-color: #fff;
     z-index: 1005;
     max-width: 100%;
-    display: none;
 
     @include rem(width, 550px);
-    @include transform(translate(0,0));
+    @include transform(translate(100%,0));
 
     h3 {
       font-family: $ff;
@@ -520,7 +519,7 @@ ol.list_styled {
     }
 
     &.sidebar_menu--open {
-      display: block;
+      @include transform(translate(0,0));
     }
 
     .sidebar_menu__header {
