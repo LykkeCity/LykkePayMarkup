@@ -1,0 +1,262 @@
+<div class="invoices">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Inbox Invoices</h3>
+    </div>
+  </div>
+
+  <div class="invoice_nav">
+    <div class="invoice_filters">
+      <form>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="form_selectpicker form_selectpicker--period form-group">
+              <label for="select1" class="control-label">Period:</label>
+              <select id="select1" class="selectpicker" data-size="10">
+                <option>This month</option>
+                <option>This year</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form_selectpicker form_selectpicker--type form-group">
+              <label for="select2" class="control-label">Type:</label>
+              <select id="select2" class="selectpicker" data-size="10">
+                <option>All</option>
+                <option>Draft</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="form_selectpicker form_selectpicker--status form-group">
+              <label for="select3" class="control-label">Status:</label>
+              <select id="select3" class="selectpicker" data-size="10">
+                <option>All</option>
+                <option>Paid</option>
+                <option>Unpaid</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="search_filter">
+              <div class="input-search input-search--index">
+                <button class="btn btn--icon">
+                  <i class="icon icon--search"></i>
+                </button>
+                <input type="text" class="form-control form-control--search" placeholder="Search">
+                <button class="btn btn--icon">
+                  <i class="icon icon--cancel_round"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table_invoices _table_checkbox">
+      <tr>
+        <th class="_number" colspan="2">Invoice number, date</th>
+        <th class="_client">Client</th>
+        <th class="_amount">Amount</th>
+        <th class="_currency">Currency</th>
+        <th class="_status">Status</th>
+        <th class="_pay">Pay due date</th>
+        <th class="_action"></th>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox12" class="checkbox__control" checked>
+            <label for="checkbox12" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732</span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--gray">Draft</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action">
+          <div class="_status_text text--red" data-target="#msg" data-toggle="modal">
+            <i class="icon--warning_icn">
+              <span class="path1"><span class="path2"><span class="path3"></span></span></span>
+            </i>
+            Disput
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox13" class="checkbox__control" checked>
+            <label for="checkbox13" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732</span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--yellow">Unpaid</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action"></td>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox14" class="checkbox__control" disabled>
+            <label for="checkbox14" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732</span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--blue">InProgress</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action"></td>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox15" class="checkbox__control">
+            <label for="checkbox15" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732</span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--green">Paid</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action"></td>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox16" class="checkbox__control" checked>
+            <label for="checkbox16" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732</span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--red">Error</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action"></td>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox17" class="checkbox__control">
+            <label for="checkbox17" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732</span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--violet">Underpaid</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action"></td>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox18" class="checkbox__control" checked>
+            <label for="checkbox18" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732 <span>API</span></span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--violet">Overpaid</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action"></td>
+      </tr>
+      <tr>
+        <td class="_checkbox">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox19" class="checkbox__control">
+            <label for="checkbox19" class="control-label checkbox__label"></label>
+          </div>
+        </td>
+        <td class="_number">
+          <span class="_title">#4974732</span>
+          <span class="_hint">15 Nov 2017</span>
+        </td>
+        <td class="_client">
+          <span class="_title">Verizon Communications</span>
+          <span class="_hint">info@verizon.com</span>
+        </td>
+        <td class="_amount">1,324.92</td>
+        <td class="_currency">CHF</td>
+        <td class="_status">
+          <span class="label label--dark">Refunded</span>
+        </td>
+        <td class="_pay">15 Nov 2017</td>
+        <td class="_action"></td>
+      </tr>
+    </table>
+  </div>
+</div>

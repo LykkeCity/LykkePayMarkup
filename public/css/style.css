@@ -2606,7 +2606,7 @@ select.bs-select-hidden, select.selectpicker { display: none !important; }
 
 .spinner--small { height: 16px; width: 16px; }
 
-.page_tab { border-bottom: 1px solid #ebedef; text-align: center; padding: 20px 0; }
+.page_tab__wrapper { border-bottom: 1px solid #ebedef; text-align: center; padding: 20px 0; }
 
 .page_tab__item { font-weight: 600; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: 1.5px; color: #8c94a0; text-transform: uppercase; display: inline-block; vertical-align: middle; font-size: 13px; font-size: 0.8125rem; }
 

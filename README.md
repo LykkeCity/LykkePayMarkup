@@ -55,8 +55,8 @@ Summary | https://lykkecity.github.io/LykkePayMarkup/public/profile_summary.html
 Desctiption | Link
 ----------- | ----
 Inbox Invoices list | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox.html
-Inbox no search results | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results_inbox.html
-Inbox no invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices_inbox.html
+Inbox no search results | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox_no_search_results.html
+Inbox no invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox_no_invoices.html
 
 
 ### Development guide

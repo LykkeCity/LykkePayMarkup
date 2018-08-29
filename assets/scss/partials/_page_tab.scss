@@ -1,7 +1,9 @@
 .page_tab {
-  border-bottom: 1px solid #ebedef;
-  text-align: center;
-  padding: 20px 0;
+  &__wrapper {
+    border-bottom: 1px solid #ebedef;
+    text-align: center;
+    padding: 20px 0;
+  }
 
   &__item {
     font-weight: $fw-semi;

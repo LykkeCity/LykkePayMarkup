@@ -48,101 +48,45 @@
   <div class="header_container">
     <header class="header">
       <div class="container">
-        <div class="header__logo header_logo">
-          <a href="/">
-          <img class="header_logo__img" src="img/lykke_new.svg" height="36" alt="lykke_logo">
-        </a>
-        </div>
-        <div class="header__actions header_actions pull-right">
-          <div class="header_actions__services">
-            <button class="btn btn--icon _open_submenu" type="button">
-            <i class="icon icon--services"></i>
-            <span>Services</span>
-          </button>
-            <menu class="header_submenu submenu">
-              <div class="submenu_list">
-                <ul class="main_projects_list">
-                  <li class="main_projects_list__item">
-                    <a href="https://www.lykke.com/" target="_blank" class="main_projects_list__link">
-                      <div class="main_projects_list__img">
-                        <img src="img/services/lykke_wallet_icon.svg" alt="lykke_wallet_logo" width="40">
-                      </div>
-                      <div class="main_projects_list__content">
-                        <div class="main_projects_list__title">Lykke Wallet</div>
-                        <div class="main_projects_list__text">
-                          Trade FX and Digital Assets
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+        <div class="header_wrapper">
+          <div class="header__logo header_logo">
+            <a href="/">
+            <img class="header_logo__img" src="img/lykke_exchange_spot_logo.svg" height="36" alt="lykke_logo">
+            <div class="header_logo__title">Lykke Pay</div>
+          </a>
+          </div>
+          <div class="header__actions header_actions pull-right">
+            <div class="header_actions__login header_login">
 
-                  <li class="main_projects_list__item">
-                    <a href="https://streams.lykke.com/" target="_blank" class="main_projects_list__link">
-                      <div class="main_projects_list__img">
-                        <img src="img/services/streams_icon.svg" alt="streams_logo" width="40">
-                      </div>
-                      <div class="main_projects_list__content">
-                        <div class="main_projects_list__title">Lykke Streams</div>
-                        <div class="main_projects_list__text">
-                          Competition platform. Is helping the great ideas to meet the bright minds
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+              <div class="header_user dropdown__control">
+                <a href="login.html">
+                  <div class="header_login__title">Sign in</div>
 
-                  <li class="main_projects_list__item">
-                    <a href="https://blockchainexplorer.lykke.com/" target="_blank" class="main_projects_list__link">
-                      <div class="main_projects_list__img">
-                        <img src="img/services/blockchain_explorer_icon.svg" alt="bl_explorer_logo" width="40">
-                      </div>
-                      <div class="main_projects_list__content">
-                        <div class="main_projects_list__title">Blockchain Explorer</div>
-                        <div class="main_projects_list__text">
-                          Explore the Blockchain. Search transaction, assets, addresses or blocks
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-
-                <ul class="social">
-                  <li><a href="https://www.facebook.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--fb_simple"></i></a></li>
-                  <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--tw"></i></a></li>
-                  <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--instagram"></i></a></li>
-                  <li><a href="https://www.youtube.com/c/LykkeX" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--youtube"></i></a></li>
-                  <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--linkedin-icn"></i></a></li>
-                  <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--reddit"></i></a></li>
-                  <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--telegram"></i></a></li>
-                  <li><a href="https://t.me/LykkeDev" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--telegram_dev"></i></a></li>
-
-                </ul>
+                  <!--     <div class="header_user__img">
+                  <img src="img/user_default.svg" width="40" alt="user_image">
+                </div>-->
+                </a>
               </div>
 
-            </menu>
-          </div>
-          <div class="header_actions__login header_login">
-
-            <div class="header_user dropdown__control">
-              <a href="/Home/SignIn">
-                <!--<div class="header_login__title">Sign in</div>-->
-
-                <div class="header_user__img">
-                  <img src="img/user_default.svg" width="40" alt="user_image">
-                </div>
-              </a>
-            </div>
-
-            <div class="dropdown__container">
+              <!--        <div class="dropdown__container">
               <ul class="dropdown__nav">
                 <li><a href="/Home/LogOut">Sign Out</a></li>
               </ul>
-            </div>
+            </div>-->
 
-          </div>
-          <div class="header_actions__logout visible-xs">
-            <a href="/Home/LogOut" class="btn btn--icon btn_logout">
-            <i class="icon icon--exit"></i>
-          </a>
+            </div>
+            <div class="header_actions__signup header_signup">
+              <div class="header_user">
+                <a href="signup.html">
+                  <div class="header_login__title">Sign up</div>
+                </a>
+              </div>
+            </div>
+            <div class="header_actions__logout visible-xs">
+              <a href="/Home/LogOut" class="btn btn--icon btn_logout">
+              <i class="icon icon--exit"></i>
+            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -170,13 +114,131 @@
   </div>
   <div class="page_tab">
     <div class="container">
-      <div class="page_tab__item">
-        <a href="#">Payments</a>
-      </div>
-      <div class="page_tab__item page_tab__item--active">
-        <a href="#">Inbox Invoices</a>
+      <div class="page_tab__wrapper">
+        <div class="page_tab__item page_tab__item--active">
+          <a href="#">Payments</a>
+        </div>
+        <div class="page_tab__item">
+          <a href="#">Inbox Invoices</a>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="_payments_sidebar sidebar_menu sidebar_menu--right">
+    <form class="invoice_form sidebar_menu__inner">
+      <div class="sidebar_breadcrumbs">
+        <button class="btn btn--icon btn_close_menu visible-xs" type="button">
+        <i class="icon icon--close"></i>
+      </button>
+        <div class="breadcrumbs_item">
+          <a href="">Profile</a>
+        </div>
+        <i class="icon icon--chevron-thin-right"></i>
+        <div class="breadcrumbs_item breadcrumbs_item--current">Information</div>
+      </div>
+      <div class="sidebar_menu__body">
+        <div class="sidebar_menu__header">
+          <div class="invoice_form__title">Payments</div>
+          <div class="invoice_form__status">Overview</div>
+        </div>
+
+        <div class="sidebar_summary sidebar_summary--two_cols">
+          <div class="sidebar_summary__item">
+            <div class="sidebar_summary__header">Total</div>
+            <div class="sidebar_summary__list">
+              <div class="sidebar_summary__row sidebar_summary__row--header">
+                <div class="sidebar_summary__td sidebar_summary__td--first">State</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">Assets</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Expected in payout asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">120,000 USD / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Received in payout asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">300,000 USD / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Refunded in payout asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">50,000 USD / 0 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Paid out (in payout asset)</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">100,000 USD / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Unresolved (in payout asset)</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">150,000 / 0 PKT</div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar_summary__item">
+            <div class="sidebar_summary__header">Paid correctly</div>
+            <div class="sidebar_summary__list">
+              <div class="sidebar_summary__row sidebar_summary__row--header">
+                <div class="sidebar_summary__td sidebar_summary__td--first">State</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">Assets</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Expected in payout asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">23,847.09 USD / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Expected in payment asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3.5 BTC / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Received in payment asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3.5 BTC / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Paid out</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">12,000 USD / 1.5 BTC / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Unresolved</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">0 BTC / 0 PKT</div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar_summary__item">
+            <div class="sidebar_summary__header">Underpaid</div>
+            <div class="sidebar_summary__list">
+              <div class="sidebar_summary__row sidebar_summary__row--header">
+                <div class="sidebar_summary__td sidebar_summary__td--first">State</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">Assets</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Expected in payout asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">23,847.09 USD / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Expected in payment asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3.5 BTC / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Received in payment asset</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">3.5 BTC / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Paid out</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">12,000 USD / 1.5 BTC / 123 PKT</div>
+              </div>
+              <div class="sidebar_summary__row">
+                <div class="sidebar_summary__td sidebar_summary__td--first">Unresolved</div>
+                <div class="sidebar_summary__td sidebar_summary__td--third">0 BTC / 0 PKT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar_menu__footer">
+          <div class="form-group">
+            <button class="btn btn-block btn_close_menu" type="button">Close</button>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
   <article class="content">
     <section class="section section--padding">
@@ -196,40 +258,40 @@
                     <div class="form_selectpicker form_selectpicker--period form-group">
                       <label for="select1" class="control-label">Period:</label>
                       <select id="select1" class="selectpicker" data-size="10">
-                        <option>This month</option>
-                        <option>This year</option>
-                      </select>
+                <option>This month</option>
+                <option>This year</option>
+              </select>
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-3">
                     <div class="form_selectpicker form_selectpicker--type form-group">
                       <label for="select2" class="control-label">Type:</label>
                       <select id="select2" class="selectpicker" data-size="10">
-                        <option>All</option>
-                        <option>Draft</option>
-                      </select>
+                <option>All</option>
+                <option>Draft</option>
+              </select>
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-3">
                     <div class="form_selectpicker form_selectpicker--status form-group">
                       <label for="select3" class="control-label">Status:</label>
                       <select id="select3" class="selectpicker" data-size="10">
-                        <option>All</option>
-                        <option>Paid</option>
-                        <option>Unpaid</option>
-                      </select>
+                <option>All</option>
+                <option>Paid</option>
+                <option>Unpaid</option>
+              </select>
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-3">
                     <div class="search_filter">
                       <div class="input-search input-search--index">
                         <button class="btn btn--icon">
-                          <i class="icon icon--search"></i>
-                        </button>
+                  <i class="icon icon--search"></i>
+                </button>
                         <input type="text" class="form-control form-control--search" placeholder="Search">
                         <button class="btn btn--icon">
-                          <i class="icon icon--cancel_round"></i>
-                        </button>
+                  <i class="icon icon--cancel_round"></i>
+                </button>
                       </div>
                     </div>
                   </div>
@@ -273,9 +335,8 @@
                 <td class="_action">
                   <div class="_status_text text--red" data-target="#msg" data-toggle="modal">
                     <i class="icon--warning_icn">
-                      <span class="path1"><span class="path2"><span class="path3"></span></span></span>
-                    </i>
-                    Disput
+              <span class="path1"><span class="path2"><span class="path3"></span></span></span>
+            </i> Disput
                   </div>
                 </td>
               </tr>
@@ -443,44 +504,56 @@
             </table>
           </div>
         </div>
+        <div class="bar_selected">
+          <div class="row">
+            <div class="col-sm-3 col-md-4">
+              <h5>Select <span class="_invoices_count">0</span> invoices</h5>
+            </div>
+            <div class="col-xs-4 col-sm-5 col-md-4  text-right">
+              <label for="amount" class="control-label">Total amount</label>
+              <input type="text" id="amount" class="form-control" value="1,500">
+            </div>
+            <div class="col-xs-4 col-sm-2">
+              <label class="control-label visible-xs">&nbsp;</label>
+              <div class="form_selectpicker">
+                <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="Asset name">
+          <option value="USD" selected>USD</option>
+          <option value="CHF">CHF</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="LKK">LKK</option>
+          <option value="LKK1Y">LKK1Y</option>
+          <option value="LKK2Y">LKK2Y</option>
+          <option value="BTC">BTC</option>
+          <option value="LTC">LTC</option>
+          <option value="ETH">ETH</option>
+          <option value="AE">AE</option>
+        </select>
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+              <label class="control-label visible-xs">&nbsp;</label>
+              <button class="btn brn--primary btn-block" type="button" disabled>Pay</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </article>
-
-  <div class="bar_selected">
-    <div class="row">
-      <div class="col-sm-3 col-md-4">
-        <h5>Select <span class="_invoices_count">0</span> invoices</h5>
-      </div>
-      <div class="col-xs-4 col-sm-5 col-md-4  text-right">
-        <label for="amount" class="control-label">Total amount</label>
-        <input type="text" id="amount" class="form-control" value="1,500">
-      </div>
-      <div class="col-xs-4 col-sm-2">
-        <label class="control-label visible-xs">&nbsp;</label>
-        <div class="form_selectpicker">
-          <select class="selectpicker" data-size="10" data-live-search="true" data-live-search-placeholder="Asset name">
-            <option value="USD" selected>USD</option>
-            <option value="CHF">CHF</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="LKK">LKK</option>
-            <option value="LKK1Y">LKK1Y</option>
-            <option value="LKK2Y">LKK2Y</option>
-            <option value="BTC">BTC</option>
-            <option value="LTC">LTC</option>
-            <option value="ETH">ETH</option>
-            <option value="AE">AE</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-xs-4 col-sm-2">
-        <label class="control-label visible-xs">&nbsp;</label>
-        <button class="btn brn--primary btn-block" type="button" disabled>Pay</button>
+  <div class="modal_dialog modal_dialog_info">
+    <div class="modal_dialog__title">
+      Settled
+    </div>
+    <div class="modal_dialog__text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="modal_dialog__controls">
+      <div class="pull-right">
+        <button class="btn modal_dialog__cancel _modal_dialog__cancel">Close</button>
       </div>
     </div>
   </div>
-
   <footer class="footer">
     <div class="footer__top">
       <div class="container">
@@ -592,37 +665,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-  <div class="modal alert_modal fade" id="msg" tabindex="-1" role="dialog">
-    <div class="modal_valign">
-      <div class="modal_valign__row">
-        <div class="modal_valign__cell">
-
-          <div class="modal__dialog" role="document">
-            <div class="modal__content">
-              <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-              <div class="modal__body">
-                <h3>Please write your comment</h3>
-                <textarea class="form-control"></textarea>
-              </div>
-              <div class="modal__footer text-right">
-                  <button class="btn btn--flat" data-dismiss="modal" type="button">Cancel</button>
-                  <button class="btn btn--primary" data-dismiss="modal" type="button">Send</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/vendor/bootstrap-select.min.js"></script>
@@ -646,22 +688,35 @@
 
       $('._show_search_block').on('click', showSearch);
       $('._hide_search_block').on('click', hideSearch);
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.menu_overlay').on('click', function() {
+        $('.modal_dialog').removeClass('modal_dialog--open');
+      });
 
-      $('._table_checkbox td:not("._action")').on('click', function () {
-        var isChecked = $(this).parent().find('input:checkbox').prop("checked"),
-        isDisabled = $(this).parent().find('input:checkbox').attr('disabled')
+      $('.modal_dialog__cancel').on('click', function() {
+        $('.menu_overlay').trigger('click');
+      });
 
-        if (!isDisabled) {
-          if (isChecked === false) {
-            isChecked = true;
-            $(this).parent().find('input:checkbox').prop('checked', isChecked);
-          }
-          else {
-            isChecked = false;
-            $(this).parent().find('input:checkbox').prop('checked', isChecked);
-          }
-        }
-      })
+      $('._delete_draft_invoice').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('body').addClass('body--menu_opened');
+        $('.modal_dialog').addClass('modal_dialog--open');
+      });
+
+      $('._open_modal_info').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('body').addClass('body--menu_opened');
+        $('.modal_dialog_info').addClass('modal_dialog--open');
+      });
+
+      $('._delete_draft_invoice').trigger('click');
     });
   </script>
 </body>
