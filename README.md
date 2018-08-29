@@ -58,6 +58,12 @@ Inbox Invoices list | https://lykkecity.github.io/LykkePayMarkup/public/profile_
 Inbox no search results | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox_no_search_results.html
 Inbox no invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox_no_invoices.html
 
+### Emails
+Desctiption | Link
+----------- | ----
+Invoice | https://lykkecity.github.io/LykkePayMarkup/email/invoice.html
+Invoice received | https://lykkecity.github.io/LykkePayMarkup/email/invoice_received.html
+
 
 ### Development guide
 
