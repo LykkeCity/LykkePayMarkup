@@ -3,16 +3,29 @@
 }
 
 .control-label {
-  font-size: 16px;
-  font-weight: $fw-bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: $fw-semi;
   line-height: 1.56;
-  letter-spacing: normal;
   text-align: left;
-  color: #333333;
+  color: $black;
 
+  @include rem(margin-bottom, 7px);
   @include rem(font-size, 16px);
+
+  a {
+    font-weight: $fw-semi;
+  }
+
+  .btn.btn--icon {
+    color: $primary;
+
+    .icon {
+      color: $primary;
+      margin-right: 0;
+
+      @include rem(font-size, 24px);
+      @include rem(margin, 0 -3px);
+    }
+  }
 }
 
 .hint {
@@ -25,6 +38,10 @@
   &--error {
     color: #ff3e2e !important;
   }
+}
+
+.form-control {
+  color: $text;
 }
 
 .input-group {
@@ -255,20 +272,38 @@
   }
 }
 
+.radio__control:checked ~ .form-control.radio__label {
+  box-shadow: inset 0 0 0 2px $primary !important;
+}
+
 .form-control {
   &.radio__label {
-    @include rem(height, 60px);
-    @include rem(padding, 18px 18px 18px 55px);
+    text-align: center;
+    height: auto;
+    color: $black;
+    font-weight: $fw-semi;
+    border: 0 !important;
+    box-shadow: inset 0 0 0 1px #CFD2D7 !important;
+
+    @include rem(padding, 30px 22px);
 
     &:after,
     &:before {
-      @include rem(left, 20px);
-      @include rem(top, 18px);
+      content: '';
+      display: none;
     }
 
     &:after {
       @include rem(left, 27px);
       @include rem(top, 25px);
+    }
+
+    .icon {
+      display: block;
+      margin-right: 0;
+
+      @include rem(font-size, 30px);
+      @include rem(margin-bottom, 5px);
     }
   }
 
@@ -359,6 +394,8 @@
   @include transform(translate(0, -50%));
 
   &.icon, .icon {
+    color: $black;
+
     @include rem(font-size, 24px);
   }
 
@@ -375,20 +412,35 @@
 
 .submit-group {
   .btn {
-    width: 165px;
     max-width: 100%;
   }
 }
 
-.form_register {
-  @include rem(margin, 50px 0);
-
+.form_register, .form_signup {
   .form-group {
-    @include rem(margin-bottom, 20px);
+    @include rem(margin-bottom, 30px);
+
+    &--inline {
+      @include rem(margin-top, -5px);
+    }
+
+    p {
+      @include rem(font-size, 16px);
+      @include rem(margin-top, 12px);
+
+      a {
+        font-weight: $fw-semi;
+      }
+    }
   }
 
   .submit-group {
-    @include rem(margin-top, 30px);
+    @include rem(margin-top, 60px);
+
+    .btn {
+      min-width: 135px;
+      max-width: 100%;
+    }
   }
 
   .input-group {
@@ -415,15 +467,19 @@
   .btn {
     &--flat {
       border-radius: 0;
-      padding: 0 !important;
+      padding: 3px 0 !important;
 
-      @include rem(margin, 15px 0 0);
+      @include rem(font-size, 16px);
     }
   }
 
   @media all and (max-width: $screen-tablet) {
     @include rem(margin-bottom, 100px);
   }
+}
+
+.form_signup {
+
 }
 
 .input-group {
@@ -440,6 +496,25 @@
       @include rem(width, 2px);
       @include rem(top, 8px);
       @include rem(bottom, 8px);
+    }
+  }
+
+  &--success {
+    &:before {
+      content: '';
+      border-radius: 100px;
+      position: absolute;
+      background-color: $green;
+      left: 0;
+
+      @include rem(width, 2px);
+      @include rem(top, 8px);
+      @include rem(bottom, 8px);
+    }
+
+    .input-group-addon {
+      color: $green;
+      cursor: default !important;
     }
   }
 
@@ -693,5 +768,42 @@ input[type="number"] {
   .dropdown-menu > .active > a:hover,
   .dropdown-menu > .active > a:focus {
     color: #3f4d60;
+  }
+}
+
+.checkboxes_group {
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+
+    > div {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.form_title {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  @include rem(margin-bottom, 60px);
+
+  h2 {
+    @include rem(margin-bottom, 15px);
+  }
+
+  p {
+    @include rem(margin-bottom, -15px);
+  }
+}
+
+.btn {
+  &--primary {
+    &[disabled] {
+      color: #8c94a0 !important;
+      background-color: #f7f8f9 !important;
+    }
   }
 }

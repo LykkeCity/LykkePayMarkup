@@ -113,138 +113,57 @@
     </header>
   </div>
   <article class="content">
-    <section class="section section--padding">
+    <section class="section section--lead">
       <div class="container">
         <div class="row">
-          <div class="col-sm-9 col-md-6 automargin">
-            <div class="invoice_header text-center">
-              <h1 class="page__title">Invoice #4974732</h1>
-              <div class="invoice_header__subtitle">by Budweiser Stag Brewing Company</div>
-            </div>
+          <div class="col-md-6 automargin">
+            <form class="form form_register">
+              <div class="form_title">
+                <h2>Welcome back</h2>
+              </div>
 
-            <div class="alert alert--green" role="alert">
-              <table>
-                <tr>
-                  <td>
-                    <span class="label label--text label--white">Paid</span>
-                  </td>
-                  <td class="text-right">
-                    <i class="icon icon--check_circle hidden-xs"></i> Invoice has been paid
-                    <span class="hidden-xs"> on 15.05.2016</span>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="alert alert--red" role="alert">
-              <table>
-                <tr>
-                  <td>
-                    <span class="label label--text label--white">Error</span>
-                  </td>
-                  <td class="text-right">
-                    <i class="icon--warning_icn hidden-xs">
-                    <span class="path1"><span class="path2"><span class="path3"></span></span></span>
-                  </i> 0.18446902 BTC received
-                    <span class="hidden-xs"> on 15.05.2016</span>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="alert alert--violet" role="alert">
-              <table>
-                <tr>
-                  <td>
-                    <span class="label label--text label--white">Underpaid</span>
-                  </td>
-                  <td class="text-right">
-                    <i class="icon--remove_circle hidden-xs"></i> 0.18446902 BTC received
-                    <span class="hidden-xs"> on 15.05.2016</span>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="alert alert--violet" role="alert">
-              <table>
-                <tr>
-                  <td>
-                    <span class="label label--text label--white">Overpaid</span>
-                  </td>
-                  <td class="text-right">
-                    <i class="icon--add_circle hidden-xs"></i> 0.18446902 BTC received
-                    <span class="hidden-xs"> on 15.05.2016</span>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="alert alert--dark" role="alert">
-              <table>
-                <tr>
-                  <td>
-                    <span class="label label--text label--white">Refund</span>
-                  </td>
-                  <td class="text-right">
-                    <i class="icon--refund hidden-xs"></i> 0.18446902 BTC received
-                    <span class="hidden-xs"> on 15.05.2016</span>
-                  </td>
-                </tr>
-              </table>
-            </div>
+              <div class="form-group">
+                <label for="email" class="control-label">Email address</label>
+                <div class="input-group">
+                  <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="control-label">Password</label>
 
-            <div class="asset_link_list">
-              <div class="asset_link">
-                <div class="asset_link__info">
-                  <div class="asset_link__title">For payment</div>
-                  <div class="asset_link__desc">0.18446902 BTC</div>
+                <div class="input-group ">
+                  <!--.input-group--error-->
+                  <input type="password" id="password" class="form-control">
+                  <!-- TODO toggle icon classes and input type, show icon if input has value-->
+                  <i class="icon icon--show input-group-addon"></i>
+                  <!--<i class="icon icon--hide input-group-addon"></i>-->
                 </div>
+                <!-- <div class="hint hint--error">The username or password you entered is incorrect</div> -->
               </div>
-              <div class="asset_link">
-                <div class="asset_link__info">
-                  <div class="asset_link__title">Exchange rate</div>
-                  <div class="asset_link__desc">1 BTC = 15 000 USD</div>
-                </div>
-              </div>
-              <div class="asset_link">
-                <div class="asset_link__info">
-                  <div class="asset_link__title">Original</div>
-                  <div class="asset_link__desc">1,500 USD</div>
-                </div>
-              </div>
-              <div class="asset_link">
-                <div class="asset_link__info">
-                  <div class="asset_link__title">Pay Due Date</div>
-                  <div class="asset_link__desc">Thursday, November 3, 2016 3:50:24 PM</div>
-                </div>
-              </div>
-              <div class="asset_link">
-                <div class="asset_link__info">
-                  <div class="asset_link__title">Note</div>
-                  <div class="asset_link__desc">Invoice #4974732 will be paid within 24 hours (or faster)</div>
-                </div>
-              </div>
-            </div>
 
-            <h4>Files</h4>
-            <div class="asset_link_list">
-              <div class="asset_link asset_link--alt">
-                <div class="asset_link__icon">
-                  <div class="asset_icon asset_icon--red">PDF</div>
-                </div>
-                <div class="asset_link__action">
-                  <button class="btn btn--icon _delete_asset">
-                  <i class="btn__svg_icon svg_icon svg_icon--upload"></i>
-                </button>
-                </div>
-                <div class="asset_link__info">
-                  <div class="asset_link__title">BAS Rechnung Sponsoring…- Sheet1.pdf</div>
-                  <div class="asset_link__desc">57KB</div>
+              <div class="form-group form-group--inline">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="checkbox">
+                      <input type="checkbox" name="checkbox1" id="checkbox12" class="checkbox__control" checked>
+                      <label for="checkbox12" class="control-label checkbox__label">Remember me</label>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <a href="change_password.html" class="btn btn--flat">Forgot password?</a>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="submit-group">
+                <button class="btn btn--primary" type="submit">Sign in</button>
+              </div>
+            </form>
 
           </div>
         </div>
       </div>
     </section>
+
   </article>
   <footer class="footer">
     <div class="footer__top">

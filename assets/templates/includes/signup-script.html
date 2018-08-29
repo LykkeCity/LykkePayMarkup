@@ -1,0 +1,15 @@
+<script>
+  $('input[name=type]').off('change');
+  $('input[name=type]').on('change', function (e) {
+    e.preventDefault();
+
+    var typeId = $(this).val();
+
+    if (typeId === 'Business') {
+      $('.show_business').removeClass('hide')
+    }
+    else {
+      $('.show_business').addClass('hide').find('input').val('')
+    }
+  });
+</script>

@@ -1,0 +1,103 @@
+<article class="content">
+  <section class="section section--lead">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 automargin">
+          <form class="form form_signup">
+            <div class="form_title">
+              <h2>Create your account</h2>
+            </div>
+
+            <div class="checkboxes_group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <div class="radio btn-block">
+                      <input type="radio" name="type" id="radio" class="radio__control" value="Personal" checked>
+                      <label for="radio" class="form-control control-label radio__label">
+                        <i class="icon icon--user"></i>
+                        Personal account
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <div class="radio btn-block">
+                      <input type="radio" name="type" id="radio1" class="radio__control" value="Business" >
+                      <label for="radio1" class="form-control control-label radio__label">
+                        <i class="icon icon--wallet"></i>
+                        Business account
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="show_business hide">
+              <div class="form-group">
+                <label for="org" class="control-label">Organization name</label>
+                <div class="input-group">
+                  <input type="text" id="org" class="form-control">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="fname" class="control-label">First name</label>
+                  <div class="input-group">
+                    <input type="text" id="fname" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="lname" class="control-label">Last name</label>
+                  <div class="input-group">
+                    <input type="text" id="lname" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="control-label">Email address</label>
+              <div class="input-group">
+                <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">Password <a href="#" class="btn btn--icon"><i class="icon icon--info"></i></a></label>
+
+              <div class="input-group "><!--.input-group--error-->
+                <input type="password" id="password" class="form-control">
+                <!-- TODO toggle icon classes and input type, show icon if input has value-->
+                <i class="icon icon--show input-group-addon"></i>
+                <!--<i class="icon icon--hide input-group-addon"></i>-->
+              </div>
+              <!-- <div class="hint hint--error">The username or password you entered is incorrect</div> -->
+            </div>
+
+            <div class="form-group form-group--inline">
+              <div class="checkbox">
+                <input type="checkbox" name="checkbox1" id="checkbox12" class="checkbox__control" checked>
+                <label for="checkbox12" class="control-label checkbox__label">
+                  I agree with
+                  <a href="">Terms of Use</a> and
+                  <a href="">Privacy Policy</a>
+                </label>
+              </div>
+            </div>
+            <div class="submit-group">
+              <button class="btn btn--primary" type="submit">Create account</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</article>

@@ -192,8 +192,79 @@ tbody.collapse.in {
 }
 
 .header {
-  border-bottom: 1px solid $border-alt;
   z-index: 1005;
+  border-bottom: 0;
+  padding: 0;
+}
+
+.header_wrapper {
+  border-bottom: 1px solid $border-alt;
+
+  @include rem(padding, 20px 0);
+}
+
+.header_actions {
+  min-width: 0;
+
+  @include rem(margin-top, 4px);
+
+  &__login {
+    @include rem(margin-left, 20px);
+  }
+
+  &__signup {
+    @extend .header_actions__login;
+
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.header_logo {
+  @include rem(margin-top, 0);
+
+  img {
+    @include rem(margin-right, 7px);
+    @include rem(height, 50px);
+  }
+
+  &__title {
+    position: relative;
+
+    @include rem(top, 1px);
+    @include rem(font-size, 28px);
+  }
+
+  &--big {
+    @include rem(padding, 4px 0);
+
+    img {
+      @include rem(height, 90px);
+      @include rem(margin-right, 14px);
+    }
+
+    .header_logo__title {
+      line-height: 1.43;
+      letter-spacing: -0.9px;
+      color: $black;
+
+      @include rem(font-size, 50px);
+      @include rem(top, 4px);
+    }
+  }
+}
+
+@media (max-width: 543px) {
+  .header__logo {
+    width: 33px;
+  }
+}
+
+.header_user__img + .header_login__title {
+  overflow: hidden;
+
+  @include rem(margin-left, 55px);
 }
 
 .error_page {
@@ -761,4 +832,15 @@ tbody.collapse.in {
       @include rem(padding-right, 15px !important);
     }
   }
+}
+
+@media (min-width: 1200px) { .container { max-width: 1240px; } }
+
+.section__subtitle {
+  line-height: 1.33;
+  color: #657180;
+
+  @include rem(font-size, 30px);
+  @include rem(margin-top, 5px);
+  @include rem(margin-bottom, 65px);
 }

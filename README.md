@@ -1,27 +1,63 @@
 ## DEMO Pages:
 
+### Welcome page
 Desctiption | Link
 ----------- | ----
-Auth        | https://lykkecity.github.io/LykkePayMarkup/public/
+Home        | https://lykkecity.github.io/LykkePayMarkup/public/
+
+
+### Manage account
+Desctiption | Link
+----------- | ----
+Login | https://lykkecity.github.io/LykkePayMarkup/public/login.html
+Sign up | https://lykkecity.github.io/LykkePayMarkup/public/signup.html
+Verify e-mail | https://lykkecity.github.io/LykkePayMarkup/public/verify_email.html
+Change password | https://lykkecity.github.io/LykkePayMarkup/public/change_password.html
+
+
+### Checkout
+Desctiption | Link
+----------- | ----
 Checkout    | https://lykkecity.github.io/LykkePayMarkup/public/invoice.html
 Checkout - Detecting | https://lykkecity.github.io/LykkePayMarkup/public/invoice_detecting.html
 Checkout - Statuses | https://lykkecity.github.io/LykkePayMarkup/public/invoice_statuses.html
+
+
+### Main
+Desctiption | Link
+----------- | ----
+Invoices list <br>with statistic | https://lykkecity.github.io/LykkePayMarkup/public/profile.html
+No invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
+No search results| https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results.html
+404 | https://lykkecity.github.io/LykkePayMarkup/public/404.html
+Volatility | https://lykkecity.github.io/LykkePayMarkup/public/volatility.html
+
+
+### Details
+Desctiption | Link
+----------- | ----
 Details - Draft | https://lykkecity.github.io/LykkePayMarkup/public/invoice_draft.html
 Details - Unpaid | https://lykkecity.github.io/LykkePayMarkup/public/invoice_unpaid.html
 Details - Paid | https://lykkecity.github.io/LykkePayMarkup/public/invoice_paid.html
 Details - Error | https://lykkecity.github.io/LykkePayMarkup/public/invoice_paid_error.html
 Modal example | https://lykkecity.github.io/LykkePayMarkup/public/modal.html
-Invoices list <br>with statistic | https://lykkecity.github.io/LykkePayMarkup/public/profile.html
+
+
+### Create
+Desctiption | Link
+----------- | ----
 New invoice sidebar | https://lykkecity.github.io/LykkePayMarkup/public/profile_draft.html
 Generated invoice sidebar | https://lykkecity.github.io/LykkePayMarkup/public/profile_fill.html
 Summary | https://lykkecity.github.io/LykkePayMarkup/public/profile_summary.html
-No invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
-No search results| https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results.html
-404 | https://lykkecity.github.io/LykkePayMarkup/public/404.html
+
+
+### Inbox
+Desctiption | Link
+----------- | ----
 Inbox Invoices list | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox.html
 Inbox no search results | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results_inbox.html
 Inbox no invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices_inbox.html
-Volatility | https://lykkecity.github.io/LykkePayMarkup/public/volatility.html
+
 
 ### Development guide
 
