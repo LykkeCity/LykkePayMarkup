@@ -1,11 +1,13 @@
 ## DEMO Pages:
 
 ### Welcome page
+Desctiption | Link
 ----------- | ----
 Home        | https://lykkecity.github.io/LykkePayMarkup/public/
 
 
 ### Manage account
+Desctiption | Link
 ----------- | ----
 Login | https://lykkecity.github.io/LykkePayMarkup/public/login.html
 Sign up | https://lykkecity.github.io/LykkePayMarkup/public/signup.html
@@ -14,6 +16,7 @@ Change password | https://lykkecity.github.io/LykkePayMarkup/public/change_passw
 
 
 ### Checkout
+Desctiption | Link
 ----------- | ----
 Checkout    | https://lykkecity.github.io/LykkePayMarkup/public/invoice.html
 Checkout - Detecting | https://lykkecity.github.io/LykkePayMarkup/public/invoice_detecting.html
@@ -21,6 +24,7 @@ Checkout - Statuses | https://lykkecity.github.io/LykkePayMarkup/public/invoice_
 
 
 ### Main
+Desctiption | Link
 ----------- | ----
 Invoices list <br>with statistic | https://lykkecity.github.io/LykkePayMarkup/public/profile.html
 No invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
@@ -30,6 +34,7 @@ Volatility | https://lykkecity.github.io/LykkePayMarkup/public/volatility.html
 
 
 ### Details
+Desctiption | Link
 ----------- | ----
 Details - Draft | https://lykkecity.github.io/LykkePayMarkup/public/invoice_draft.html
 Details - Unpaid | https://lykkecity.github.io/LykkePayMarkup/public/invoice_unpaid.html
@@ -39,6 +44,7 @@ Modal example | https://lykkecity.github.io/LykkePayMarkup/public/modal.html
 
 
 ### Create
+Desctiption | Link
 ----------- | ----
 New invoice sidebar | https://lykkecity.github.io/LykkePayMarkup/public/profile_draft.html
 Generated invoice sidebar | https://lykkecity.github.io/LykkePayMarkup/public/profile_fill.html
@@ -46,6 +52,7 @@ Summary | https://lykkecity.github.io/LykkePayMarkup/public/profile_summary.html
 
 
 ### Inbox
+Desctiption | Link
 ----------- | ----
 Inbox Invoices list | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox.html
 Inbox no search results | https://lykkecity.github.io/LykkePayMarkup/public/profile_inbox_no_search_results.html
