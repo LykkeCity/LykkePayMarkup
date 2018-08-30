@@ -834,7 +834,10 @@ tbody.collapse.in {
   }
 }
 
-@media (min-width: 1200px) { .container { max-width: 1240px; } }
+@media (min-width: 1200px) {
+  .container { max-width: 1240px; }
+  .header .container, .header_nav .container, .site_nav .container { max-width: 1130px; }
+}
 
 .section__subtitle {
   line-height: 1.33;
