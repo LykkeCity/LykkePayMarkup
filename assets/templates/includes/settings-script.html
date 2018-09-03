@@ -1,0 +1,14 @@
+<script src="js/vendor/clipboard.min.js"></script>
+<script>
+  var clipboard = new Clipboard('._copy', {
+    text: function(trigger) {
+      return trigger.previousElementSibling.value;
+    }
+  });
+
+  clipboard.on('success', function(e) {
+    e.trigger.classList.remove('icon--copy');
+    e.trigger.classList.add('icon--check_thin');
+    e.clearSelection();
+  });
+</script>

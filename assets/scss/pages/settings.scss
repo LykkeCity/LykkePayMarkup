@@ -1,0 +1,61 @@
+.page_settings {
+  .page__title {
+    @include rem(margin-bottom, 74px);
+  }
+
+  h3 {
+    @include rem(margin-bottom, 40px);
+    @include rem(margin-top, 54px);
+
+    + p {
+      max-width: 530px;
+
+      @include rem(margin-top, -28px);
+      @include rem(margin-bottom, 35px);
+    }
+  }
+
+  .form-group {
+    @include rem(margin-bottom, 27px);
+  }
+
+  .btn--flat {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include rem(font-size, 16px);
+
+    &.btn--red {
+      @include rem(margin-top, -28px);
+    }
+  }
+
+  textarea {
+    height: 380px;
+  }
+
+  .input-group {
+    ~ .hint {
+      @include rem(margin-top, 15px);
+    }
+  }
+
+  .input-group-addon {
+    margin-top: 0;
+    transform: none;
+    cursor: pointer;
+
+    @include rem(top, 4px);
+  }
+
+  .hint {
+    margin-top: 0;
+
+    ~ .btn {
+      width: 180px;
+      max-width: 100%;
+
+      @include rem(margin-top, 20px);
+    }
+  }
+}

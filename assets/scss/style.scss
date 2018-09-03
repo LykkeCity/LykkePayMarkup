@@ -40,6 +40,7 @@
 //specific styles should be after common
 @import 'pages/invoice';
 @import 'pages/volatility';
+@import 'pages/settings';
 
 .svg_icon_fill {
   fill: $black;
@@ -119,6 +120,10 @@
     .svg_icon--copy {
       background-image: url(../img/copy-active.svg);
     }
+  }
+
+  &--flat.btn--red {
+    color: $red !important;
   }
 }
 .invoice_controls {

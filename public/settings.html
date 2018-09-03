@@ -149,71 +149,108 @@
     </nav>
   </div>
   <article class="content">
-    <section class="section section--padding">
+    <section class="section section--lead">
       <div class="container">
-        <div class="invoices">
-          <div class="row">
-            <div class="col-sm-6">
-              <h3>Inbox Invoices</h3>
-            </div>
-          </div>
+        <div class="row">
+          <div class="col-sm-9 col-md-6 automargin">
+            <div class="page_settings">
+              <h2 class="page__title">Leroy Cox</h2>
 
-          <div class="invoice_nav">
-            <div class="invoice_filters">
-              <form>
-                <div class="row">
-                  <div class="col-sm-6 col-md-3">
-                    <div class="form_selectpicker form_selectpicker--period form-group">
-                      <label for="select1" class="control-label">Period:</label>
-                      <select id="select1" class="selectpicker" data-size="10">
-                <option>This month</option>
-                <option>This year</option>
-              </select>
-                    </div>
+              <form action="">
+                <h3>Account</h3>
+                <div class="form-group">
+                  <label for="name" class="control-label">Full name</label>
+                  <div class="input-group">
+                    <input type="text" id="name" class="form-control" value="Leroy">
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="form_selectpicker form_selectpicker--type form-group">
-                      <label for="select2" class="control-label">Type:</label>
-                      <select id="select2" class="selectpicker" data-size="10">
-                <option>All</option>
-                <option>Draft</option>
-              </select>
-                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="control-label">Email address</label>
+                  <div class="input-group">
+                    <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="form_selectpicker form_selectpicker--status form-group">
-                      <label for="select3" class="control-label">Status:</label>
-                      <select id="select3" class="selectpicker" data-size="10">
-                <option>All</option>
-                <option>Paid</option>
-                <option>Unpaid</option>
-              </select>
-                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="control-label">Password</label>
+
+                  <div class="input-group ">
+                    <input type="password" id="password" class="form-control" value="23e8d23e" readonly>
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="search_filter">
-                      <div class="input-search input-search--index">
-                        <button class="btn btn--icon">
-                  <i class="icon icon--search"></i>
-                </button>
-                        <input type="text" class="form-control form-control--search" placeholder="Search">
-                        <button class="btn btn--icon">
-                  <i class="icon icon--cancel_round"></i>
-                </button>
-                      </div>
-                    </div>
+                  <a href="#" class="btn btn--flat">Change password</a>
+                </div>
+
+                <h3>Accounting asset</h3>
+                <p>The asset used to display total balance of all your paid and unpaid invoices.</p>
+
+                <div class="form-group">
+                  <label for="name" class="control-label">Asset</label>
+                  <div class="form_selectpicker form-group">
+                    <select id="select1" class="selectpicker" data-size="10">
+                    <option>USD</option>
+                    <option>EUR</option>
+                  </select>
                   </div>
+                </div>
+
+                <h3>API key</h3>
+                <div class="form-group">
+                  <label for="MerchantID" class="control-label">Merchant ID</label>
+                  <div class="input-group">
+                    <input type="text" id="MerchantID" class="form-control form-control--readonly" value="9d9bcca0-6cce-4462-9c06-8284103e31e0" readonly>
+                    <i class="icon icon--copy input-group-addon _copy"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="MerchantAPI" class="control-label">Merchant API key</label>
+                  <div class="input-group">
+                    <input type="text" id="MerchantAPI" class="form-control form-control--readonly" value="ByhCwTAWKHjcWCkAwanNr3eJb4VbTn" readonly>
+                    <i class="icon icon--copy input-group-addon _copy"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="MerchantSecret" class="control-label">Merchant Secret</label>
+                  <div class="input-group">
+                    <textarea type="text" id="MerchantSecret" class="form-control form-control--readonly" readonly>——BEGIN RSA PRIVATE KEY——
+MIlEow1BAAKCAQEA5bphXvyM2Qk3vcCm5Bcx3IwsOfHH7Eb7tc1Z6Q2pPhfMUzpEr8tgZgCoQintMvVIFQnLxQ8NN012bp8Dd10exEQo+Uem3ApJ0VhaAXurRFBIDJnUhGUsOpNEn4etlfseS120KKvERUyFbJQw18Ps+sCfPnREwFj+deJ5a2ALjz48nQBDDX1Bh0yR037mgEJtGw1KIDJOTZF7qsKDs6F0E1jccisHcsS49/1vW6b1-1WFXzfoG4vaHVRkHOICh09nzY9VPfYmYC702EPQaFdevlqinx8113X+UuX3z7evKELK37jRqdRNZtvY4v58ck225RHhMIxA0k86rRpSc871VyTwIDAQABAolBAQCLCAyLw6C6gjh+e5HSyJDLDHcquLHL6Tna8vc5wcvyxipl4RgmVZ9kXenR83+uhgCyiun1hhPApTUps3aX0pzRJ711khzHvaX9VBFpK/fDUTKpoLOiaiF3sDmR51s1ajU9c7mYG30ALj3p/cxW+zpkX590XwnyuJTsIrMNpuGpfW1Pwa2w6msqE10/92LIIhiHFBRxqQh1Wk1ZaSFoHYEs6mmk7FX1A94x1YOTDjWfqWMiPifvd7zpchHgnIVqrFrudO4G7D+n84cxB2U8swPOLruhSna+9JElzpnmWrvObsaQpX6OOLYVIDBV5vZeUkHKeEGnhtbRO3LIIRYqYfEfy1h+CgzgBzopCoP2EbjfDgDSy+f3K6134iMne+bKzwDuRI6AYXxV10bWIljYZ3RXmZHUhGsySMzX4No9yWRJdv4JYFe0R+8X1bYcOOXyaSC3DB68Wlez
+gV7A+wKBgHl/pMH1CIQLaW1e+OtLg3+/T42aXSRd4h7jKYUUDRC+611c/DvmbpoW
+y9640BoEbjzEuSO4ZYynZZ9eut5kIblE1X16d9GFMYrgaLVtafFExGGPQkP1nW61
+4RhB1m1M37Gs9MCrTGzjtwJc1S3zse7btiewKOZ2SqZ0FcqVvgKm
+ END RSA PRIVATE KEY
+                </textarea>
+                    <i class="icon icon--copy input-group-addon _copy"></i>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="MerchantSecret0" class="control-label">Merchant Secret</label>
+                  <div class="hint">Please be aware, we don’t store Merchant Secret on our servers. Every time you push ‘Generate new’, new key is generated, the previous key becomes obsolete.</div>
+                  <button class="btn btn--primary" type="button">Generate</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="MerchantSecret1" class="control-label">Merchant Secret</label>
+                  <div class="input-group">
+                    <textarea type="text" id="MerchantSecret1" class="form-control form-control--readonly" readonly>——BEGIN RSA PRIVATE KEY——
+MIlEow1BAAKCAQEA5bphXvyM2Qk3vcCm5Bcx3IwsOfHH7Eb7tc1Z6Q2pPhfMUzpEr8tgZgCoQintMvVIFQnLxQ8NN012bp8Dd10exEQo+Uem3ApJ0VhaAXurRFBIDJnUhGUsOpNEn4etlfseS120KKvERUyFbJQw18Ps+sCfPnREwFj+deJ5a2ALjz48nQBDDX1Bh0yR037mgEJtGw1KIDJOTZF7qsKDs6F0E1jccisHcsS49/1vW6b1-1WFXzfoG4vaHVRkHOICh09nzY9VPfYmYC702EPQaFdevlqinx8113X+UuX3z7evKELK37jRqdRNZtvY4v58ck225RHhMIxA0k86rRpSc871VyTwIDAQABAolBAQCLCAyLw6C6gjh+e5HSyJDLDHcquLHL6Tna8vc5wcvyxipl4RgmVZ9kXenR83+uhgCyiun1hhPApTUps3aX0pzRJ711khzHvaX9VBFpK/fDUTKpoLOiaiF3sDmR51s1ajU9c7mYG30ALj3p/cxW+zpkX590XwnyuJTsIrMNpuGpfW1Pwa2w6msqE10/92LIIhiHFBRxqQh1Wk1ZaSFoHYEs6mmk7FX1A94x1YOTDjWfqWMiPifvd7zpchHgnIVqrFrudO4G7D+n84cxB2U8swPOLruhSna+9JElzpnmWrvObsaQpX6OOLYVIDBV5vZeUkHKeEGnhtbRO3LIIRYqYfEfy1h+CgzgBzopCoP2EbjfDgDSy+f3K6134iMne+bKzwDuRI6AYXxV10bWIljYZ3RXmZHUhGsySMzX4No9yWRJdv4JYFe0R+8X1bYcOOXyaSC3DB68Wlez
+gV7A+wKBgHl/pMH1CIQLaW1e+OtLg3+/T42aXSRd4h7jKYUUDRC+611c/DvmbpoW
+y9640BoEbjzEuSO4ZYynZZ9eut5kIblE1X16d9GFMYrgaLVtafFExGGPQkP1nW61
+4RhB1m1M37Gs9MCrTGzjtwJc1S3zse7btiewKOZ2SqZ0FcqVvgKm
+ END RSA PRIVATE KEY
+                </textarea>
+                    <i class="icon icon--copy input-group-addon _copy"></i>
+                  </div>
+                  <div class="hint">Please be aware, we don’t store Merchant Secret on our servers. Every time you push ‘Generate new’, new key is generated, the previous key becomes obsolete.</div>
+                  <button class="btn btn--default" type="button">Re-generate</button>
+                </div>
+
+                <h3>Delete account</h3>
+                <p>Permanently delete your account and all of your content.</p>
+
+                <div class="btn btn--flat btn--red">
+                  <i class="icon icon--trash"></i> Delete your account
                 </div>
               </form>
             </div>
-          </div>
-
-          <div class="invoices__empty_result empty_result">
-            <div class="empty_result__img-container">
-              <img src="img/invoices-no-results.svg" />
-            </div>
-            <div class="empty_result__title">No search results</div>
-            <div class="empty_result__description">Sorry, we couldn't find any matches “356738”. Try using another keyword.</div>
           </div>
         </div>
       </div>
@@ -336,29 +373,18 @@
   <script src="js/vendor/owl.carousel.min.js"></script>
   <script src="js/vendor/fastclick.min.js"></script>
   <script src="js/functions.js"></script>
+  <script src="js/vendor/clipboard.min.js"></script>
   <script>
-    $(document).ready(function() {
-      var searchBlock = $('.search_filter'),
-        searchActiveClass = 'search_filter--show';
-
-      function showSearch(e) {
-        e.preventDefault();
-        searchBlock.toggleClass(searchActiveClass);
+    var clipboard = new Clipboard('._copy', {
+      text: function(trigger) {
+        return trigger.previousElementSibling.value;
       }
-
-      function hideSearch(e) {
-        e.preventDefault();
-        searchBlock.removeClass(searchActiveClass);
-      }
-
-      $('._show_search_block').on('click', showSearch);
-      $('._hide_search_block').on('click', hideSearch);
     });
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('._show_search_block').trigger('click');
-      $('.form-control--search').val('356738');
+
+    clipboard.on('success', function(e) {
+      e.trigger.classList.remove('icon--copy');
+      e.trigger.classList.add('icon--check_thin');
+      e.clearSelection();
     });
   </script>
 </body>
