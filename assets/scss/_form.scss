@@ -58,6 +58,28 @@
   .form-control {
     @include rem(padding-right, 50px);
   }
+
+  &--suggest {
+    .control-label {
+      position: absolute;
+      line-height: 1.5;
+      font-weight: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+      color: rgba(#3f4d60, .6);
+
+      @include rem(left, 20px);
+      @include rem(top, 12px);
+      @include rem(font-size, 16px);
+
+      ~ .amsify-suggestags-area .form-control {
+        @include rem(padding-left, 50px);
+        @include rem(padding-right, 20px);
+        @include rem(min-height, 50px);
+
+      }
+    }
+  }
 }
 
 .checkbox__label,

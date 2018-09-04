@@ -59,3 +59,15 @@
 .sidebar_menu {
   z-index: 999999;
 }
+
+.modal_dialog_share {
+  width: 570px;
+
+  hr {
+    @include rem(margin, 30px 0)
+  }
+
+  p {
+    @include rem(margin-bottom, 15px)
+  }
+}

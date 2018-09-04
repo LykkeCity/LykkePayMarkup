@@ -164,7 +164,7 @@
                 <i class="icon icon--exchange"></i>
                 Refresh
               </button>
-                <button class="btn btn--flat btn--default invoice_controls__btn" type="button">
+                <button class="btn btn--flat btn--default invoice_controls__btn _open_modal_share" type="button">
                 <i class="icon icon--share"></i>
                 Share
               </button>
@@ -326,6 +326,36 @@
       </div>
     </section>
   </article>
+  <div class="modal_dialog modal_dialog_share">
+    <div class="modal_dialog__title">
+      Share Invoice #4974732
+    </div>
+    <div class="modal_dialog__text">
+      <form action="" class="form_settings">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="link" class="form-control form-control--readonly" value="https://www.lykke.com/?ref=dustin34ie8" readonly>
+            <i class="icon icon--copy input-group-addon _copy"></i>
+          </div>
+        </div>
+
+        <hr>
+        <p>Please enter e-mail of recipient:</p>
+        <div class="form-group">
+          <div class="input-group input-group--suggest">
+            <label for="suggest" class="control-label">To:</label>
+            <input type="text" class="form-control _suggest" name="suggest" id="suggest" placeholder="" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal_dialog__controls">
+      <div class="pull-right">
+        <button class="btn btn--flat _modal_dialog__cancel">Cancel and close</button>
+        <button class="btn btn--primary">Send invoice</button>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="footer__top">
       <div class="container">
@@ -443,6 +473,62 @@
   <script src="js/vendor/owl.carousel.min.js"></script>
   <script src="js/vendor/fastclick.min.js"></script>
   <script src="js/functions.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.menu_overlay').on('click', function() {
+        $('.modal_dialog').removeClass('modal_dialog--open');
+      });
+
+      $('._modal_dialog__cancel').on('click', function() {
+        $('.menu_overlay').trigger('click');
+      });
+
+      $('._delete_draft_invoice').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('body').addClass('body--menu_opened');
+        $('.modal_dialog_delete').addClass('modal_dialog--open');
+      });
+
+      $('._open_modal_info').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('body').addClass('body--menu_opened');
+        $('.modal_dialog_info').addClass('modal_dialog--open');
+      });
+
+
+      $('._open_modal_share').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('body').addClass('body--menu_opened');
+        $('.modal_dialog_share').addClass('modal_dialog--open');
+      });
+
+      // $('._delete_draft_invoice').trigger('click');
+    });
+  </script>
+  <script src="js/vendor/clipboard.min.js"></script>
+  <script>
+    var clipboard = new Clipboard('._copy', {
+      text: function(trigger) {
+        return trigger.previousElementSibling.value;
+      }
+    });
+
+    clipboard.on('success', function(e) {
+      e.trigger.classList.remove('icon--copy');
+      e.trigger.classList.add('icon--check_thin');
+      e.clearSelection();
+    });
+  </script>
+  <script src="js/vendor/jquery.amsify.suggestags.js"></script>
+  <script>
+    $('._suggest').amsifySuggestags();
+  </script>
   <script>
     $(function() {
       $('[data-toggle="tooltip"]').tooltip()

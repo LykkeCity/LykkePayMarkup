@@ -14,7 +14,9 @@
       @include rem(margin-bottom, 35px);
     }
   }
+}
 
+.form_settings {
   .form-group {
     @include rem(margin-bottom, 27px);
   }
@@ -43,7 +45,7 @@
   .input-group-addon {
     margin-top: 0;
     transform: none;
-    cursor: pointer;
+    cursor: pointer !important;
 
     @include rem(top, 4px);
   }
