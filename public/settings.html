@@ -120,7 +120,7 @@
 
           <ul class="header_nav__list nav_list">
             <li class="nav_list__item nav_list__item--active">
-              <a href="#">Payments</a>
+              <a href="profile.html">Payments</a>
             </li>
             <li class="nav_list__item">
               <a href="#">Money requests</a>
@@ -138,7 +138,7 @@
               <a href="#">Users</a>
             </li>
             <li class="nav_list__item">
-              <a href="#">Settings</a>
+              <a href="settings.html">Settings</a>
             </li>
             <li class="nav_list__item">
               <a href="#">Documentation</a>
@@ -154,37 +154,36 @@
         <div class="row">
           <div class="col-sm-9 col-md-6 automargin">
             <div class="page_settings">
-              <h2 class="page__title">Leroy Cox</h2>
+              <h2 class="page__title">Merchant Display Name</h2>
 
-              <form action="" class="form_settings">
+              <div action="" class="form_settings">
                 <h3>Account</h3>
                 <div class="form-group">
                   <label for="name" class="control-label">Full name</label>
                   <div class="input-group">
-                    <input type="text" id="name" class="form-control" value="Leroy">
+                    <input type="text" id="name" class="form-control form_settings__info" value="Name Surname" disabled>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="email" class="control-label">Email address</label>
                   <div class="input-group">
-                    <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+                    <input type="email" id="email" class="form-control form_settings__info" disabled value="leroycox@lykke.com">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="password" class="control-label">Password</label>
-
                   <div class="input-group ">
-                    <input type="password" id="password" class="form-control" value="23e8d23e" readonly>
+                    <input type="password" id="password" class="form-control" value="23e8d23e" disabled>
                   </div>
-                  <a href="#" class="btn btn--flat">Change password</a>
+                  <a href="change_password.html" class="btn btn--flat">Change password</a>
                 </div>
 
-                <h3>Accounting asset</h3>
+                <h3>Primary asset</h3>
                 <p>The asset used to display total balance of all your paid and unpaid invoices.</p>
 
                 <div class="form-group">
                   <label for="name" class="control-label">Asset</label>
-                  <div class="form_selectpicker form-group">
+                  <div class="form_selectpicker">
                     <select id="select1" class="selectpicker" data-size="10">
                     <option>USD</option>
                     <option>EUR</option>
@@ -204,19 +203,6 @@
                   <label for="MerchantAPI" class="control-label">Merchant API key</label>
                   <div class="input-group">
                     <input type="text" id="MerchantAPI" class="form-control form-control--readonly" value="ByhCwTAWKHjcWCkAwanNr3eJb4VbTn" readonly>
-                    <i class="icon icon--copy input-group-addon _copy"></i>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="MerchantSecret" class="control-label">Merchant Secret</label>
-                  <div class="input-group">
-                    <textarea type="text" id="MerchantSecret" class="form-control form-control--readonly" readonly>——BEGIN RSA PRIVATE KEY——
-MIlEow1BAAKCAQEA5bphXvyM2Qk3vcCm5Bcx3IwsOfHH7Eb7tc1Z6Q2pPhfMUzpEr8tgZgCoQintMvVIFQnLxQ8NN012bp8Dd10exEQo+Uem3ApJ0VhaAXurRFBIDJnUhGUsOpNEn4etlfseS120KKvERUyFbJQw18Ps+sCfPnREwFj+deJ5a2ALjz48nQBDDX1Bh0yR037mgEJtGw1KIDJOTZF7qsKDs6F0E1jccisHcsS49/1vW6b1-1WFXzfoG4vaHVRkHOICh09nzY9VPfYmYC702EPQaFdevlqinx8113X+UuX3z7evKELK37jRqdRNZtvY4v58ck225RHhMIxA0k86rRpSc871VyTwIDAQABAolBAQCLCAyLw6C6gjh+e5HSyJDLDHcquLHL6Tna8vc5wcvyxipl4RgmVZ9kXenR83+uhgCyiun1hhPApTUps3aX0pzRJ711khzHvaX9VBFpK/fDUTKpoLOiaiF3sDmR51s1ajU9c7mYG30ALj3p/cxW+zpkX590XwnyuJTsIrMNpuGpfW1Pwa2w6msqE10/92LIIhiHFBRxqQh1Wk1ZaSFoHYEs6mmk7FX1A94x1YOTDjWfqWMiPifvd7zpchHgnIVqrFrudO4G7D+n84cxB2U8swPOLruhSna+9JElzpnmWrvObsaQpX6OOLYVIDBV5vZeUkHKeEGnhtbRO3LIIRYqYfEfy1h+CgzgBzopCoP2EbjfDgDSy+f3K6134iMne+bKzwDuRI6AYXxV10bWIljYZ3RXmZHUhGsySMzX4No9yWRJdv4JYFe0R+8X1bYcOOXyaSC3DB68Wlez
-gV7A+wKBgHl/pMH1CIQLaW1e+OtLg3+/T42aXSRd4h7jKYUUDRC+611c/DvmbpoW
-y9640BoEbjzEuSO4ZYynZZ9eut5kIblE1X16d9GFMYrgaLVtafFExGGPQkP1nW61
-4RhB1m1M37Gs9MCrTGzjtwJc1S3zse7btiewKOZ2SqZ0FcqVvgKm
- END RSA PRIVATE KEY
-                </textarea>
                     <i class="icon icon--copy input-group-addon _copy"></i>
                   </div>
                 </div>
@@ -249,11 +235,11 @@ y9640BoEbjzEuSO4ZYynZZ9eut5kIblE1X16d9GFMYrgaLVtafFExGGPQkP1nW61
                 <div class="btn btn--flat btn--red">
                   <i class="icon icon--trash"></i> Delete your account
                 </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   </article>
   <footer class="footer">

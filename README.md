@@ -75,7 +75,11 @@ Invoice received | https://lykkecity.github.io/LykkePayMarkup/public/email/invoi
 `gulp dev`
 
 
-[//]: # (Auth http://localhost:9006)
+[//]: # (Welcome page http://localhost:9006)
+
+[//]: # (Manage account)
+
+[//]: # (Settings http://localhost:9006/settings.html)
 
 [//]: # (Checkout http://localhost:9006/invoice.html)
 

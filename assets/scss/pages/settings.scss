@@ -17,6 +17,11 @@
 }
 
 .form_settings {
+  &__info.form-control[disabled] {
+    background-color: #fff;
+    color: #333333;
+  }
+
   .form-group {
     @include rem(margin-bottom, 27px);
   }
