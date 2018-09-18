@@ -1,55 +1,59 @@
 .modal_dialog {
-    visibility: hidden;
-    background: #fff;
-    position: fixed;
-    top: 7%;
-    width: 470px;
-    max-width: 100%;
-    z-index: 9999999;
-    left: 0;
-    right: 0;
-    margin: auto;
-    box-shadow: $box-shadow-modal;
-    border-radius: 8px;
-    opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  position: fixed;
+  top: 7%;
+  width: 470px;
+  max-width: 100%;
+  z-index: 9999999;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: $box-shadow-modal;
+  border-radius: 8px;
+  opacity: 0;
 
-    @include rem(padding, 40px 40px 40px);
-    @include css3-prefix('transition', $all);
+  @include rem(padding, 40px 40px 40px);
+  @include css3-prefix('transition', $all);
+
+  @media all and (max-width: $screen-mobile) {
+    width: auto !important;
+    margin: 10px;
+  }
+
+  &--open {
+    top: 10%;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__title {
+    color: $black;
+    font-weight: $fw-bold;
+    font-family: $ff-alt;
+
+    @include rem(font-size, 30px);
+    @include rem(margin-bottom, 30px);
+  }
+
+  &__text {
+    color: $text;
+
+    @include rem(font-size, 18px);
+    @include rem(margin-bottom, 47px);
+  }
+
+  &__cancel {
+    width: 160px;
 
     @media all and (max-width: $screen-mobile) {
-        width: auto;
-        margin: 10px;
+      width: auto;
     }
+  }
 
-    &--open {
-        top: 10%;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    &__title {
-        color: $black;
-        font-weight: $fw-bold;
-        font-family: $ff-alt;
-
-        @include rem(font-size, 30px);
-        @include rem(margin-bottom, 30px);
-    }
-
-    &__text {
-        color: $text;
-
-        @include rem(font-size, 18px);
-        @include rem(margin-bottom, 47px);
-    }
-
-    &__cancel {
-        width: 160px;
-
-        @media all and (max-width: $screen-mobile) {
-            width: auto;
-        }
-    }
+  &__controls {
+    white-space: nowrap;
+  }
 }
 
 .menu_overlay {
@@ -60,7 +64,8 @@
   z-index: 999999;
 }
 
-.modal_dialog_share {
+.modal_dialog_share ,
+.modal_dialog_refund {
   width: 570px;
 
   hr {
@@ -69,5 +74,23 @@
 
   p {
     @include rem(margin-bottom, 15px)
+  }
+}
+
+
+.amount_total {
+  color: #333333;
+  line-height: 1.67;
+
+  @include rem(margin-top, -12px);
+  @include rem(font-size, 18px);
+
+  &__title {
+    opacity: .6;
+  }
+
+  &__value {
+    text-align: right;
+    max-width: 60%;
   }
 }

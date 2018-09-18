@@ -165,7 +165,7 @@
                 <i class="icon icon--pay"></i>
                 Settlement
               </button>
-                <button class="btn btn--flat btn--default invoice_controls__btn" type="button">
+                <button class="btn btn--flat btn--default invoice_controls__btn _open_modal_refund" type="button">
                 <i class="icon icon--send"></i>
                 Refund
               </button>
@@ -438,13 +438,20 @@
         $('.modal_dialog_info').addClass('modal_dialog--open');
       });
 
-
       $('._open_modal_share').on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
 
         $('body').addClass('body--menu_opened');
         $('.modal_dialog_share').addClass('modal_dialog--open');
+      });
+
+      $('._open_modal_refund').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $('body').addClass('body--menu_opened');
+        $('.modal_dialog_refund').addClass('modal_dialog--open');
       });
 
       // $('._delete_draft_invoice').trigger('click');
