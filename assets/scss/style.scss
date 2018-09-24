@@ -210,13 +210,17 @@ tbody.collapse.in {
 
   &__login {
     @include rem(margin-left, 20px);
+
+    a {
+      color: $primary;
+    }
   }
 
   &__signup {
     @extend .header_actions__login;
 
     a {
-      color: $primary;
+      color: $white;
     }
   }
 }
