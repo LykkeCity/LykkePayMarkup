@@ -2734,8 +2734,6 @@ ol.list_styled li:before { content: counter(step-counter); background-color: #33
 
 .table_invoices tr td { cursor: auto; }
 
-.table_invoices tr th { cursor: pointer; }
-
 .table_invoices ._checkbox { width: 10px; min-width: 0; vertical-align: top; padding-right: 16px; padding-right: 1rem; }
 
 .table_invoices ._checkbox .control-label { padding: 15px; padding: 0.9375rem; }
