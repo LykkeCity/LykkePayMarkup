@@ -14,6 +14,8 @@ Sign up | https://lykkecity.github.io/LykkePayMarkup/public/signup.html
 Verify e-mail | https://lykkecity.github.io/LykkePayMarkup/public/verify_email.html
 Change password | https://lykkecity.github.io/LykkePayMarkup/public/change_password.html
 Settings | https://lykkecity.github.io/LykkePayMarkup/public/settings.html
+Verify address | https://lykkecity.github.io/LykkePayMarkup/public/message_verify.html
+Verified address | https://lykkecity.github.io/LykkePayMarkup/public/message_confirmed.html
 
 
 ### Checkout
@@ -64,6 +66,7 @@ Desctiption | Link
 ----------- | ----
 Invoice | https://lykkecity.github.io/LykkePayMarkup/public/email/invoice.html
 Invoice received | https://lykkecity.github.io/LykkePayMarkup/public/email/invoice_received.html
+Confirm email | https://lykkecity.github.io/LykkePayMarkup/public/email/confirm_email.html
 
 
 ### Development guide

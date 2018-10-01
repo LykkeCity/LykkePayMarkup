@@ -1,0 +1,94 @@
+.block_status {
+  width: 590px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10vH 0;
+
+  &__title {
+    font-family: $ff-alt;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    color: #111111;
+
+    @include rem(font-size, 30px);
+    @include rem(margin-bottom, 28px);
+  }
+
+  &__text {
+    line-height: 1.59;
+    color: #333333;
+
+    @include rem(font-size, 22px);
+    @include rem(margin-bottom, 60px);
+  }
+
+  &__button {
+    text-align: center;
+
+    .btn {
+      min-width: 207px;
+      max-width: 100%;
+    }
+  }
+
+  &__decline_list {
+    line-height: 1.67;
+    color: $text;
+
+    @include rem(margin-top, 25px);
+    @include rem(font-size, 18px);
+
+    li {
+      @include rem(margin-bottom, 15px);
+    }
+
+    .icon {
+      position: relative;
+      top: -2px;
+
+      @include rem(font-size, 30px);
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 20px 0;
+  }
+}
+
+.contact_hint {
+  text-align: center;
+
+  @include rem(padding, 20px 0);
+
+  a {
+    font-weight: $fw-semi;
+  }
+}
+
+.message_icon {
+  border-radius: 100px;
+  text-align: center;
+  color: $white;
+  background-color: $primary;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include rem(margin-bottom, 30px);
+  @include rem(width, 90px);
+  @include rem(height, 90px);
+  @include rem(line-height, 86px);
+
+  img {
+    @include rem(width, 60px);
+  }
+
+  &--green {
+    background-color: $green;
+  }
+
+  &--red {
+    background-color: $red;
+  }
+}
