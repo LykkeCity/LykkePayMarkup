@@ -267,69 +267,15 @@
   <article class="content">
     <section class="section section--padding">
       <div class="container">
-        <div class="profile_info">
-          <div class="row">
-            <div class="col-md-5 col-sm-5">
-              <div class="profile_balance">
-                <div class="profile_info__header">Current balance</div>
-                <div class="profile_balance__value">
-                  <span class="profile_balance__number">10,635,843.09</span>
-                  <span class="profile_balance__currency">CHF</span>
-                </div>
-                <div class="profile_controls">
-                  <button class="btn _create_invoice_btn">
-            <i class="icon icon--add"></i>
-            New invoice
-          </button>
-                  <!--
-            <button class="settlement_btn btn btn--flat">
-              <i class="btn__svg_icon svg_icon svg_icon--settlement svg_icon--margin"></i>Settlement
-            </button>
-          -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-7 col-sm-7">
-              <div class="profile_summary">
-                <div class="profile_info__header">
-                  Received 23,500 CHF
-                  <button class="profile_info__header_help _payments_summary_btn">
-            <i class="btn__svg_icon svg_icon svg_icon--help"></i>
-          </button>
-                </div>
-                <div class="profile_info__link">
-                  <a href="volatility.html">Volatility shield</a>
-                </div>
-                <div class="profile_summary__list clearfix">
-                  <div class="profile_summary__left">
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Settled <a href="#" class="btn btn--icon _open_modal_info"><i class="icon icon--help_outline"></i></a></div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Commission</div>
-                      <div class="profile_summary__status_value">2,35,843.09 CHF</div>
-                    </div>
-                  </div>
-                  <div class="profile_summary__right">
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Unresolved <a href="#" class="btn btn--icon _open_modal_info"><i class="icon icon--help_outline"></i></a></div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
-                    </div>
-                    <div class="profile_summary__item clearfix">
-                      <div class="profile_summary__status_name">Refunded <a href="#" class="btn btn--icon _open_modal_info"><i class="icon icon--help_outline"></i></a></div>
-                      <div class="profile_summary__status_value">10,235,843.09 CHF</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="invoices">
-          <div class="row">
+        <!--include partials/content_profile_info.html-->
+        <div class="payments">
+          <div class="row payments_header">
             <div class="col-sm-6">
-              <h3>Payments</h3>
+              <h3 class="payments_header__title">Payments</h3>
+              <button class="btn payments_header__btn">
+        <i class="icon icon--add"></i>
+        New invoice
+      </button>
             </div>
             <div class="col-sm-6 clearfix">
               <div class="invoice_controls">

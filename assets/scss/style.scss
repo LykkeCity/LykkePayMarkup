@@ -41,6 +41,7 @@
 @import 'partials/message';
 //specific styles should be after common
 @import 'pages/invoice';
+@import 'pages/payments';
 @import 'pages/volatility';
 @import 'pages/settings';
 
@@ -539,12 +540,6 @@ tbody.collapse.in {
       width: 100%;
     }
   }
-}
-
-.invoices h3 {
-  margin: 0;
-
-  @include rem(padding, 10px 0)
 }
 
 .invoice_nav {

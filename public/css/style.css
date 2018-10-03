@@ -2632,7 +2632,7 @@ hr { max-width: none; width: 100%; border: 0; border-bottom: 1px solid #ebedef; 
 
 .section.section--lead { padding: 90px 0; padding: 5.625rem 0; }
 
-.section.section--padding { padding: 60px 0; padding: 3.75rem 0; }
+.section.section--padding { padding: 40px 0; padding: 2.5rem 0; }
 
 @media all and (max-width: 767px) { .section.section--padding { padding: 30px 0; } }
 
@@ -2884,7 +2884,11 @@ ol.list_styled li:before { content: counter(step-counter); background-color: #33
 
 .amsify-suggestags-input-area .amsify-select-tag.col-bg { border-radius: 100px; background-color: #f7f8f9; position: relative; padding: 5px 40px 5px 25px; padding: 0.3125rem 2.5rem 0.3125rem 1.5625rem; }
 
-/*.amsify-suggestags-input-area .amsify-select-tag:hover { background: #737373; color: white; }*/
+/*.amsify-suggestags-input-area
+.amsify-select-tag:hover {
+	background: #737373;
+    color: white;
+}*/
 .amsify-suggestags-input-area .disabled.amsify-select-tag { background: #eaeaea; color: #b9b9b9; pointer-events: none; }
 
 .amsify-suggestags-input-area .flash.amsify-select-tag { background-color: #f57f7f; -webkit-transition: background-color 200ms linear; -ms-transition: background-color 200ms linear; transition: background-color 200ms linear; }
@@ -3682,6 +3686,12 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 @media all and (max-width: 480px) { .invoice_actions { margin-bottom: 20px; }
   .invoice_actions__menu .invoice_controls__btn { display: block; } }
 
+.payments_header { margin-bottom: 40px; margin-bottom: 2.5rem; }
+
+.payments_header__title { display: inline; font-size: 26px; font-size: 1.625rem; font-weight: 800; margin-bottom: 0; margin-right: 40px; margin-right: 2.5rem; vertical-align: middle; }
+
+.payments_header__btn { display: inline-block; padding-bottom: 10px; padding-bottom: 0.625rem; padding-top: 10px; padding-top: 0.625rem; }
+
 .volatility_page .page__title { margin-bottom: 60px; margin-bottom: 3.75rem; }
 
 .volatility_page .profile_info__header { margin-bottom: 24px; margin-bottom: 1.5rem; }
@@ -3895,8 +3905,6 @@ tbody.collapse.in { display: table-row-group; }
 @media all and (max-width: 991px) { .profile_summary__left { width: 100%; }
   .profile_summary__left *:last-child { border-bottom: none; }
   .profile_summary__right { padding-left: 0; width: 100%; } }
-
-.invoices h3 { margin: 0; padding: 10px 0; padding: 0.625rem 0; }
 
 .invoice_nav { position: relative; margin-top: 20px; margin-top: 1.25rem; margin-bottom: 12px; margin-bottom: 0.75rem; }
 

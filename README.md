@@ -29,8 +29,8 @@ Checkout - Statuses | https://lykkecity.github.io/LykkePayMarkup/public/invoice_
 ### Main
 Desctiption | Link
 ----------- | ----
-Invoices list <br>with statistic | https://lykkecity.github.io/LykkePayMarkup/public/profile.html
-No invoices | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
+Payments | https://lykkecity.github.io/LykkePayMarkup/public/profile.html
+No payments | https://lykkecity.github.io/LykkePayMarkup/public/profile_no_invoices.html
 No search results| https://lykkecity.github.io/LykkePayMarkup/public/profile_no_search_results.html
 404 | https://lykkecity.github.io/LykkePayMarkup/public/404.html
 Volatility | https://lykkecity.github.io/LykkePayMarkup/public/volatility.html
@@ -100,7 +100,9 @@ Confirm email | https://lykkecity.github.io/LykkePayMarkup/public/email/confirm_
 
 [//]: # (http://localhost:9006/modal.html)
 
-[//]: # (Invoices list <br>with statistic http://localhost:9006/profile.html)
+[//]: # (Main)
+
+[//]: # (Payments http://localhost:9006/profile.html)
 
 [//]: # (New invoice sidebar http://localhost:9006/profile_draft.html)
 

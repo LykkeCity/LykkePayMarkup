@@ -35,7 +35,7 @@ hr {
   }
 
   &.section--padding {
-    @include rem(padding, 60px 0);
+    @include rem(padding, 40px 0);
   }
 
   @media all and (max-width: $screen-landscape) {
