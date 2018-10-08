@@ -90,15 +90,17 @@ Confirm email | https://lykkecity.github.io/LykkePayMarkup/public/email/confirm_
 
 [//]: # (Checkout - Statuses http://localhost:9006/invoice_statuses.html)
 
+[//]: # (Details)
+
 [//]: # (Details - Draft http://localhost:9006/invoice_draft.html)
 
-[//]: # (http://localhost:9006/invoice_unpaid.html)
+[//]: # (Details - Unpaid http://localhost:9006/invoice_unpaid.html)
 
 [//]: # (Details - Paid http://localhost:9006/invoice_paid.html)
 
 [//]: # (Details - Error http://localhost:9006/invoice_paid_error.html)
 
-[//]: # (http://localhost:9006/modal.html)
+[//]: # (Modal delete example http://localhost:9006/modal.html)
 
 [//]: # (Main)
 
