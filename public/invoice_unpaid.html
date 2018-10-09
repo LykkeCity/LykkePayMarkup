@@ -153,14 +153,6 @@
             </div>
             <div class="invoice_actions__menu">
               <div class="invoice_controls">
-                <button class="btn btn--flat btn--default invoice_controls__btn">
-                <i class="icon icon--pay"></i>
-                Settlement
-              </button>
-                <button class="btn btn--flat btn--default invoice_controls__btn _open_modal_refund" type="button">
-                <i class="icon icon--send"></i>
-                Refund
-              </button>
                 <button class="btn btn--flat btn--default invoice_controls__btn" type="button">
                 <i class="icon icon--exchange"></i>
                 Refresh
@@ -227,30 +219,7 @@
                 </div>
               </div>
 
-              <div class="form_header">
-                <button type="button" class="btn btn-sm btn-primary pull-right">Add File</button>
-                <h3>Attachment</h3>
-              </div>
-
-              <div class="attachment_list">
-                <!--
-              <div class="asset_link_list">
-                <div class="asset_link asset_link--alt">
-                  <div class="asset_link__icon">
-                    <div class="asset_icon asset_icon--red">PDF</div>
-                  </div>
-                  <div class="asset_link__action">
-                    <button class="btn btn--icon _delete_asset"><i class="icon icon--download"></i></button>
-                  </div>
-                  <div class="asset_link__info">
-                    <div class="asset_link__title">BAS Rechnung Sponsoring…- Sheet1.pdf</div>
-                    <div class="asset_link__desc">57KB</div>
-                  </div>
-                </div>
-              </div>
-              -->
-                <div class="hint">No file selected</div>
-              </div>
+              <!-- Do not show attachment files if they were not added -->
 
               <div class="form_header">
                 <h3>History</h3>
@@ -282,7 +251,7 @@
                       <span class="middot">&middot;</span>
                       <div class="history_item__date">08:22 AM January 10, 2018</div>
                     </div>
-                    <div class="history_item__text">Draft created</div>
+                    <div class="history_item__text">Invoice generated: N CHF to be paid</div>
                   </div>
                 </div>
               </div>
@@ -293,6 +262,20 @@
       </div>
     </section>
   </article>
+  <div class="modal_dialog modal_dialog_delete">
+    <div class="modal_dialog__title">
+      Are you sure?
+    </div>
+    <div class="modal_dialog__text">
+      Do you really want to delete "LP_2018044.pdf"?
+    </div>
+    <div class="modal_dialog__controls">
+      <div class="pull-right">
+        <button class="btn btn--flat">Yes</button>
+        <button class="btn modal_dialog__cancel _modal_dialog__cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
   <div class="modal_dialog modal_dialog_share">
     <div class="modal_dialog__title">
       Share Invoice #4974732
