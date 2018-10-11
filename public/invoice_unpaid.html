@@ -129,12 +129,13 @@
             <div class="col-md-8 automargin">
               <div class="invoice_header">
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-12">
                     <h1 class="page__title">Invoice #4974732</h1>
                     <div class="invoice_header__link">
-                      <a href="">https://www.lykke.com/invoices/#4974732</a>
-                      <button class="btn btn--icon _copy" type="button">
-                      <i class="btn__svg_icon svg_icon svg_icon--ulpoad"></i>
+                      <!-- invoice checkout url here -->
+                      <a href="javascript:void(0)">https://pay.lykke.com/invoice/b4a89aac-4fe9-4d86-b161-4b29594ac7af</a>
+                      <button class="btn btn--icon _copy" type="button" data-toggle="tooltip" data-placement="top" title="Copied">
+                      <i class="btn__svg_icon svg_icon svg_icon--copy"></i>
                     </button>
                     </div>
                   </div>
@@ -149,7 +150,8 @@
 
           <div class="invoice_actions">
             <div class="invoice_actions__qr">
-              <img src="img/qr.png" alt="qr" width="120">
+              <!-- invoice checkout url here -->
+              <img src="https://chart.googleapis.com/chart?chs=138x138&chld=L|0&cht=qr&chl=https%3A%2F%2Fpay.lykke.com%2Finvoice%2Fb4a89aac-4fe9-4d86-b161-4b29594ac7af" alt="qr" width="138" height="138">
             </div>
             <div class="invoice_actions__menu">
               <div class="invoice_controls">
@@ -530,6 +532,11 @@
       e.trigger.classList.add('icon--check_thin');
       e.clearSelection();
     });
+  </script>
+  <script>
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
   <script src="js/vendor/jquery.amsify.suggestags.js"></script>
   <script>
