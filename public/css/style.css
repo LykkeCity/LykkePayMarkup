@@ -3482,7 +3482,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .invoice_header:after, .invoice_header:before { content: ""; display: table; clear: both; }
 
-.invoice_header .page__title { text-align: inherit; color: #111; }
+.invoice_header .page__title { text-align: inherit; color: #111; word-wrap: break-word; }
 
 .invoice_header ~ .asset_link_list .asset_link:first-child { border-top: 0; }
 
