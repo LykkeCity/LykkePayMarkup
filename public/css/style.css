@@ -3586,6 +3586,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .invoice_page .form_header { margin-top: 60px; margin-top: 3.75rem; }
 
+.invoice_page .attachment_list--download .asset_link__info .asset_link__title { max-width: 100%; }
+
 .invoice_buttons { margin: 54px 0; margin: 3.375rem 0; }
 
 .invoice_buttons .btn:first-child { min-width: 155px; }

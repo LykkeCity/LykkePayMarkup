@@ -374,6 +374,16 @@
   .form_header {
     @include rem(margin-top, 60px);
   }
+
+  .attachment_list {
+    &--download {
+      .asset_link__info {
+        .asset_link__title {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .invoice_buttons {
