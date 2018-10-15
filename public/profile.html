@@ -775,6 +775,7 @@
   <script>
     $(document).ready(function() {
       $('.menu_overlay').on('click', function() {
+        $('.menu_overlay').removeClass('menu_overlay--open');
         $('.modal_dialog').removeClass('modal_dialog--open');
       });
 
@@ -798,11 +799,12 @@
         $('.modal_dialog_info').addClass('modal_dialog--open');
       });
 
+      // TODO: every modal script should be in separated file
       $('._open_modal_share').on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
 
-        $('body').addClass('body--menu_opened');
+        overlayWithoutBlurring();
         $('.modal_dialog_share').addClass('modal_dialog--open');
       });
 
@@ -810,9 +812,13 @@
         e.preventDefault();
         e.stopPropagation();
 
-        $('body').addClass('body--menu_opened');
+        overlayWithoutBlurring();
         $('.modal_dialog_refund').addClass('modal_dialog--open');
       });
+
+      function overlayWithoutBlurring() {
+        $('.menu_overlay').addClass('menu_overlay--open');
+      }
     });
   </script>
 </body>

@@ -160,11 +160,15 @@ li.amsify-item-pad.active {
   @include rem(padding, 5px 40px 5px 25px)
 }
 
-/*.amsify-suggestags-input-area
+.amsify-select-tag--error {
+  -webkit-box-shadow: 0px 0px 5px #ff0;
+  box-shadow: 0px 0px 5px #ff0;
+}
+
+.amsify-suggestags-input-area
 .amsify-select-tag:hover {
-	background: #737373;
-    color: white;
-}*/
+	background: #eee; // modified
+}
 
 .amsify-suggestags-input-area
 .disabled.amsify-select-tag {

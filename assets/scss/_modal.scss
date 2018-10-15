@@ -58,6 +58,11 @@
 
 .menu_overlay {
   z-index: 99999;
+
+  &--open {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .sidebar_menu {
