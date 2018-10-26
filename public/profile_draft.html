@@ -278,7 +278,7 @@
           <div class="row payments_header">
             <div class="col-sm-6">
               <h3 class="payments_header__title">Payments</h3>
-              <button class="btn payments_header__btn">
+              <button class="btn payments_header__btn _create_invoice_btn">
         <i class="icon icon--add"></i>
         New invoice
       </button>
@@ -368,8 +368,13 @@
                     <div class="form_selectpicker form_selectpicker--period form-group">
                       <label for="select1" class="control-label">Period:</label>
                       <select id="select1" class="selectpicker" data-size="10">
+                <option>This week</option>
+                <option>Last week</option>
                 <option>This month</option>
+                <option>Last month</option>
+                <option>Three months</option>
                 <option>This year</option>
+                <option>Last year</option>
               </select>
                     </div>
                   </div>
@@ -378,17 +383,27 @@
                       <label for="select2" class="control-label">Type:</label>
                       <select id="select2" class="selectpicker" data-size="10">
                 <option>All</option>
-                <option>Draft</option>
+                <option>Invoice</option>
+                <option>API</option>
               </select>
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-3">
                     <div class="form_selectpicker form_selectpicker--status form-group">
                       <label for="select3" class="control-label">Status:</label>
-                      <select id="select3" class="selectpicker" data-size="10">
+                      <select id="select3" class="selectpicker" data-live-search="true" data-size="10">
                 <option>All</option>
-                <option>Paid</option>
+                <option>Draft</option>
                 <option>Unpaid</option>
+                <option>In Progress</option>
+                <option>Paid</option>
+                <option>Underpaid</option>
+                <option>Overpaid</option>
+                <option>LatePaid</option>
+                <option>Refunded</option>
+                <option>PastDue</option>
+                <option>Removed</option>
+                <option>Error</option>
               </select>
                     </div>
                   </div>
